@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class CquptApplication {
 
     public static void main(String[] args) {
+        System.out.println("Springboot初始化======");
         SpringApplication.run(CquptApplication.class, args);
     }
 
