@@ -1,0 +1,21 @@
+2022-02-08 11:53:30.651  INFO 17592 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 17592 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-08 11:53:30.651  INFO 17592 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-08 11:53:30.705  INFO 17592 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-08 11:53:30.705  INFO 17592 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-08 11:53:31.907  INFO 17592 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-08 11:53:31.923  INFO 17592 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-08 11:53:31.923  INFO 17592 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-08 11:53:32.008  INFO 17592 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-08 11:53:32.008  INFO 17592 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1303 ms
+2022-02-08 11:53:32.156  INFO 17592 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-08 11:53:32.440  INFO 17592 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-08 11:53:33.242  INFO 17592 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-08 11:53:33.274  INFO 17592 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-08 11:53:33.274  INFO 17592 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 3.105 seconds (JVM running for 4.166)
+2022-02-08 11:53:45.797  INFO 17592 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-08 11:53:45.797  INFO 17592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-08 11:53:45.797  INFO 17592 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-02-08 11:53:45.813  INFO 17592 --- [http-nio-8080-exec-1] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/', ip='127.0.0.1', classMethod='com.cqupt.controller.BusGoodsController.test', args=[]}
+2022-02-08 11:53:45.828  INFO 17592 --- [http-nio-8080-exec-1] com.cqupt.aspect.LogAspect               : Result : CQUPTtest
+2022-02-08 11:54:25.082  INFO 17592 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/', ip='127.0.0.1', classMethod='com.cqupt.controller.BusGoodsController.test', args=[]}
+2022-02-08 11:54:25.082  INFO 17592 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : CQUPTtest
