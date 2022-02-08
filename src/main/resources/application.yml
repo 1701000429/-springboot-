@@ -42,6 +42,12 @@ mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
+
+mybatis:
+  configuration:
+    map-underscore-to-camel-case: true
+
+
 #配置log日志的存储路径
 logging:
   level:
@@ -49,26 +55,6 @@ logging:
     com.lrm: debug
   file:
     name: log/Log.log
-
-
-##shiro的配置
-#shiro:
-#  hash-algorithm-name: md5
-#  hash-iterations: 2
-#  anon-urls:
-#    - /stu/toStudent
-#    - /stu/Addsuggest
-#    - /suggest/loadAllsuggest
-#    - /index.html*
-#    - /sys/toLogin*
-#    - /login/login*
-#    - /login/getCode
-#    - /resources/**
-#    - /notice/loadAllNotice
-#  login-url: /index.html
-#  log-out-url: /login/logout*
-#  authc-ulrs:
-#    - /**
 
 #端口号为8080
 server:
