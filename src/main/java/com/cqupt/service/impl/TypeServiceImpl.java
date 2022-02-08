@@ -44,8 +44,8 @@ public class TypeServiceImpl extends ServiceImpl<TypeMapper, Type> implements Ty
     }
 
     @Override
-    public List<Type> getAllTypeAndBlog() {
-        return typeDao.getAllTypeAndBlog();
+    public List<Type> getAllTypeAndPaper() {
+        return typeDao.getAllTypeAndPaper();
     }
 
     @Override

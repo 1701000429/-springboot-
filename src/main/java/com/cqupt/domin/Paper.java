@@ -38,7 +38,7 @@ public class Paper implements Serializable {
     /**
      * 创建时间
      */
-    private LocalDateTime createTime;
+    private LocalDateTime createtime;
 
     /**
      * 论文描述
@@ -48,7 +48,7 @@ public class Paper implements Serializable {
     /**
      * 论文首图(存储路径)
      */
-    private String firstPicture;
+    private String firstpicture;
 
     /**
      * 论文状态(1保存2发布)
@@ -63,7 +63,7 @@ public class Paper implements Serializable {
     /**
      * 论文发布时间
      */
-    private LocalDateTime updateTime;
+    private LocalDateTime updatetime;
 
     /**
      * 论文浏览次数
@@ -73,17 +73,17 @@ public class Paper implements Serializable {
     /**
      * 论文类型id
      */
-    private Long typeId;
+    private Long typeid;
 
     /**
      * 论文发布者id
      */
-    private Long userId;
+    private Long userid;
 
     /**
      * 评论总数
      */
-    private Integer commentCount;
+    private Integer commentcount;
 
     /**
      * 论文对应的附件

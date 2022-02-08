@@ -45,8 +45,8 @@
   <div class="ui attached pointing menu">
     <div class="ui container">
       <div class="right menu">
-        <a href="#" th:href="@{/admin/types/input}" class="item">新增</a>
-        <a href="#" th:href="@{/admin/types}" class="teal active item">列表</a>
+        <a href="#" th:href="@{/cqupt/admin/types/input}" class="item">新增</a>
+        <a href="#" th:href="@{/cqupt/admin/types}" class="teal active item">列表</a>
       </div>
     </div>
   </div>
@@ -76,8 +76,8 @@
             <td th:text="${iterStat.count}">1</td>
             <td th:text="${type.name}">我的故事</td>
             <td>
-              <a href="#" th:href="@{/admin/types/{id}/input(id=${type.id})}" class="ui mini teal basic button">编辑</a>
-              <a href="#" th:href="@{/admin/types/{id}/delete(id=${type.id})}"  onclick="return confirm('确定要删除该分类吗？三思啊! 删了可就没了！')" class="ui mini red basic button">删除</a>
+              <a href="#" th:href="@{/cqupt/admin/types/{id}/input(id=${type.id})}" class="ui mini teal basic button">编辑</a>
+              <a href="#" th:href="@{/cqupt/admin/types/{id}/delete(id=${type.id})}"  onclick="return confirm('确定要删除该分类吗？三思啊! 删了可就没了！')" class="ui mini red basic button">删除</a>
             </td>
           </tr>
         </tbody>
@@ -86,7 +86,7 @@
             <th colspan="6" >
               <div class="ui inverted divided stackable grid">
                 <div class="three wide column" align="center">
-                  <a class="item" th:href="@{/admin/types(pageNum=${pageInfo.hasPreviousPage}?${pageInfo.prePage}:1)}" th:unless="${pageInfo.isFirstPage}">上一页</a>
+                  <a class="item" th:href="@{/cqupt/admin/types(pageNum=${pageInfo.hasPreviousPage}?${pageInfo.prePage}:1)}" th:unless="${pageInfo.isFirstPage}">上一页</a>
                 </div>
 
                 <div class="ten wide column" align="center">
@@ -94,11 +94,11 @@
                 </div>
 
                 <div class="three wide column" align="center">
-                  <a class="item" th:href="@{/admin/types(pageNum=${pageInfo.hasNextPage}?${pageInfo.nextPage}:${pageInfo.pages})}" th:unless="${pageInfo.isLastPage}">下一页</a>
+                  <a class="item" th:href="@{/cqupt/admin/types(pageNum=${pageInfo.hasNextPage}?${pageInfo.nextPage}:${pageInfo.pages})}" th:unless="${pageInfo.isLastPage}">下一页</a>
                 </div>
               </div>
               <div align="center">
-              <a href="#" th:href="@{/admin/types/input}">
+              <a href="#" th:href="@{/cqupt/admin/types/input}">
                 <button type="button" class="ui teal button m-mobile-wide m-margin-top"><i class="pencil icon"></i>新增</button>
               </a>
               </div>

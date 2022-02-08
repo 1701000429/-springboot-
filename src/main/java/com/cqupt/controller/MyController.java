@@ -36,9 +36,5 @@ public class MyController {
         return "index";
     }
 
-    //跳转到type分类页面
-    @GetMapping("/admin/type")
-    public String types() {
-        return "admin/types";
-    }
+
 }

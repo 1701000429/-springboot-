@@ -20,7 +20,7 @@ public interface TypeMapper extends BaseMapper<Type> {
 
     List<Type> getAllType();
 
-    List<Type> getAllTypeAndBlog();
+    List<Type> getAllTypeAndPaper();
 
     Type getTypeByName(String name);
 
