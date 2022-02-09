@@ -2,5 +2,35 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.cqupt.mapper.PaperMapper">
 
+    <!--查询所有文章-->
+    <select id="getAllPaper" resultType="com.cqupt.domin.Paper">
+        select * from cquptacademic.paper
+    </select>
+
+<!--    由于查询整个文章列表太多内容，这里写一个map，查询后台管理页面的paper列表-->
+    <resultMap id="paperQuery" type="com.cqupt.domin.queryvo.PaperQuery">
+        <id property="id" column="id"/>
+        <result property="title" column="title"/>
+        <result property="updatetime" column="updatetime"/>
+        <result property="views" column="views"/>
+        <result property="typeid" column="typeid"/>
+        <association property="type" javaType="com.cqupt.domin.Type">
+            <id property="id" column="id"/>
+            <result property="name" column="name"/>
+        </association>
+    </resultMap>
+    <!--查询文章管理列表-->
+    <select id="getAllPaperQuery" resultMap="paperQuery">
+        select b.id,
+        b.title,
+        b.updatetime,
+        b.views,
+        b.typeid,
+        t.id,
+        t.name
+        from cquptacademic.paper b left outer join
+        cquptacademic.type t on b.typeid = t.id
+    </select>
+
 
 </mapper>
