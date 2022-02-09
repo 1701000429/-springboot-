@@ -8,10 +8,12 @@
     </select>
 
 <!--    由于查询整个文章列表太多内容，这里写一个map，查询后台管理页面的paper列表-->
-    <resultMap id="paperQuery" type="com.cqupt.domin.queryvo.PaperQuery">
+    <resultMap id="paperQuery" type="com.cqupt.domin.queryvo.PaperQuery"
+                >
         <id property="id" column="id"/>
         <result property="title" column="title"/>
-        <result property="updatetime" column="updatetime"/>
+        <result property="updatetime" column="updatetime"
+                jdbcType="DATE"/>
         <result property="views" column="views"/>
         <result property="typeid" column="typeid"/>
         <association property="type" javaType="com.cqupt.domin.Type">
@@ -20,7 +22,7 @@
         </association>
     </resultMap>
     <!--查询文章管理列表-->
-    <select id="getAllPaperQuery" resultMap="paperQuery">
+    <select id="getAllPaperQuery" resultMap="paperQuery ">
         select b.id,
         b.title,
         b.updatetime,

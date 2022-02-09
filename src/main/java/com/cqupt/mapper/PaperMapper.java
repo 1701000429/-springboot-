@@ -2,6 +2,7 @@ package com.cqupt.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.cqupt.domin.Paper;
+import com.cqupt.domin.queryvo.PaperQuery;
 
 import java.util.List;
 
@@ -25,7 +26,7 @@ public interface PaperMapper extends BaseMapper<Paper> {
 
 
 
-    List<Paper> getAllPaperQuery();
+    List<PaperQuery> getAllPaperQuery();
 
     int savePaper(Paper Paper);
 

@@ -6,6 +6,7 @@ import com.cqupt.domin.Type;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
@@ -28,6 +29,7 @@ public class PaperQuery {
     //论文标题
     private String title;
     //论文更新时间
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
     private Date updatetime;
     //论文类型
     private Integer typeid;

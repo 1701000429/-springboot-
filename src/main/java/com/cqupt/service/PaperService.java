@@ -2,6 +2,7 @@ package com.cqupt.service;
 
 import com.baomidou.mybatisplus.extension.service.IService;
 import com.cqupt.domin.Paper;
+import com.cqupt.domin.queryvo.PaperQuery;
 
 import java.util.List;
 
@@ -16,7 +17,7 @@ import java.util.List;
 public interface PaperService extends IService<Paper> {
 
     //获取全部paper，后台列表显示
-    List<Paper> getAllPaperQuery();
+    List<PaperQuery> getAllPaperQuery();
 
     Paper getPaperById(Long id);
 

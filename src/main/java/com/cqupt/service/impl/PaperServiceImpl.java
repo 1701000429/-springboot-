@@ -2,6 +2,7 @@ package com.cqupt.service.impl;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.cqupt.domin.Paper;
+import com.cqupt.domin.queryvo.PaperQuery;
 import com.cqupt.mapper.PaperMapper;
 import com.cqupt.service.PaperService;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -24,7 +25,7 @@ public class PaperServiceImpl extends ServiceImpl<PaperMapper, Paper> implements
     PaperMapper paperDao;
 
     @Override
-    public List<Paper> getAllPaperQuery() {
+    public List<PaperQuery> getAllPaperQuery() {
         return paperDao.getAllPaperQuery();
     }
 

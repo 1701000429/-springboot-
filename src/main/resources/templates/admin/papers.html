@@ -100,7 +100,7 @@
                     <td th:text="${paper.title}">未知标题</td>
                     <td th:text="${paper.type.name}">未知类型</td>
                     <td th:text="${paper.views} ">未知浏览次数</td>
-                    <td th:text="${paper.updatetime}">2022-02-10 09:45</td>
+                    <td th:text="${#dates.format(paper.updatetime, 'yyyy-MM-dd')}">2022-02-10 09:45</td>
                     <td>
                         <a href="#" th:href="@{/cqupt/admin/papers/{id}/input(id=${paper.id})}" class="ui mini teal basic button">编辑</a>
                         <a href="#" th:href="@{/cqupt/admin/papers/{id}/delete(id=${paper.id})}" class="ui mini red basic button">删除</a>

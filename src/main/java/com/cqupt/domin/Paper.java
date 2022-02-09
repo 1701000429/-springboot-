@@ -5,9 +5,11 @@ import com.baomidou.mybatisplus.annotation.TableId;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.io.Serializable;
 import java.time.LocalDateTime;
+import java.util.Date;
 
 /**
  * <p>
@@ -38,7 +40,8 @@ public class Paper implements Serializable {
     /**
      * 创建时间
      */
-    private LocalDateTime createtime;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date createtime;
 
     /**
      * 论文描述
@@ -63,7 +66,8 @@ public class Paper implements Serializable {
     /**
      * 论文发布时间
      */
-    private LocalDateTime updatetime;
+    @DateTimeFormat(pattern = "yyyy-MM-dd")
+    private Date updatetime;
 
     /**
      * 论文浏览次数
@@ -78,7 +82,7 @@ public class Paper implements Serializable {
     /**
      * 论文发布者id
      */
-    private Long userid;
+    private Integer userid;
 
     /**
      * 评论总数
