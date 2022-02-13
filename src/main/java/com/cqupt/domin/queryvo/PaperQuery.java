@@ -17,6 +17,7 @@ import java.util.Date;
  *
  * @author 刘博文
  * @since 2022-02-08
+ * @描述： 后台首页展示的缩略
  */
 @Data
 @EqualsAndHashCode(callSuper = false)

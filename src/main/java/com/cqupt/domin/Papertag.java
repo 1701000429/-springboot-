@@ -29,6 +29,12 @@ public class Papertag implements Serializable {
         this.tagid = tagid;
     }
 
+    public Papertag(Integer paperid, Integer tagid) {
+        this.paperid = paperid;
+        this.tagid = tagid;
+    }
+
+    @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
 
     /**
@@ -44,4 +50,7 @@ public class Papertag implements Serializable {
     private Integer tagid;
 
 
+    public Papertag() {
+
+    }
 }

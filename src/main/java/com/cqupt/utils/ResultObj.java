@@ -9,10 +9,16 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 public class ResultObj {
+    public ResultObj(Integer code, String msg) {
+        this.code = code;
+        this.msg = msg;
+    }
 
     private Integer code;
     private String msg;
 
+    //data
+    private String data;
 //    s
 
 }

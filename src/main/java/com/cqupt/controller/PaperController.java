@@ -4,19 +4,21 @@ package com.cqupt.controller;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
-import com.cqupt.domin.Paper;
-import com.cqupt.domin.Tag;
-import com.cqupt.domin.Type;
-import com.cqupt.domin.User;
+import com.cqupt.domin.*;
 import com.cqupt.domin.queryvo.PaperQuery;
+import com.cqupt.domin.queryvo.PaperSubmit;
 import com.cqupt.service.PaperService;
+import com.cqupt.service.PapertagService;
+import com.cqupt.service.TagService;
 import com.cqupt.service.TypeService;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpSession;
@@ -40,6 +42,12 @@ public class PaperController {
 
     @Autowired
     private TypeService typeService;
+
+    @Autowired
+    private TagService tagService;
+
+    @Autowired
+    private PapertagService papertagService;
 
     //论文列表
     @RequestMapping("/papers")
@@ -65,43 +73,92 @@ public class PaperController {
 
     //todo  2022/2/10
 
-
     //跳转论文新增页面
     @GetMapping("/papers/input")
     public String input(Model model) {
         model.addAttribute("types",typeService.getAllType());
-        model.addAttribute("paper", new Paper());
+        model.addAttribute("tags",tagService.getAllTag());
+        model.addAttribute("paper", new PaperSubmit());
         return "admin/papers-input";
     }
 
-//    // 论文新增
+    // 论文新增的post请求提交
     @PostMapping("/papers")
-    public String post(Paper paper,
+    public String post(PaperSubmit paperSubmit,
                        RedirectAttributes attributes,
                        HttpSession session){
-        System.out.println("进入论文新增的controller=====");
-        System.out.println(paper);
-        //id commentabled content  description firstpicture title
-        System.out.println("进入论文新增的controller=====");
+        System.out.println("进入论文新增的controller=========================");
+        System.out.println(paperSubmit);
+        System.out.println("进入论文新增的controller=========================");
+        //1.从session中拿到user
         User LoginUser=(User) session.getAttribute("user");
-        //设置用户id，从session里面拿
+        //2.先解析出Paper
+        Paper paper=new Paper(paperSubmit);
+        //3.设置Paper其他信息     设置用户id，时间等等
+        paper.setFirstpicture(LoginUser.getAvatar());
         paper.setUserid(LoginUser.getId());
         paper.setViews(0);
         paper.setCreatetime(new Date());
         paper.setUpdatetime(new Date());
         paper.setFlag(null);
         paper.setCommentcount(0);
-        //todo   论文首图，zip的上传
 
+        if(paper.getCommentabled()==null){
+            paper.setCommentabled(0);
+        }
+        //4. 讲论文信息持久化到数据库 insert into paper .......
         //这里使用MybatisPlus提供的API
         boolean successFlag=paperService.save(paper);
+        //这里如果失败，会直接redirect
         if(successFlag==false){
+            attributes.addFlashAttribute("message", "新增失败");
+            return "redirect:/cqupt/admin/papers";
+        }
+
+
+
+        //5. 进行PaperTag联系表的保存。
+        System.out.println("进入论文新增的controller  getTagid=========================");
+        System.out.println(paperSubmit.getTagid());
+        String tagIdList=paperSubmit.getTagid();
+        String[] tagIds = tagIdList.split(",");
+        System.out.println(tagIds);
+        System.out.println("进入论文新增的controller  getTagid=========================");
+
+
+        //重新查询paperid
+        QueryWrapper<Paper> queryWrapper = new QueryWrapper<Paper>();
+        //2.select添加where条件（动态sql）
+        queryWrapper.eq("title",paper.getTitle());
+        queryWrapper.eq("content",paper.getContent());
+        queryWrapper.eq("description",paper.getDescription());
+        queryWrapper.eq("zip",paper.getZip());
+        queryWrapper.last(" ORDER BY createtime DESC LIMIT 1");
+        //queryWrapper.ge("createtime",paper.getCreatetime());
+        Paper newInsertPaper=paperService.getOne(queryWrapper);
+        //进行PaperTag数据表的修改
+        boolean papertagFlag=true;
+        for (int i = 0; i < tagIds.length; i++) {
+            System.out.println("分解的tagid是");
+            System.out.println(tagIds[i]);
+            //此时的paperId是null    因为论文id是自增的
+            Papertag paperTag=new Papertag(newInsertPaper.getId(),Integer.valueOf(tagIds[i]));
+            boolean tagFlag=papertagService.save(paperTag);
+            if(tagFlag==false){
+                papertagFlag=false;
+            }
+
+        }
+
+        if(successFlag==false||papertagFlag==false){
             attributes.addFlashAttribute("message", "新增失败");
         }else {
             attributes.addFlashAttribute("message", "新增成功");
         }
+
         return "redirect:/cqupt/admin/papers";
     }
+
 
 //    //    删除文章
 //    @GetMapping("/blogs/{id}/delete")

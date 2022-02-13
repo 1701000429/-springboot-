@@ -2,6 +2,7 @@ package com.cqupt.domin;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.cqupt.domin.queryvo.PaperSubmit;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 import lombok.experimental.Accessors;
@@ -99,5 +100,25 @@ public class Paper implements Serializable {
      */
     private String flag;
 
+    public Paper() {
+    }
+
+    public Paper(PaperSubmit paperSubmit) {
+        this.id = paperSubmit.id;
+        this.commentabled = paperSubmit.commentabled;
+        this.content = paperSubmit.content;
+        this.createtime = paperSubmit.createtime;
+        this.description = paperSubmit.description;
+        this.firstpicture = paperSubmit.firstpicture;
+        this.published = paperSubmit.published;
+        this.title = paperSubmit.title;
+        this.updatetime = paperSubmit.updatetime;
+        this.views = paperSubmit.views;
+        this.typeid = paperSubmit.typeid;
+        this.userid = paperSubmit.userid;
+        this.commentcount = paperSubmit.commentcount;
+        this.zip = paperSubmit.zip;
+        this.flag = paperSubmit.flag;
+    }
 
 }

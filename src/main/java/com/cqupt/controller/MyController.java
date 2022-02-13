@@ -31,9 +31,10 @@ public class MyController {
     }
 
     //跳转到首页，论文列表
-    @GetMapping("/paper")
+    @GetMapping("/user/index")
     public String index() {
-        return "index";
+
+        return "CQUPTtest";
     }
 
 

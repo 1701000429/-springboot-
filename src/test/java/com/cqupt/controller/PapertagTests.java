@@ -29,9 +29,9 @@ class PapertagTests {
     //测试mybatisPlus中的service层的接口
     @Test
     void saveTest() {
-        Papertag papertag=new Papertag(1,1,10);
+        Papertag papertag=new Papertag(2,10);
         System.out.println(papertag);
-        boolean flag=papertagService.updateById(papertag);
+        boolean flag=papertagService.save(papertag);
         System.out.println(flag);
     }
 
@@ -78,5 +78,8 @@ class PapertagTests {
         System.out.println("删除情况：");
         System.out.println(flag);
     }
+
+
+    //测试自己写的
 
 }

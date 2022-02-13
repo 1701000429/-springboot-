@@ -2,6 +2,7 @@ package com.cqupt.mapper;
 
 import com.baomidou.mybatisplus.core.mapper.BaseMapper;
 import com.cqupt.domin.Papertag;
+import com.cqupt.domin.Tag;
 
 /**
  * <p>
@@ -12,5 +13,6 @@ import com.cqupt.domin.Papertag;
  * @since 2022-02-09
  */
 public interface PapertagMapper extends BaseMapper<Papertag> {
+    int  savePapertag(Papertag papertag);
 
 }

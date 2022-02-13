@@ -89,34 +89,41 @@
                 <div class=" field">
                     <div class="ui left labeled action input">
                         <label class="ui compact teal basic label">标签</label>
-<!--                        <div class="ui fluid selection multiple search  dropdown">-->
-<!--                            <input type="hidden" name="tagid" th:value="*{tagid}" >-->
-<!--                            <i class="dropdown icon"></i>-->
-<!--                            <div class="default text">标签</div>-->
-<!--                            <div class="menu">-->
-<!--                                <div th:each="tag : ${tags}" class="item" data-value="1" th:data-value="${tag.id}" th:text="${tag.name}">java</div>-->
-<!--                            </div>-->
-<!--                        </div>-->
+                        <div class="ui fluid selection multiple search  dropdown">
+                            <input type="hidden" name="tagid" th:value="*{tagid}" >
+                            <i class="dropdown icon"></i>
+                            <div class="default text">标签</div>
+                            <div class="menu">
+                                <div th:each="tag : ${tags}" class="item" data-value="1" th:data-value="${tag.id}" th:text="${tag.name}">java</div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class=" field">
-                <div class="ui left labeled input">
-                    <label class="ui teal basic label">首图</label>
-                    <input type="text" name="firstPicture" th:value="*{firstpicture}" placeholder="首图引用地址">
-                </div>
-            </div>
+<!--            <div class=" field">-->
+<!--                <div class="ui left labeled input">-->
+<!--                    <label class="ui teal basic label">论文首图</label>-->
+<!--                    <input type="text" name="firstPicture" th:value="*{firstpicture}" placeholder="首图引用地址">-->
+<!--                </div>-->
+<!--            </div>-->
 
             <div class="required field">
                 <textarea name="description" th:text="*{description}" placeholder="论文描述..." maxlength="200"></textarea>
             </div>
+            <div calss="m-padded-tb">
+                <button type="button" class="layui-btn" id="test1">
+                    上传论文附件
+                </button>
+            </div>
+
+            <input type="hidden" id="zip" name="zip" value="">
 
             <div class="inline fields">
 
-                <div class="field">
+                <div class="field m-padded-tb">
                     <div class="ui checkbox">
-                        <input type="checkbox" id="commentabled" name="commentabled" th:checked="*{commentabled}" class="hidden">
+                        <input type="checkbox" id="commentabled" name="commentabled" th:checked="*{commentabled}" class="hidden" value="0" onclick="this.value=(this.value=='0')?'1':'0'">
                         <label for="commentabled">评论</label>
                     </div>
                 </div>
@@ -180,7 +187,7 @@
 
 
 <script src="../../static/lib/editormd/editormd.js" th:src="@{/lib/editormd/editormd.js}"></script>
-
+<script src="../static/layui/layui.js" th:src="@{/layui/layui.js}"></script>
 <script>
 
     //初始化Markdown编辑器
@@ -210,6 +217,9 @@
 
     $('#publish-btn').click(function () {
         $('[name="published"]').val("2");
+
+        // $('[name="commentabled"]').val("2");
+
         $('#blog-form').submit();
     });
 
@@ -253,6 +263,37 @@
                 }]
             }
         }
+    });
+
+
+  // 使用layui上传文件
+    layui.use(['upload','layer'], function(){
+        var upload = layui.upload;
+
+        //执行实例
+        var uploadInst = upload.render({
+            elem: '#test1' //绑定元素
+            ,url: '/cqupt/admin/fileupload' //上传接口
+            ,done: function(res){
+                //上传完毕回调
+                console.log(res)
+                if(res.code==200){
+                    layer.msg(res.msg);
+                    //按钮变成 上传成功，并显示文件名
+                    var fileName=res.data;
+                    document.getElementById("test1").innerHTML="文件 "+fileName+" 上传成功";
+                    document.getElementById("zip").value=fileName;
+
+                }else{
+                    layer.msg(res.msg);
+                }
+            }
+            ,error: function(){
+                //请求异常回调
+            },
+            accept: 'file' //允许上传的文件类型(全部文件)
+            ,size: 10000 //最大允许上传的文件大小10000KB(防止用户随便上传几个G的文件 )
+        });
     });
 
 </script>
