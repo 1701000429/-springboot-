@@ -1,16 +1,44 @@
 package com.cqupt.controller;
+import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
+import com.cqupt.domin.Paper;
+import com.cqupt.domin.Tag;
+import com.cqupt.domin.Type;
+import com.cqupt.domin.User;
+import com.cqupt.domin.queryvo.PaperQuery;
 import com.cqupt.service.PaperService;
+import com.cqupt.service.TagService;
+import com.cqupt.service.TypeService;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
+import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpSession;
+import java.util.List;
 
+
+//放一些登录，不同级别用户登陆成功后的一些简单路由
 @Controller
 @RequestMapping("/cqupt")
 public class MyController {
+    @Autowired
+    private PaperService paperService;
+
+    @Autowired
+    private TypeService typeService;
+
+    @Autowired
+    private TagService tagService;
+
     //登陆页面
     @GetMapping("/login")
     public String toLogin() {
@@ -30,11 +58,42 @@ public class MyController {
         return "redirect:/cqupt/login";
     }
 
-    //跳转到首页，论文列表
+    //跳转到用户首页，论文列表
     @GetMapping("/user/index")
-    public String index() {
+    public String index(Model model,
+                        @RequestParam(defaultValue = "1",value = "pageNum") Integer pageNum,
+                        RedirectAttributes attributes,
+                        HttpSession session){
+        System.out.println("user================================");
+        User LoginUser=(User) session.getAttribute("user");
+        System.out.println(LoginUser);
+        System.out.println("user================================");
+        //查询一些type和tag供前端展示
+        QueryWrapper<Type> queryWrapper = new QueryWrapper<Type>();
+        queryWrapper.last(" ORDER BY id  DESC LIMIT 6");
+        List<Type> types=typeService.list(queryWrapper);
+        QueryWrapper<Tag> queryWrapper2 = new QueryWrapper<Tag>();
+        queryWrapper2.last(" ORDER BY id  DESC LIMIT 10");
+        List<Tag> tags=tagService.list(queryWrapper2);
+        //查询一些推荐论文供前端展示(这里就简单的推荐最新发表的)
+        QueryWrapper<Paper> queryWrapper3 = new QueryWrapper<Paper>();
+        queryWrapper3.last(" ORDER BY createtime  DESC LIMIT 5");
+        List<Paper> recommendPapers=paperService.list(queryWrapper3);
+        //将这些对象传给model
+        model.addAttribute("types", types);
+        model.addAttribute("tags", tags);
+        model.addAttribute("recommendPapers", recommendPapers);
+        User LoginUser2=(User) session.getAttribute("user");
+        model.addAttribute("USER", LoginUser2);
+        //查询全部paper缩略
+        //按照排序字段 倒序 排序
+        String orderBy = " updatetime desc";
+        PageHelper.startPage(pageNum,6,orderBy);
+        List<PaperQuery> list = paperService.getAllPaperQuery();
+        PageInfo<PaperQuery> pageInfo = new PageInfo<PaperQuery>(list);
+        model.addAttribute("pageInfo",pageInfo);
 
-        return "CQUPTtest";
+        return "index";
     }
 
 

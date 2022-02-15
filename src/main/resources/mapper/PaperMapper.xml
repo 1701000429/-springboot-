@@ -16,6 +16,7 @@
                 jdbcType="DATE"/>
         <result property="views" column="views"/>
         <result property="typeid" column="typeid"/>
+        <result property="description" column="description"/>
         <association property="type" javaType="com.cqupt.domin.Type">
             <id property="id" column="id"/>
             <result property="name" column="name"/>
@@ -28,6 +29,7 @@
         b.updatetime,
         b.views,
         b.typeid,
+        b.`description`,
         t.id,
         t.name
         from cquptacademic.paper b left outer join

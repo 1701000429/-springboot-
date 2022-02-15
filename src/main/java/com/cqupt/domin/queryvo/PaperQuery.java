@@ -17,7 +17,7 @@ import java.util.Date;
  *
  * @author 刘博文
  * @since 2022-02-08
- * @描述： 后台首页展示的缩略
+ * @描述： 后台首页展示的缩略    前台首页展示的缩略
  */
 @Data
 @EqualsAndHashCode(callSuper = false)
@@ -34,7 +34,14 @@ public class PaperQuery {
     private Date updatetime;
     //论文类型
     private Integer typeid;
+    private String name;
     private Type type;
     //论文浏览量
     private Integer views;
+
+    //add in 2022/2/15 适配前台，加一个descriiption
+    /**
+     * 论文描述
+     */
+    private String description;
 }
