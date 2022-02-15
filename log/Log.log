@@ -2777,3 +2777,1110 @@ org.springframework.expression.spel.SpelEvaluationException: EL1008E: Property o
 2022-02-15 16:55:23.624  INFO 12160 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=1)
 2022-02-15 16:55:23.757  INFO 12160 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@461ceff5]}
 2022-02-15 16:55:23.971  INFO 12160 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 16:56:27.332  INFO 688 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 688 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 16:56:27.332  INFO 688 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 16:56:27.401  INFO 688 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 16:56:27.401  INFO 688 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 16:56:29.041  INFO 688 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 16:56:29.041  INFO 688 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 16:56:29.041  INFO 688 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 16:56:29.257  INFO 688 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 16:56:29.257  INFO 688 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1856 ms
+2022-02-15 16:56:29.536  INFO 688 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 16:56:29.923  INFO 688 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 16:56:31.123  INFO 688 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 16:56:31.539  INFO 688 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 16:56:31.599  INFO 688 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 16:56:31.611  INFO 688 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 4.904 seconds (JVM running for 6.758)
+2022-02-15 16:56:35.707  INFO 688 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-15 16:56:35.707  INFO 688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-15 16:56:35.707  INFO 688 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-02-15 16:56:35.779  INFO 688 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-15 16:56:35.779  INFO 688 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-15 16:56:42.993  INFO 688 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[ls, 123456, 1, org.apache.catalina.session.StandardSessionFacade@346c5e1b, {}]}
+2022-02-15 16:56:43.309  INFO 688 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=1)
+2022-02-15 16:56:43.394  INFO 688 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@346c5e1b]}
+2022-02-15 16:56:43.641  INFO 688 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 19:37:34.970  INFO 16464 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 16464 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 19:37:34.970  INFO 16464 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 19:37:35.024  INFO 16464 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 19:37:35.024  INFO 16464 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 19:37:36.696  INFO 16464 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 19:37:36.711  INFO 16464 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 19:37:36.711  INFO 16464 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 19:37:36.796  INFO 16464 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 19:37:36.796  INFO 16464 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1772 ms
+2022-02-15 19:37:36.992  INFO 16464 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 19:37:37.445  INFO 16464 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 19:37:38.681  INFO 16464 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 19:37:39.247  INFO 16464 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 19:37:39.332  INFO 16464 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 19:37:39.332  INFO 16464 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 5.011 seconds (JVM running for 6.845)
+2022-02-15 19:37:46.679  INFO 16464 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-15 19:37:46.679  INFO 16464 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-15 19:37:46.683  INFO 16464 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-02-15 19:37:46.744  INFO 16464 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-15 19:37:46.755  INFO 16464 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-15 19:37:54.204  INFO 16464 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[ls, 123456, 1, org.apache.catalina.session.StandardSessionFacade@175d2b12, {}]}
+2022-02-15 19:37:54.528  INFO 16464 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=1)
+2022-02-15 19:37:54.575  INFO 16464 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@175d2b12]}
+2022-02-15 19:37:54.773  INFO 16464 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 19:38:03.772 ERROR 16464 --- [http-nio-8080-exec-8] c.c.aspect.ControllerExceptionHandler    : Requst URL : http://localhost:8080/cqupt/user/paper/21，Exception : {}
+
+java.lang.NullPointerException: null
+	at com.cqupt.controller.user.IndexController.blog(IndexController.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-02-15 19:38:03.777  WARN 16464 --- [http-nio-8080-exec-8] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-02-15 19:40:07.106  INFO 23584 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 23584 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 19:40:07.106  INFO 23584 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 19:40:07.175  INFO 23584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 19:40:07.191  INFO 23584 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 19:40:09.097  INFO 23584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 19:40:09.097  INFO 23584 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 19:40:09.097  INFO 23584 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 19:40:09.289  INFO 23584 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 19:40:09.289  INFO 23584 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2097 ms
+2022-02-15 19:40:09.556  INFO 23584 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 19:40:10.044  INFO 23584 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 19:40:11.347  INFO 23584 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 19:40:11.880  INFO 23584 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 19:40:11.924  INFO 23584 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 19:40:11.939  INFO 23584 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 5.587 seconds (JVM running for 7.499)
+2022-02-15 19:40:12.033  INFO 23584 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-15 19:40:12.033  INFO 23584 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-15 19:40:12.033  INFO 23584 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-02-15 19:40:12.069  INFO 23584 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-15 19:40:12.085  INFO 23584 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-15 19:40:17.750  INFO 23584 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[lbw, 123456, 1, org.apache.catalina.session.StandardSessionFacade@d8933e1, {}]}
+2022-02-15 19:40:18.066  INFO 23584 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=404, msg=登录失败, data=1)
+2022-02-15 19:40:25.181  INFO 23584 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[ls, 123456, 1, org.apache.catalina.session.StandardSessionFacade@d8933e1, {}]}
+2022-02-15 19:40:25.212  INFO 23584 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=1)
+2022-02-15 19:40:25.243  INFO 23584 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@d8933e1]}
+2022-02-15 19:40:25.504  INFO 23584 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 19:40:29.793 ERROR 23584 --- [http-nio-8080-exec-9] c.c.aspect.ControllerExceptionHandler    : Requst URL : http://localhost:8080/cqupt/user/paper/21，Exception : {}
+
+java.lang.NullPointerException: null
+	at com.cqupt.controller.user.IndexController.blog(IndexController.java:53)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-02-15 19:40:29.793  WARN 23584 --- [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-02-15 19:41:56.013  INFO 23756 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 23756 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 19:41:56.013  INFO 23756 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 19:41:56.082  INFO 23756 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 19:41:56.082  INFO 23756 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 19:41:57.970  INFO 23756 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 19:41:57.985  INFO 23756 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 19:41:57.985  INFO 23756 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 19:41:58.077  INFO 23756 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 19:41:58.078  INFO 23756 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1996 ms
+2022-02-15 19:41:58.353  INFO 23756 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 19:41:58.667  INFO 23756 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 19:41:59.796  INFO 23756 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 19:42:00.358  INFO 23756 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 19:42:00.429  INFO 23756 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 19:42:00.449  INFO 23756 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 5.125 seconds (JVM running for 7.068)
+2022-02-15 19:42:05.278  INFO 22496 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 22496 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 19:42:05.278  INFO 22496 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 19:42:05.348  INFO 22496 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 19:42:05.348  INFO 22496 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 19:42:07.482  INFO 22496 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 19:42:07.482  INFO 22496 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 19:42:07.482  INFO 22496 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 19:42:07.588  INFO 22496 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 19:42:07.588  INFO 22496 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2240 ms
+2022-02-15 19:42:07.936  INFO 22496 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 19:42:08.237  INFO 22496 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 19:42:09.822  INFO 22496 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 19:42:10.356  INFO 22496 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 19:42:10.418  INFO 22496 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 19:42:10.440  INFO 22496 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 5.824 seconds (JVM running for 7.68)
+2022-02-15 19:42:14.278  INFO 22496 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-15 19:42:14.278  INFO 22496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-15 19:42:14.278  INFO 22496 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-02-15 19:42:14.353  INFO 22496 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-15 19:42:14.369  INFO 22496 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-15 19:42:22.379  INFO 22496 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[ls, 123456, 1, org.apache.catalina.session.StandardSessionFacade@5679196d, {}]}
+2022-02-15 19:42:22.786  INFO 22496 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=1)
+2022-02-15 19:42:22.834  INFO 22496 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@5679196d]}
+2022-02-15 19:42:23.123  INFO 22496 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 19:43:18.813 ERROR 22496 --- [http-nio-8080-exec-1] c.c.aspect.ControllerExceptionHandler    : Requst URL : http://localhost:8080/cqupt/user/paper/21，Exception : {}
+
+java.lang.NullPointerException: null
+	at com.cqupt.controller.user.IndexController.blog(IndexController.java:55)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:150)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:117)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-02-15 19:43:18.813  WARN 22496 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [java.lang.NullPointerException]
+2022-02-15 19:43:19.652  INFO 22496 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-02-15 19:43:19.667  INFO 22496 --- [SpringApplicationShutdownHook] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-02-15 19:44:38.741  INFO 20852 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 20852 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 19:44:38.741  INFO 20852 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 19:44:38.802  INFO 20852 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 19:44:38.802  INFO 20852 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 19:44:40.866  INFO 20852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 19:44:40.866  INFO 20852 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 19:44:40.866  INFO 20852 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 19:44:41.013  INFO 20852 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 19:44:41.014  INFO 20852 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2212 ms
+2022-02-15 19:44:41.248  INFO 20852 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 19:44:41.645  INFO 20852 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 19:44:42.887  INFO 20852 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 19:44:43.518  INFO 20852 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 19:44:43.588  INFO 20852 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 19:44:43.603  INFO 20852 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 5.59 seconds (JVM running for 7.597)
+2022-02-15 19:44:43.666  INFO 20852 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-15 19:44:43.666  INFO 20852 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-15 19:44:43.666  INFO 20852 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-02-15 19:44:43.708  INFO 20852 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-15 19:44:43.717  INFO 20852 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-15 19:44:50.130  INFO 20852 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[ls, 123456, 1, org.apache.catalina.session.StandardSessionFacade@18083531, {}]}
+2022-02-15 19:44:50.462  INFO 20852 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=1)
+2022-02-15 19:44:50.516  INFO 20852 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@18083531]}
+2022-02-15 19:44:50.723  INFO 20852 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 19:47:42.266  INFO 20476 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 20476 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 19:47:42.266  INFO 20476 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 19:47:42.337  INFO 20476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 19:47:42.337  INFO 20476 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 19:47:44.316  INFO 20476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 19:47:44.316  INFO 20476 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 19:47:44.316  INFO 20476 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 19:47:44.533  INFO 20476 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 19:47:44.533  INFO 20476 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2196 ms
+2022-02-15 19:47:44.748  INFO 20476 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 19:47:45.133  INFO 20476 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 19:47:46.350  INFO 20476 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 19:47:46.860  INFO 20476 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 19:47:46.942  INFO 20476 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 19:47:46.962  INFO 20476 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 5.413 seconds (JVM running for 7.347)
+2022-02-15 19:47:58.678  INFO 20476 --- [http-nio-8080-exec-2] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-15 19:47:58.678  INFO 20476 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-15 19:47:58.678  INFO 20476 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-02-15 19:47:58.766  INFO 20476 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-15 19:47:58.781  INFO 20476 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-15 19:48:07.040  INFO 20476 --- [http-nio-8080-exec-7] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[ls, 123456, 0, org.apache.catalina.session.StandardSessionFacade@10dc0a9, {}]}
+2022-02-15 19:48:07.400  INFO 20476 --- [http-nio-8080-exec-7] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=404, msg=登录失败, data=null)
+2022-02-15 19:48:10.653  INFO 20476 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[ls, 123456, 1, org.apache.catalina.session.StandardSessionFacade@10dc0a9, {}]}
+2022-02-15 19:48:10.668  INFO 20476 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=1)
+2022-02-15 19:48:10.706  INFO 20476 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@10dc0a9]}
+2022-02-15 19:48:10.891  INFO 20476 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 19:48:14.872  INFO 20476 --- [http-nio-8080-exec-9] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 2, {}, org.apache.catalina.session.StandardSessionFacade@10dc0a9]}
+2022-02-15 19:48:14.957  INFO 20476 --- [http-nio-8080-exec-9] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 19:48:19.195  INFO 20476 --- [http-nio-8080-exec-8] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 3, {}, org.apache.catalina.session.StandardSessionFacade@10dc0a9]}
+2022-02-15 19:48:19.242  INFO 20476 --- [http-nio-8080-exec-8] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 19:48:44.838  INFO 20476 --- [http-nio-8080-exec-8] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 2, {}, org.apache.catalina.session.StandardSessionFacade@10dc0a9]}
+2022-02-15 19:48:44.892  INFO 20476 --- [http-nio-8080-exec-8] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 19:48:47.289  INFO 20476 --- [http-nio-8080-exec-9] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@10dc0a9]}
+2022-02-15 19:48:47.336  INFO 20476 --- [http-nio-8080-exec-9] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 20:34:26.037  INFO 22084 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 22084 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 20:34:26.038  INFO 22084 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 20:34:26.083  INFO 22084 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 20:34:26.083  INFO 22084 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 20:34:28.149  INFO 22084 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 20:34:28.149  INFO 22084 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 20:34:28.149  INFO 22084 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 20:34:28.287  INFO 22084 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 20:34:28.287  INFO 22084 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2204 ms
+2022-02-15 20:34:28.553  INFO 22084 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 20:34:29.021  INFO 22084 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 20:34:30.295  INFO 22084 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 20:34:30.833  INFO 22084 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 20:34:30.896  INFO 22084 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 20:34:30.913  INFO 22084 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 5.314 seconds (JVM running for 6.546)
+2022-02-15 20:34:45.222  INFO 22084 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-15 20:34:45.222  INFO 22084 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-15 20:34:45.222  INFO 22084 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-02-15 20:34:45.291  INFO 22084 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-15 20:34:45.306  INFO 22084 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-15 20:34:50.842  INFO 22084 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[ls, 123456, 1, org.apache.catalina.session.StandardSessionFacade@7b19be13, {}]}
+2022-02-15 20:34:51.190  INFO 22084 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=1)
+2022-02-15 20:34:51.306  INFO 22084 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@7b19be13]}
+2022-02-15 20:34:51.506  INFO 22084 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 20:38:52.986  INFO 18956 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 18956 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 20:38:52.986  INFO 18956 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 20:38:53.033  INFO 18956 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 20:38:53.033  INFO 18956 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 20:38:54.157  INFO 18956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 20:38:54.157  INFO 18956 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 20:38:54.157  INFO 18956 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 20:38:54.257  INFO 18956 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 20:38:54.257  INFO 18956 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1224 ms
+2022-02-15 20:38:54.404  INFO 18956 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 20:38:54.674  INFO 18956 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 20:38:55.422  INFO 18956 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 20:38:55.793  INFO 18956 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 20:38:55.824  INFO 18956 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 20:38:55.845  INFO 18956 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 3.335 seconds (JVM running for 4.453)
+2022-02-15 20:39:03.199  INFO 18956 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-15 20:39:03.199  INFO 18956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-15 20:39:03.199  INFO 18956 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-02-15 20:39:03.248  INFO 18956 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-15 20:39:03.253  INFO 18956 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-15 20:39:09.042  INFO 18956 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[ls, 123456, 1, org.apache.catalina.session.StandardSessionFacade@34f9b65c, {}]}
+2022-02-15 20:39:09.216  INFO 18956 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=1)
+2022-02-15 20:39:09.264  INFO 18956 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@34f9b65c]}
+2022-02-15 20:39:09.365  INFO 18956 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 20:40:12.544  INFO 19992 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 19992 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 20:40:12.544  INFO 19992 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 20:40:12.591  INFO 19992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 20:40:12.591  INFO 19992 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 20:40:13.699  INFO 19992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 20:40:13.714  INFO 19992 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 20:40:13.714  INFO 19992 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 20:40:13.798  INFO 19992 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 20:40:13.798  INFO 19992 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1207 ms
+2022-02-15 20:40:13.945  INFO 19992 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 20:40:14.193  INFO 19992 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 20:40:14.894  INFO 19992 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 20:40:15.248  INFO 19992 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 20:40:15.279  INFO 19992 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 20:40:15.300  INFO 19992 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 3.162 seconds (JVM running for 4.288)
+2022-02-15 20:40:18.986  INFO 19992 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-15 20:40:18.986  INFO 19992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-15 20:40:18.986  INFO 19992 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-02-15 20:40:19.024  INFO 19992 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-15 20:40:19.026  INFO 19992 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-15 20:40:26.116  INFO 19992 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[ls, 123456, 1, org.apache.catalina.session.StandardSessionFacade@55f0bf0e, {}]}
+2022-02-15 20:40:26.285  INFO 19992 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=1)
+2022-02-15 20:40:26.354  INFO 19992 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@55f0bf0e]}
+2022-02-15 20:40:26.454  INFO 19992 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 20:42:40.026  INFO 17440 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 17440 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 20:42:40.027  INFO 17440 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 20:42:40.080  INFO 17440 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 20:42:40.081  INFO 17440 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 20:42:41.204  INFO 17440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 20:42:41.214  INFO 17440 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 20:42:41.214  INFO 17440 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 20:42:41.305  INFO 17440 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 20:42:41.306  INFO 17440 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1225 ms
+2022-02-15 20:42:41.462  INFO 17440 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 20:42:41.726  INFO 17440 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 20:42:42.451  INFO 17440 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 20:42:42.837  INFO 17440 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 20:42:42.873  INFO 17440 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 20:42:42.884  INFO 17440 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 3.318 seconds (JVM running for 4.474)
+2022-02-15 20:42:53.680  INFO 17440 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-15 20:42:53.680  INFO 17440 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-15 20:42:53.680  INFO 17440 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-02-15 20:42:53.736  INFO 17440 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-15 20:42:53.741  INFO 17440 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-15 20:42:58.339  INFO 17440 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[ls, 123456, 1, org.apache.catalina.session.StandardSessionFacade@61313f75, {}]}
+2022-02-15 20:42:58.520  INFO 17440 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=1)
+2022-02-15 20:42:58.535  INFO 17440 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@61313f75]}
+2022-02-15 20:42:58.631  INFO 17440 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 20:44:45.292  INFO 25872 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 25872 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 20:44:45.292  INFO 25872 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 20:44:45.339  INFO 25872 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 20:44:45.339  INFO 25872 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 20:44:46.410  INFO 25872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 20:44:46.410  INFO 25872 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 20:44:46.410  INFO 25872 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 20:44:46.495  INFO 25872 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 20:44:46.511  INFO 25872 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1172 ms
+2022-02-15 20:44:46.642  INFO 25872 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 20:44:46.897  INFO 25872 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 20:44:47.582  INFO 25872 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 20:44:47.945  INFO 25872 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 20:44:47.983  INFO 25872 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 20:44:47.983  INFO 25872 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 3.077 seconds (JVM running for 4.113)
+2022-02-15 20:44:51.999  INFO 25872 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-15 20:44:51.999  INFO 25872 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-15 20:44:51.999  INFO 25872 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-02-15 20:44:52.036  INFO 25872 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-15 20:44:52.036  INFO 25872 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-15 20:44:56.655  INFO 25872 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[ls, 123456, 1, org.apache.catalina.session.StandardSessionFacade@58f76b6, {}]}
+2022-02-15 20:44:56.841  INFO 25872 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=1)
+2022-02-15 20:44:56.873  INFO 25872 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@58f76b6]}
+2022-02-15 20:44:56.955  INFO 25872 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 20:50:54.178  INFO 16064 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 16064 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 20:50:54.178  INFO 16064 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 20:50:54.215  INFO 16064 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 20:50:54.215  INFO 16064 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 20:50:55.292  INFO 16064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 20:50:55.292  INFO 16064 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 20:50:55.292  INFO 16064 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 20:50:55.380  INFO 16064 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 20:50:55.380  INFO 16064 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1165 ms
+2022-02-15 20:50:55.550  INFO 16064 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 20:50:55.799  INFO 16064 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 20:50:56.484  INFO 16064 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 20:50:56.854  INFO 16064 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 20:50:56.901  INFO 16064 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 20:50:56.916  INFO 16064 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 3.152 seconds (JVM running for 4.138)
+2022-02-15 20:51:04.135  INFO 16064 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-15 20:51:04.135  INFO 16064 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-15 20:51:04.135  INFO 16064 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-02-15 20:51:04.177  INFO 16064 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-15 20:51:04.180  INFO 16064 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-15 20:51:10.147  INFO 16064 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[ls, 123456, 1, org.apache.catalina.session.StandardSessionFacade@4b368483, {}]}
+2022-02-15 20:51:10.347  INFO 16064 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=1)
+2022-02-15 20:51:10.378  INFO 16064 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@4b368483]}
+2022-02-15 20:51:10.487  INFO 16064 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 20:55:36.540  INFO 16064 --- [Thread-11] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-02-15 20:55:36.541  INFO 16064 --- [Thread-11] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-02-15 20:55:56.280  INFO 23020 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 23020 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 20:55:56.280  INFO 23020 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 20:55:56.330  INFO 23020 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 20:55:56.330  INFO 23020 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 20:55:57.491  INFO 23020 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 20:55:57.507  INFO 23020 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 20:55:57.507  INFO 23020 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 20:55:57.591  INFO 23020 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 20:55:57.591  INFO 23020 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1261 ms
+2022-02-15 20:55:57.741  INFO 23020 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 20:55:58.005  INFO 23020 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 20:56:03.198  INFO 10080 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 10080 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 20:56:03.198  INFO 10080 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 20:56:03.245  INFO 10080 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 20:56:03.245  INFO 10080 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 20:56:04.326  INFO 10080 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 20:56:04.326  INFO 10080 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 20:56:04.326  INFO 10080 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 20:56:04.427  INFO 10080 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 20:56:04.427  INFO 10080 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1182 ms
+2022-02-15 20:56:04.569  INFO 10080 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 20:56:04.824  INFO 10080 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 20:56:05.524  INFO 10080 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 20:56:05.902  INFO 10080 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 20:56:05.941  INFO 10080 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 20:56:05.953  INFO 10080 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 3.157 seconds (JVM running for 4.158)
+2022-02-15 20:56:09.654  INFO 10080 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-15 20:56:09.654  INFO 10080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-15 20:56:09.654  INFO 10080 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-02-15 20:56:09.680  INFO 10080 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-15 20:56:09.680  INFO 10080 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-15 20:56:13.946  INFO 10080 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[ls, 123456, 1, org.apache.catalina.session.StandardSessionFacade@448e9a0a, {}]}
+2022-02-15 20:56:14.131  INFO 10080 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=1)
+2022-02-15 20:56:14.146  INFO 10080 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@448e9a0a]}
+2022-02-15 20:56:14.248  INFO 10080 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 20:58:52.846  INFO 24108 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 24108 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 20:58:52.846  INFO 24108 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 20:58:52.882  INFO 24108 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 20:58:52.882  INFO 24108 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 20:58:53.931  INFO 24108 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 20:58:53.931  INFO 24108 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 20:58:53.931  INFO 24108 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 20:58:54.047  INFO 24108 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 20:58:54.047  INFO 24108 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1165 ms
+2022-02-15 20:58:54.194  INFO 24108 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 20:58:54.448  INFO 24108 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 20:58:55.181  INFO 24108 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 20:58:55.568  INFO 24108 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 20:58:55.608  INFO 24108 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 20:58:55.616  INFO 24108 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 3.157 seconds (JVM running for 4.286)
+2022-02-15 20:59:06.694  INFO 24108 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-15 20:59:06.694  INFO 24108 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-15 20:59:06.694  INFO 24108 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-02-15 20:59:06.730  INFO 24108 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-15 20:59:06.734  INFO 24108 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-15 20:59:11.957  INFO 24108 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[ls, 123456, 1, org.apache.catalina.session.StandardSessionFacade@6cf3cd9a, {}]}
+2022-02-15 20:59:12.120  INFO 24108 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=1)
+2022-02-15 20:59:12.152  INFO 24108 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@6cf3cd9a]}
+2022-02-15 20:59:12.235  INFO 24108 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 20:59:38.556  INFO 23512 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 23512 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 20:59:38.556  INFO 23512 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 20:59:38.610  INFO 23512 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 20:59:38.610  INFO 23512 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 20:59:39.707  INFO 23512 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 20:59:39.711  INFO 23512 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 20:59:39.711  INFO 23512 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 20:59:39.814  INFO 23512 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 20:59:39.815  INFO 23512 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1205 ms
+2022-02-15 20:59:39.959  INFO 23512 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 20:59:40.213  INFO 23512 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 20:59:40.915  INFO 23512 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 20:59:41.294  INFO 23512 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 20:59:41.316  INFO 23512 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 20:59:41.331  INFO 23512 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 3.164 seconds (JVM running for 4.223)
+2022-02-15 20:59:41.378  INFO 23512 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-15 20:59:41.378  INFO 23512 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-15 20:59:41.378  INFO 23512 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-02-15 20:59:41.428  INFO 23512 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-15 20:59:41.428  INFO 23512 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-15 20:59:47.043  INFO 23512 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[ls, 123456, 1, org.apache.catalina.session.StandardSessionFacade@566ee224, {}]}
+2022-02-15 20:59:47.221  INFO 23512 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=1)
+2022-02-15 20:59:47.305  INFO 23512 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@566ee224]}
+2022-02-15 20:59:47.412  INFO 23512 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 21:00:56.985  INFO 25792 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 25792 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 21:00:56.985  INFO 25792 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 21:00:57.044  INFO 25792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 21:00:57.044  INFO 25792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 21:00:58.097  INFO 25792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 21:00:58.113  INFO 25792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 21:00:58.113  INFO 25792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 21:00:58.197  INFO 25792 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 21:00:58.197  INFO 25792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1153 ms
+2022-02-15 21:00:58.349  INFO 25792 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 21:00:58.598  INFO 25792 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 21:00:59.299  INFO 25792 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 21:00:59.700  INFO 25792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 21:00:59.732  INFO 25792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 21:00:59.740  INFO 25792 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 3.143 seconds (JVM running for 4.104)
+2022-02-15 21:01:03.181  INFO 25792 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-15 21:01:03.181  INFO 25792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-15 21:01:03.181  INFO 25792 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-02-15 21:01:03.236  INFO 25792 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-15 21:01:03.236  INFO 25792 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-15 21:01:08.606  INFO 25792 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[ls, 123456, 1, org.apache.catalina.session.StandardSessionFacade@7d66bc46, {}]}
+2022-02-15 21:01:08.771  INFO 25792 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=1)
+2022-02-15 21:01:08.822  INFO 25792 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@7d66bc46]}
+2022-02-15 21:01:08.923  INFO 25792 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 21:02:53.471  INFO 25544 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 25544 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 21:02:53.471  INFO 25544 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 21:02:53.518  INFO 25544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 21:02:53.518  INFO 25544 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 21:02:54.572  INFO 25544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 21:02:54.588  INFO 25544 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 21:02:54.588  INFO 25544 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 21:02:54.672  INFO 25544 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 21:02:54.672  INFO 25544 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1154 ms
+2022-02-15 21:02:54.835  INFO 25544 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 21:02:55.088  INFO 25544 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 21:02:55.790  INFO 25544 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 21:02:56.154  INFO 25544 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 21:02:56.191  INFO 25544 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 21:02:56.206  INFO 25544 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 3.124 seconds (JVM running for 4.287)
+2022-02-15 21:03:02.284  INFO 25544 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-15 21:03:02.284  INFO 25544 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-15 21:03:02.284  INFO 25544 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-02-15 21:03:02.316  INFO 25544 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-15 21:03:02.331  INFO 25544 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-15 21:03:09.128  INFO 25544 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[ls, 123456, 1, org.apache.catalina.session.StandardSessionFacade@e1136cc, {}]}
+2022-02-15 21:03:09.312  INFO 25544 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=1)
+2022-02-15 21:03:09.397  INFO 25544 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@e1136cc]}
+2022-02-15 21:03:09.497  INFO 25544 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 21:06:20.924  INFO 10164 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 10164 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 21:06:20.924  INFO 10164 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 21:06:20.955  INFO 10164 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 21:06:20.955  INFO 10164 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 21:06:22.025  INFO 10164 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 21:06:22.041  INFO 10164 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 21:06:22.041  INFO 10164 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 21:06:22.132  INFO 10164 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 21:06:22.132  INFO 10164 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1177 ms
+2022-02-15 21:06:22.294  INFO 10164 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 21:06:22.605  INFO 10164 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 21:06:23.411  INFO 10164 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 21:06:23.843  INFO 10164 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 21:06:23.896  INFO 10164 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 21:06:23.896  INFO 10164 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 3.421 seconds (JVM running for 4.392)
+2022-02-15 21:06:27.352  INFO 10164 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-15 21:06:27.352  INFO 10164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-15 21:06:27.352  INFO 10164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-02-15 21:06:27.376  INFO 10164 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-15 21:06:27.376  INFO 10164 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-15 21:06:32.361  INFO 10164 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[ls, 123456, 1, org.apache.catalina.session.StandardSessionFacade@6b4035af, {}]}
+2022-02-15 21:06:32.531  INFO 10164 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=1)
+2022-02-15 21:06:32.600  INFO 10164 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@6b4035af]}
+2022-02-15 21:06:32.700  INFO 10164 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 21:12:25.087  INFO 25948 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 25948 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 21:12:25.087  INFO 25948 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 21:12:25.133  INFO 25948 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 21:12:25.133  INFO 25948 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 21:12:26.241  INFO 25948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 21:12:26.241  INFO 25948 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 21:12:26.241  INFO 25948 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 21:12:26.341  INFO 25948 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 21:12:26.341  INFO 25948 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1208 ms
+2022-02-15 21:12:26.489  INFO 25948 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 21:12:26.780  INFO 25948 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 21:12:27.544  INFO 25948 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 21:12:27.928  INFO 25948 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 21:12:27.975  INFO 25948 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 21:12:27.975  INFO 25948 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 3.356 seconds (JVM running for 4.517)
+2022-02-15 21:12:32.110  INFO 25948 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-15 21:12:32.110  INFO 25948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-15 21:12:32.110  INFO 25948 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-02-15 21:12:32.142  INFO 25948 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-15 21:12:32.157  INFO 25948 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-15 21:12:38.636  INFO 25948 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[ls, 123456, 1, org.apache.catalina.session.StandardSessionFacade@49f78c2c, {}]}
+2022-02-15 21:12:38.830  INFO 25948 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=1)
+2022-02-15 21:12:38.897  INFO 25948 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@49f78c2c]}
+2022-02-15 21:12:39.000  INFO 25948 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 21:25:38.258  INFO 24824 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 24824 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 21:25:38.258  INFO 24824 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 21:25:38.304  INFO 24824 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 21:25:38.304  INFO 24824 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 21:25:39.400  INFO 24824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 21:25:39.408  INFO 24824 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 21:25:39.409  INFO 24824 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 21:25:39.505  INFO 24824 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 21:25:39.506  INFO 24824 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1202 ms
+2022-02-15 21:25:39.668  INFO 24824 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 21:25:39.914  INFO 24824 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 21:25:40.631  INFO 24824 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 21:25:41.014  INFO 24824 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 21:25:41.048  INFO 24824 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 21:25:41.048  INFO 24824 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 3.226 seconds (JVM running for 4.229)
+2022-02-15 21:26:39.044  INFO 24824 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-15 21:26:39.044  INFO 24824 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-15 21:26:39.044  INFO 24824 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-02-15 21:26:39.160 ERROR 24824 --- [http-nio-8080-exec-1] org.thymeleaf.TemplateEngine             : [THYMELEAF][http-nio-8080-exec-1] Exception processing template "http://192.168.10.1:8080": Error resolving template [http://192.168.10.1:8080], template might not exist or might not be accessible by any of the configured Template Resolvers
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [http://192.168.10.1:8080], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-02-15 21:26:39.160 ERROR 24824 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.thymeleaf.exceptions.TemplateInputException: Error resolving template [http://192.168.10.1:8080], template might not exist or might not be accessible by any of the configured Template Resolvers] with root cause
+
+org.thymeleaf.exceptions.TemplateInputException: Error resolving template [http://192.168.10.1:8080], template might not exist or might not be accessible by any of the configured Template Resolvers
+	at org.thymeleaf.engine.TemplateManager.resolveTemplate(TemplateManager.java:869)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:607)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:366)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-02-15 21:32:47.869  INFO 24768 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 24768 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 21:32:47.870  INFO 24768 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 21:32:47.914  INFO 24768 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 21:32:47.914  INFO 24768 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 21:32:49.166  INFO 24768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 21:32:49.174  INFO 24768 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 21:32:49.174  INFO 24768 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 21:32:49.289  INFO 24768 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 21:32:49.289  INFO 24768 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1375 ms
+2022-02-15 21:32:49.491  INFO 24768 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 21:32:49.772  INFO 24768 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 21:32:50.575  INFO 24768 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 21:32:51.046  INFO 24768 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 21:32:51.105  INFO 24768 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 21:32:51.115  INFO 24768 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 3.759 seconds (JVM running for 4.96)
+2022-02-15 21:32:54.691  INFO 24768 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-15 21:32:54.691  INFO 24768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-15 21:32:54.707  INFO 24768 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2022-02-15 21:32:54.729  INFO 24768 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-15 21:32:54.744  INFO 24768 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-15 21:33:01.907  INFO 24768 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[ls, 123456, 1, org.apache.catalina.session.StandardSessionFacade@50c15fbd, {}]}
+2022-02-15 21:33:02.076  INFO 24768 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=1)
+2022-02-15 21:33:02.107  INFO 24768 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@50c15fbd]}
+2022-02-15 21:33:02.198  INFO 24768 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 21:33:43.987  INFO 16988 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 16988 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 21:33:43.987  INFO 16988 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 21:33:44.025  INFO 16988 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 21:33:44.025  INFO 16988 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 21:33:45.085  INFO 16988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 21:33:45.100  INFO 16988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 21:33:45.100  INFO 16988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 21:33:45.186  INFO 16988 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 21:33:45.186  INFO 16988 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1161 ms
+2022-02-15 21:33:45.332  INFO 16988 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 21:33:45.585  INFO 16988 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 21:33:46.287  INFO 16988 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 21:33:46.634  INFO 16988 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 21:33:46.672  INFO 16988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 21:33:46.688  INFO 16988 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 3.111 seconds (JVM running for 4.213)
+2022-02-15 21:33:48.659  INFO 16988 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-15 21:33:48.659  INFO 16988 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-15 21:33:48.659  INFO 16988 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-02-15 21:33:48.703  INFO 16988 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-15 21:33:48.708  INFO 16988 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-15 21:33:52.995  INFO 16988 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[ls, 123456, 1, org.apache.catalina.session.StandardSessionFacade@749def60, {}]}
+2022-02-15 21:33:53.161  INFO 16988 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=1)
+2022-02-15 21:33:53.214  INFO 16988 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@749def60]}
+2022-02-15 21:33:53.303  INFO 16988 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 21:42:40.331  INFO 16988 --- [Thread-12] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closing ...
+2022-02-15 21:42:40.336  INFO 16988 --- [Thread-12] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} closed
+2022-02-15 21:42:40.567  INFO 16988 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 16988 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 21:42:40.568  INFO 16988 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 21:42:40.979  INFO 16988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 21:42:40.980  INFO 16988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 21:42:40.980  INFO 16988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 21:42:41.006  INFO 16988 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 21:42:41.006  INFO 16988 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 433 ms
+2022-02-15 21:42:41.056  INFO 16988 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 21:42:41.088  INFO 16988 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} inited
+2022-02-15 21:42:41.727  INFO 16988 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 21:42:42.021  INFO 16988 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 21:42:42.044  INFO 16988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 21:42:42.048  INFO 16988 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 1.555 seconds (JVM running for 539.573)
+2022-02-15 21:42:42.050  INFO 16988 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-02-15 21:42:43.953  INFO 16988 --- [Thread-18] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closing ...
+2022-02-15 21:42:43.954  INFO 16988 --- [Thread-18] com.alibaba.druid.pool.DruidDataSource   : {dataSource-2} closed
+2022-02-15 21:42:44.111  INFO 16988 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 16988 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 21:42:44.111  INFO 16988 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 21:42:44.392  INFO 16988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 21:42:44.393  INFO 16988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 21:42:44.393  INFO 16988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 21:42:44.417  INFO 16988 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 21:42:44.417  INFO 16988 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 304 ms
+2022-02-15 21:42:44.456  INFO 16988 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 21:42:44.483  INFO 16988 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} inited
+2022-02-15 21:42:44.892  INFO 16988 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 21:42:45.050  INFO 16988 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 21:42:45.063  INFO 16988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 21:42:45.066  INFO 16988 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 0.983 seconds (JVM running for 542.592)
+2022-02-15 21:42:45.067  INFO 16988 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-02-15 21:43:41.098  INFO 16988 --- [Thread-22] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closing ...
+2022-02-15 21:43:41.100  INFO 16988 --- [Thread-22] com.alibaba.druid.pool.DruidDataSource   : {dataSource-3} closed
+2022-02-15 21:43:41.346  INFO 16988 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 16988 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 21:43:41.346  INFO 16988 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 21:43:41.680  INFO 16988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 21:43:41.687  INFO 16988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 21:43:41.687  INFO 16988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 21:43:41.715  INFO 16988 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 21:43:41.716  INFO 16988 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 370 ms
+2022-02-15 21:43:41.770  INFO 16988 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 21:43:41.811  INFO 16988 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} inited
+2022-02-15 21:43:42.266  INFO 16988 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 21:43:42.429  INFO 16988 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 21:43:42.448  INFO 16988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 21:43:42.458  INFO 16988 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 1.144 seconds (JVM running for 599.983)
+2022-02-15 21:43:42.461  INFO 16988 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-02-15 21:43:44.363  INFO 16988 --- [Thread-26] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} closing ...
+2022-02-15 21:43:44.364  INFO 16988 --- [Thread-26] com.alibaba.druid.pool.DruidDataSource   : {dataSource-4} closed
+2022-02-15 21:43:44.555  INFO 16988 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 16988 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 21:43:44.556  INFO 16988 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 21:43:45.013  INFO 16988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 21:43:45.013  INFO 16988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 21:43:45.013  INFO 16988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 21:43:45.065  INFO 16988 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 21:43:45.065  INFO 16988 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 509 ms
+2022-02-15 21:43:45.132  INFO 16988 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 21:43:45.196  INFO 16988 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-5} inited
+2022-02-15 21:43:45.811  INFO 16988 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 21:43:45.995  INFO 16988 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 21:43:46.015  INFO 16988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 21:43:46.021  INFO 16988 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 1.502 seconds (JVM running for 603.545)
+2022-02-15 21:43:46.021  INFO 16988 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-02-15 21:44:31.406  INFO 16988 --- [Thread-30] com.alibaba.druid.pool.DruidDataSource   : {dataSource-5} closing ...
+2022-02-15 21:44:31.408  INFO 16988 --- [Thread-30] com.alibaba.druid.pool.DruidDataSource   : {dataSource-5} closed
+2022-02-15 21:44:31.546  INFO 16988 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 16988 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 21:44:31.546  INFO 16988 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 21:44:31.883  INFO 16988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 21:44:31.883  INFO 16988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 21:44:31.883  INFO 16988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 21:44:31.904  INFO 16988 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 21:44:31.904  INFO 16988 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 358 ms
+2022-02-15 21:44:31.956  INFO 16988 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 21:44:31.985  INFO 16988 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-6} inited
+2022-02-15 21:44:32.384  INFO 16988 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 21:44:32.585  INFO 16988 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 21:44:32.600  INFO 16988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 21:44:32.600  INFO 16988 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 1.076 seconds (JVM running for 650.13)
+2022-02-15 21:44:32.600  INFO 16988 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-02-15 22:01:01.512  INFO 16988 --- [Thread-34] com.alibaba.druid.pool.DruidDataSource   : {dataSource-6} closing ...
+2022-02-15 22:01:01.514  INFO 16988 --- [Thread-34] com.alibaba.druid.pool.DruidDataSource   : {dataSource-6} closed
+2022-02-15 22:01:01.714  INFO 16988 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 16988 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 22:01:01.715  INFO 16988 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 22:01:01.994  INFO 16988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 22:01:01.994  INFO 16988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 22:01:01.994  INFO 16988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 22:01:02.018  INFO 16988 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 22:01:02.018  INFO 16988 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 301 ms
+2022-02-15 22:01:02.059  INFO 16988 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 22:01:02.096  INFO 16988 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-7} inited
+2022-02-15 22:01:02.499  INFO 16988 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 22:01:02.661  INFO 16988 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 22:01:02.675  INFO 16988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 22:01:02.678  INFO 16988 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 0.991 seconds (JVM running for 1640.203)
+2022-02-15 22:01:02.679  INFO 16988 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-02-15 22:01:04.522  INFO 16988 --- [Thread-38] com.alibaba.druid.pool.DruidDataSource   : {dataSource-7} closing ...
+2022-02-15 22:01:04.523  INFO 16988 --- [Thread-38] com.alibaba.druid.pool.DruidDataSource   : {dataSource-7} closed
+2022-02-15 22:01:04.652  INFO 16988 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 16988 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 22:01:04.652  INFO 16988 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 22:01:04.926  INFO 16988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 22:01:04.927  INFO 16988 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 22:01:04.927  INFO 16988 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 22:01:04.952  INFO 16988 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 22:01:04.952  INFO 16988 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 298 ms
+2022-02-15 22:01:04.992  INFO 16988 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 22:01:05.019  INFO 16988 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-8} inited
+2022-02-15 22:01:05.388  INFO 16988 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 22:01:05.542  INFO 16988 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 22:01:05.555  INFO 16988 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 22:01:05.559  INFO 16988 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 0.932 seconds (JVM running for 1643.084)
+2022-02-15 22:01:05.560  INFO 16988 --- [restartedMain] .ConditionEvaluationDeltaLoggingListener : Condition evaluation unchanged
+2022-02-15 22:01:11.683  INFO 20096 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 20096 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 22:01:11.685  INFO 20096 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 22:01:11.754  INFO 20096 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 22:01:11.755  INFO 20096 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 22:01:12.981  INFO 20096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 22:01:12.988  INFO 20096 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 22:01:12.988  INFO 20096 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 22:01:13.076  INFO 20096 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 22:01:13.077  INFO 20096 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1322 ms
+2022-02-15 22:01:13.226  INFO 20096 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 22:01:13.478  INFO 20096 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 22:01:14.206  INFO 20096 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 22:01:14.600  INFO 20096 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 22:01:14.636  INFO 20096 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 22:01:14.645  INFO 20096 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 3.418 seconds (JVM running for 4.436)
+2022-02-15 22:01:17.799  INFO 20096 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-15 22:01:17.799  INFO 20096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-15 22:01:17.800  INFO 20096 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-02-15 22:01:17.829  INFO 20096 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-15 22:01:17.833  INFO 20096 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-15 22:01:22.775  INFO 20096 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[ls, 123456, 1, org.apache.catalina.session.StandardSessionFacade@137d8f71, {}]}
+2022-02-15 22:01:22.940  INFO 20096 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=1)
+2022-02-15 22:01:22.964  INFO 20096 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@137d8f71]}
+2022-02-15 22:01:23.058  INFO 20096 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 22:02:15.250  INFO 12792 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 12792 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 22:02:15.251  INFO 12792 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 22:02:15.296  INFO 12792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 22:02:15.296  INFO 12792 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 22:02:16.354  INFO 12792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 22:02:16.361  INFO 12792 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 22:02:16.361  INFO 12792 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 22:02:16.449  INFO 12792 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 22:02:16.449  INFO 12792 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1152 ms
+2022-02-15 22:02:16.591  INFO 12792 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 22:02:16.845  INFO 12792 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 22:02:17.531  INFO 12792 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 22:02:17.888  INFO 12792 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 22:02:17.923  INFO 12792 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 22:02:17.932  INFO 12792 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 3.119 seconds (JVM running for 4.163)
+2022-02-15 22:02:58.892  INFO 20684 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 20684 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 22:02:58.893  INFO 20684 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 22:02:58.941  INFO 20684 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 22:02:58.941  INFO 20684 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 22:03:00.036  INFO 20684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 22:03:00.045  INFO 20684 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 22:03:00.045  INFO 20684 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 22:03:00.141  INFO 20684 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 22:03:00.141  INFO 20684 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1199 ms
+2022-02-15 22:03:00.299  INFO 20684 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 22:03:00.550  INFO 20684 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 22:03:01.313  INFO 20684 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 22:03:01.758  INFO 20684 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 22:03:01.794  INFO 20684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 22:03:01.804  INFO 20684 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 3.369 seconds (JVM running for 4.594)
+2022-02-15 22:03:04.997  INFO 20684 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-15 22:03:04.997  INFO 20684 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-15 22:03:04.998  INFO 20684 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-02-15 22:03:05.033  INFO 20684 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-15 22:03:05.037  INFO 20684 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-15 22:03:12.104  INFO 20684 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[ls, 123456, 1, org.apache.catalina.session.StandardSessionFacade@23edbfac, {}]}
+2022-02-15 22:03:12.275  INFO 20684 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=1)
+2022-02-15 22:03:12.357  INFO 20684 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@23edbfac]}
+2022-02-15 22:03:12.452  INFO 20684 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 22:05:26.689  INFO 19136 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 19136 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 22:05:26.690  INFO 19136 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 22:05:26.737  INFO 19136 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 22:05:26.737  INFO 19136 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 22:05:27.817  INFO 19136 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 22:05:27.826  INFO 19136 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 22:05:27.826  INFO 19136 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 22:05:27.932  INFO 19136 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 22:05:27.932  INFO 19136 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1194 ms
+2022-02-15 22:05:28.099  INFO 19136 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 22:05:28.364  INFO 19136 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 22:05:29.085  INFO 19136 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 22:05:29.462  INFO 19136 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 22:05:29.498  INFO 19136 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 22:05:29.507  INFO 19136 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 3.253 seconds (JVM running for 4.26)
+2022-02-15 22:06:02.858  INFO 19136 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-15 22:06:02.858  INFO 19136 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-15 22:06:02.859  INFO 19136 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 0 ms
+2022-02-15 22:06:02.895  INFO 19136 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-15 22:06:02.900  INFO 19136 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-15 22:06:08.525  INFO 19136 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[ls, 123456, 1, org.apache.catalina.session.StandardSessionFacade@54ab8649, {}]}
+2022-02-15 22:06:08.697  INFO 19136 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=1)
+2022-02-15 22:06:08.776  INFO 19136 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@54ab8649]}
+2022-02-15 22:06:08.876  INFO 19136 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 22:08:59.596  INFO 2552 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 2552 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 22:08:59.597  INFO 2552 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 22:08:59.645  INFO 2552 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 22:08:59.645  INFO 2552 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 22:09:00.713  INFO 2552 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 22:09:00.720  INFO 2552 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 22:09:00.720  INFO 2552 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 22:09:00.806  INFO 2552 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 22:09:00.806  INFO 2552 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1160 ms
+2022-02-15 22:09:00.952  INFO 2552 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 22:09:01.211  INFO 2552 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 22:09:01.900  INFO 2552 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 22:09:02.258  INFO 2552 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 22:09:02.293  INFO 2552 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 22:09:02.303  INFO 2552 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 3.218 seconds (JVM running for 4.267)
+2022-02-15 22:09:02.514  INFO 2552 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-15 22:09:02.514  INFO 2552 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-15 22:09:02.515  INFO 2552 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-02-15 22:09:02.549  INFO 2552 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-15 22:09:02.554  INFO 2552 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-15 22:09:06.998  INFO 2552 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[ls, 123456, 1, org.apache.catalina.session.StandardSessionFacade@3e0eac64, {}]}
+2022-02-15 22:09:07.170  INFO 2552 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=1)
+2022-02-15 22:09:07.226  INFO 2552 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@3e0eac64]}
+2022-02-15 22:09:07.323  INFO 2552 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 22:10:33.036  INFO 20508 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 20508 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 22:10:33.038  INFO 20508 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 22:10:33.085  INFO 20508 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 22:10:33.085  INFO 20508 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 22:10:34.149  INFO 20508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 22:10:34.156  INFO 20508 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 22:10:34.156  INFO 20508 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 22:10:34.243  INFO 20508 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 22:10:34.244  INFO 20508 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1158 ms
+2022-02-15 22:10:34.390  INFO 20508 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 22:10:34.637  INFO 20508 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 22:10:35.333  INFO 20508 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 22:10:35.687  INFO 20508 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 22:10:35.722  INFO 20508 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 22:10:35.732  INFO 20508 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 3.131 seconds (JVM running for 4.233)
+2022-02-15 22:10:56.513  INFO 20508 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-15 22:10:56.513  INFO 20508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-15 22:10:56.514  INFO 20508 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-02-15 22:10:56.554  INFO 20508 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-15 22:10:56.558  INFO 20508 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-15 22:11:02.431  INFO 20508 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[ls, 123456, 1, org.apache.catalina.session.StandardSessionFacade@4c49ca66, {}]}
+2022-02-15 22:11:02.597  INFO 20508 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=1)
+2022-02-15 22:11:02.673  INFO 20508 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@4c49ca66]}
+2022-02-15 22:11:02.771  INFO 20508 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-15 22:12:29.469  INFO 1008 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 1008 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-15 22:12:29.470  INFO 1008 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-15 22:12:29.517  INFO 1008 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-15 22:12:29.517  INFO 1008 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-15 22:12:30.593  INFO 1008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-15 22:12:30.601  INFO 1008 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-15 22:12:30.601  INFO 1008 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-15 22:12:30.691  INFO 1008 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-15 22:12:30.691  INFO 1008 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1173 ms
+2022-02-15 22:12:30.836  INFO 1008 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-15 22:12:31.085  INFO 1008 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-15 22:12:31.807  INFO 1008 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-15 22:12:32.170  INFO 1008 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-15 22:12:32.205  INFO 1008 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-15 22:12:32.215  INFO 1008 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 3.163 seconds (JVM running for 4.229)
+2022-02-15 22:12:34.422  INFO 1008 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-15 22:12:34.422  INFO 1008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-15 22:12:34.423  INFO 1008 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-02-15 22:12:34.457  INFO 1008 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-15 22:12:34.461  INFO 1008 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-15 22:12:40.671  INFO 1008 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[ls, 123456, 1, org.apache.catalina.session.StandardSessionFacade@546b1dd5, {}]}
+2022-02-15 22:12:40.841  INFO 1008 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=1)
+2022-02-15 22:12:40.922  INFO 1008 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@546b1dd5]}
+2022-02-15 22:12:41.024  INFO 1008 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : index

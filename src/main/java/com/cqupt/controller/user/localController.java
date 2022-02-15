@@ -6,26 +6,25 @@ import com.cqupt.domin.Tag;
 import com.cqupt.service.PaperService;
 import com.cqupt.service.PapertagService;
 import com.cqupt.service.TagService;
+import com.cqupt.utils.wifiIPV4;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.util.ArrayList;
 import java.util.List;
 import com.cqupt.utils.MarkdownUtils;
 
 //普通用户登录后的一些路由
 @Controller
-@RequestMapping("/cqupt/user")
-public class IndexController {
+public class localController {
 
     @Autowired
     PaperService paperService;
@@ -65,11 +64,14 @@ public class IndexController {
         return "paper";
     }
 
-    @GetMapping("/paperZipDownload222222222222")
-    public String paperZipDownload() {
-        //论文下载
-        return "redirect:/cqupt/login";
-
+    @GetMapping("/getLocalhost")
+    @ResponseBody
+    public String getUrl() {
+        List<String> ips=wifiIPV4.getLocalIPList();
+        System.out.println("服务器IP地址为============");
+        System.out.println(ips);
+        //我的是第三块IP对应wifi那个
+        String ip= ips.get(2);
+        return ip;
     }
-
 }
