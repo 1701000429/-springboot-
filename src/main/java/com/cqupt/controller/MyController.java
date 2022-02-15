@@ -90,6 +90,8 @@ public class MyController {
         String orderBy = " updatetime desc";
         PageHelper.startPage(pageNum,6,orderBy);
         List<PaperQuery> list = paperService.getAllPaperQuery();
+        System.out.println("zip是否存在 ");
+        System.out.println(list);
         PageInfo<PaperQuery> pageInfo = new PageInfo<PaperQuery>(list);
         model.addAttribute("pageInfo",pageInfo);
 

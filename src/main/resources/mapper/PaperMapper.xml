@@ -17,6 +17,7 @@
         <result property="views" column="views"/>
         <result property="typeid" column="typeid"/>
         <result property="description" column="description"/>
+        <result property="zip" column="zip"/>
         <association property="type" javaType="com.cqupt.domin.Type">
             <id property="id" column="id"/>
             <result property="name" column="name"/>
@@ -30,6 +31,7 @@
         b.views,
         b.typeid,
         b.`description`,
+        b.zip,
         t.id,
         t.name
         from cquptacademic.paper b left outer join

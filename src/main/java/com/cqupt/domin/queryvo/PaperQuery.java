@@ -44,4 +44,6 @@ public class PaperQuery {
      * 论文描述
      */
     private String description;
+
+    private String zip;
 }

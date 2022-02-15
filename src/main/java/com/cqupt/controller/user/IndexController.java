@@ -6,18 +6,24 @@ import com.cqupt.domin.Tag;
 import com.cqupt.service.PaperService;
 import com.cqupt.service.PapertagService;
 import com.cqupt.service.TagService;
+import com.cqupt.utils.AppFileUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import javax.servlet.ServletOutputStream;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.net.URLEncoder;
 import java.util.ArrayList;
 import java.util.List;
 import com.cqupt.utils.MarkdownUtils;
@@ -34,7 +40,7 @@ public class IndexController {
     @Autowired
     PapertagService papertagService;
 
-    //前台论文详情页
+    //前台论文详情页,之所以再写一遍，没有session会被拦截请求。这里的路径不在cqupt下，不会被拦截
     @GetMapping("/paper/{id}")
     public String blog(@PathVariable Long id, Model model) {
         Paper paper=paperService.getById(id);
@@ -65,11 +71,54 @@ public class IndexController {
         return "paper";
     }
 
-    @GetMapping("/paperZipDownload222222222222")
-    public String paperZipDownload() {
-        //论文下载
+
+//    @RequestMapping("/paperZipDownload")
+//    @ResponseBody
+//    public void paperZipDownload(String fileName,
+//                                 HttpServletRequest request,
+//                                 HttpServletResponse response) throws IOException {
+//        if(fileName==null||fileName==""){
+//            request.setAttribute("msg","文件下载失败");
+//            System.out.println("文件名为空=======");
+//            return;
+//        }
+//        //前端传文件名过来，这里拼接路径
+//        String filePath= AppFileUtils.UPLOAD_PATH+"/"+fileName;
+//        System.out.println(filePath);
+////        File dest = new File(filePath + "\\"+fileName);
+//        // 读到流中
+//        InputStream inputStream = new FileInputStream(filePath);// 文件的存放路径
+//        response.reset();
+//        response.setContentType("application/force-download");
+//
+//
+//        String filename = fileName;
+//        response.addHeader("Content-Disposition", "attachment; filename=" + URLEncoder.encode(filename, "UTF-8"));
+//        ServletOutputStream outputStream = response.getOutputStream();
+//        byte[] b = new byte[1024];
+//        int len;
+//        //从输入流中读取一定数量的字节，并将其存储在缓冲区字节数组中，读到末尾返回-1
+//        while ((len = inputStream.read(b)) > 0) {
+//            outputStream.write(b, 0, len);
+//        }
+//        inputStream.close();
+//
+//
+//    }
+
+
+    @GetMapping("/myself")
+    public String myself() {
+        //进入个人主页
         return "redirect:/cqupt/login";
 
     }
+    @GetMapping("/myComment")
+    public String myComment() {
+        //进入我的评论查看页
+        return "redirect:/cqupt/login";
+
+    }
+
 
 }
