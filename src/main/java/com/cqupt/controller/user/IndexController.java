@@ -42,7 +42,7 @@ public class IndexController {
 
     //前台论文详情页,之所以再写一遍，没有session会被拦截请求。这里的路径不在cqupt下，不会被拦截
     @GetMapping("/paper/{id}")
-    public String blog(@PathVariable Long id, Model model) {
+    public String paper(@PathVariable Long id, Model model) {
         Paper paper=paperService.getById(id);
         //浏览量+1
         int nowView=paper.getViews();

@@ -68,3 +68,5 @@ server:
   port: 8080
 
 
+#评论时默认头像
+comment.avatar: /images/cquptLOGO.jpg

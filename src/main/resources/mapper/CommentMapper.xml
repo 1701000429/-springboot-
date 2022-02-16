@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cqupt.mapper.CommentMapper">
+
+    <select id="getByPaperId" resultType="com.cqupt.domin.Comment">
+         SELECT *
+        FROM cquptacademic.comment c
+        WHERE c.paperid = #{paperid}
+        ORDER BY c.createtime DESC
+    </select>
+
+    <select id="getByPaperIdAndParentId" resultType="com.cqupt.domin.Comment">
+         SELECT *
+        FROM cquptacademic.comment c
+        WHERE c.paperid = #{paperid} and c.parentcommentid = #{parentcommentid}
+        ORDER BY c.createtime DESC
+    </select>
+
+</mapper>
