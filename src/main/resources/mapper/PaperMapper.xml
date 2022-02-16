@@ -38,5 +38,21 @@
         cquptacademic.type t on b.typeid = t.id
     </select>
 
+<!--查询-->
+    <select id="searchByTitleOrTypeOrRecommend" parameterType="com.cqupt.domin.queryvo.PaperQuery" resultMap="paperQuery">
+        <bind name="pattern" value="'%' + title + '%'" />
+        select b.id,b.title,b.updatetime,b.typeid,t.id,t.name from cquptacademic.paper b ,cquptacademic.type t
+        <where>
+            <if test="1 == 1">
+                b.typeid = t.id
+            </if>
+            <if test="typeid != null">
+                and b.typeid = #{typeid}
+            </if>
+            <if test="title != null">
+                and b.title like #{pattern}
+            </if>
+        </where>
+    </select>
 
 </mapper>

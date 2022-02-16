@@ -93,7 +93,13 @@ public class TagController {
     //    删除分类
     @GetMapping("/tags/{id}/delete")
     public String delete(@PathVariable Long id,RedirectAttributes attributes) {
-        tagService.deleteTag(id);
+        try {
+            tagService.deleteTag(id);
+        }catch(Exception e){
+            attributes.addFlashAttribute("message", "删除失败");
+            return "redirect:/cqupt/admin/tags";
+        }
+
         attributes.addFlashAttribute("message", "删除成功");
         return "redirect:/cqupt/admin/tags";
     }

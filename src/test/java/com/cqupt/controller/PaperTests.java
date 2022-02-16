@@ -5,6 +5,7 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.cqupt.domin.Paper;
 import com.cqupt.domin.Paper;
+import com.cqupt.domin.queryvo.PaperQuery;
 import com.cqupt.mapper.PaperMapper;
 import com.cqupt.mapper.PaperMapper;
 import com.cqupt.service.PaperService;
@@ -52,5 +53,17 @@ public class PaperTests {
         System.out.println("result=================");
         System.out.println(records);
     }
+
+    @Test
+    void PaperSearchTest(){
+        PaperQuery paper=new PaperQuery();
+        paper.setTitle("");
+        paper.setTypeid(2);
+        System.out.println("null test===============");
+        System.out.println(paper.getTitle());
+        mapper.searchByTitleOrTypeOrRecommend(paper);
+    }
+
+
 
 }

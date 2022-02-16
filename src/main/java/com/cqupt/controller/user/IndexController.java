@@ -110,7 +110,7 @@ public class IndexController {
     @GetMapping("/myself")
     public String myself() {
         //进入个人主页
-        return "redirect:/cqupt/login";
+        return "myself";
 
     }
     @GetMapping("/myComment")

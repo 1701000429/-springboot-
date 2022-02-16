@@ -93,7 +93,13 @@ public class TypeController {
     //    删除分类
     @GetMapping("/types/{id}/delete")
     public String delete(@PathVariable Long id,RedirectAttributes attributes) {
-        typeService.deleteType(id);
+        try{
+            typeService.deleteType(id);
+        }catch(Exception e){
+            attributes.addFlashAttribute("message", "删除失败");
+            return "redirect:/cqupt/admin/types";
+        }
+
         attributes.addFlashAttribute("message", "删除成功");
         return "redirect:/cqupt/admin/types";
     }

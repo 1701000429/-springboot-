@@ -34,7 +34,7 @@ public interface PaperMapper extends BaseMapper<Paper> {
 
     void deletePaper(Long id);
 
-    List<Paper> searchByTitleOrTypeOrRecommend(Paper searchPaper);
+    List<PaperQuery> searchByTitleOrTypeOrRecommend(PaperQuery searchPaper);
 
     List<Paper> getFirstPagePaper();
 

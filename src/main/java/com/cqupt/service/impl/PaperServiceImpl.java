@@ -50,8 +50,8 @@ public class PaperServiceImpl extends ServiceImpl<PaperMapper, Paper> implements
     }
 
     @Override
-    public List<Paper> getPaperBySearch(Paper searchPaper) {
-        return null;
+    public List<PaperQuery> getPaperBySearch(PaperQuery searchPaper) {
+        return paperDao.searchByTitleOrTypeOrRecommend(searchPaper);
     }
 
     @Override

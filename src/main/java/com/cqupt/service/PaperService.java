@@ -29,7 +29,7 @@ public interface PaperService extends IService<Paper> {
 
     void deletePaper(Long id);
 
-    List<Paper> getPaperBySearch(Paper searchPaper);
+    List<PaperQuery> getPaperBySearch(PaperQuery searchPaper);
 
     List<Paper> getAllFirstPagePaper();
 

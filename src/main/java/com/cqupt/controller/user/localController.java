@@ -61,7 +61,7 @@ public class localController {
             tags.add(tag);
         }
         model.addAttribute("tags", tags);
-        return "paper";
+        return "Wechat/paper";
     }
 
     @GetMapping("/getLocalhost")
@@ -73,5 +73,10 @@ public class localController {
         //我的是第三块IP对应wifi那个
         String ip= ips.get(2);
         return ip;
+    }
+
+    @GetMapping("/")
+    public String toLogin(){
+        return "redirect:/cqupt/login";
     }
 }

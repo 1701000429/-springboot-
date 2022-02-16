@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.cqupt.domin.*;
 import com.cqupt.domin.queryvo.PaperQuery;
 import com.cqupt.domin.queryvo.PaperSubmit;
+import com.cqupt.mapper.PaperMapper;
 import com.cqupt.service.PaperService;
 import com.cqupt.service.PapertagService;
 import com.cqupt.service.TagService;
@@ -37,6 +38,7 @@ import java.util.List;
 @Controller
 @RequestMapping("/cqupt/admin")
 public class PaperController {
+
     @Autowired
     private PaperService paperService;
 
@@ -160,45 +162,73 @@ public class PaperController {
     }
 
 
-//    //    删除文章
-//    @GetMapping("/blogs/{id}/delete")
-//    public String delete(@PathVariable Long id, RedirectAttributes attributes) {
-//        blogService.deleteBlog(id);
-//        attributes.addFlashAttribute("message", "删除成功");
-//        return "redirect:/admin/blogs";
-//    }
+    //    删除文章
+    @GetMapping("/papers/{id}/delete")
+    public String delete(@PathVariable Long id, RedirectAttributes attributes) {
+       //使用MybatisPlus快速删除
+        try{
+            paperService.removeById(id);
+        }catch(Exception e){
+            attributes.addFlashAttribute("message", "删除失败");
+            return "redirect:/cqupt/admin/papers";
+        }
+
+        attributes.addFlashAttribute("message", "删除成功");
+        return "redirect:/cqupt/admin/papers";
+    }
 //
-//    //    跳转编辑修改文章
-//    @GetMapping("/blogs/{id}/input")
-//    public String editInput(@PathVariable Long id, Model model) {
-//        ShowBlog blogById = blogService.getBlogById(id);
-//        List<Type> allType = typeService.getAllType();
-//        model.addAttribute("blog", blogById);
-//        model.addAttribute("types", allType);
-//        return "admin/blogs-input";
-//    }
-//
-//    //    编辑修改文章
-//    @PostMapping("/blogs/{id}")
-//    public String editPost(@Valid ShowBlog showBlog, RedirectAttributes attributes) {
-//        int b = blogService.updateBlog(showBlog);
-//        if(b ==0){
-//            attributes.addFlashAttribute("message", "修改失败");
-//        }else {
-//            attributes.addFlashAttribute("message", "修改成功");
-//        }
-//        return "redirect:/admin/blogs";
-//    }
-//
-//    //    搜索博客
-//    @PostMapping("/blogs/search")
-//    public String search(SearchBlog searchBlog, Model model,
-//                         @RequestParam(defaultValue = "1",value = "pageNum") Integer pageNum) {
-//        List<BlogQuery> blogBySearch = blogService.getBlogBySearch(searchBlog);
-//        PageHelper.startPage(pageNum, 10);
-//        PageInfo<BlogQuery> pageInfo = new PageInfo<>(blogBySearch);
-//        model.addAttribute("pageInfo", pageInfo);
-//        return "admin/blogs :: blogList";
-//    }
+    //    跳转编辑修改文章
+    @GetMapping("/papers/{id}/input")
+    public String editInput(@PathVariable Long id, Model model) {
+        Paper paperget = paperService.getById(id);
+        List<Type> allType = typeService.getAllType();
+        List<Tag> allTag = tagService.list();
+        model.addAttribute("paper", paperget);
+        model.addAttribute("types", allType);
+        model.addAttribute("tags", allTag);
+        return "admin/papers-change";
+    }
+
+    //    编辑修改文章
+    @PostMapping("/papersupdate/{id}")
+    public String editPost(Paper paper,
+                           RedirectAttributes attributes) {
+//        Paper.setUpdatetime(new Date());
+        Paper oldPaper=paperService.getById(paper.getId());
+        oldPaper.setUpdatetime(new Date());
+        //修改前端传过来不为null的字段
+        if(paper.getTitle()!=null&&paper.getTitle()!="")
+            oldPaper.setTitle(paper.getTitle());
+        if(paper.getContent()!=null&&paper.getContent()!="")
+            oldPaper.setContent(paper.getContent());
+        if(paper.getDescription()!=null&&paper.getDescription()!="")
+            oldPaper.setDescription(paper.getDescription());
+        if(paper.getZip()!=null&&paper.getZip()!="")
+            oldPaper.setZip(paper.getZip());
+        if(paper.getCommentabled()!=null)
+            oldPaper.setCommentabled(paper.getCommentabled());
+
+        boolean b = paperService.updateById(oldPaper);
+        if(b ==false){
+            attributes.addFlashAttribute("message", "修改失败");
+        }else {
+            attributes.addFlashAttribute("message", "修改成功");
+        }
+        return "redirect:/cqupt/admin/papers";
+    }
+
+    //    搜索论文
+    @PostMapping("/papers/search")
+    public String search(PaperQuery paper, Model model,
+                         @RequestParam(defaultValue = "1",value = "pageNum") Integer pageNum) {
+        if(paper.getTitle()==null){
+            paper.setTitle("");
+        }
+        List<PaperQuery> paperget = paperService.getPaperBySearch(paper);
+        PageHelper.startPage(pageNum, 10);
+        PageInfo<PaperQuery> pageInfo = new PageInfo<>(paperget);
+        model.addAttribute("pageInfo", pageInfo);
+        return "admin/papers :: paperList";
+    }
 
 }
