@@ -20,7 +20,7 @@ public interface PaperMapper extends BaseMapper<Paper> {
     List<Paper> getAllPaper();
 
 
-    //todo
+    Integer getNumberByTypeid(Long id);
 
     Paper getPaperById(Long id);
 

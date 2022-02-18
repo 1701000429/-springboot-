@@ -30,6 +30,11 @@ public class PaperServiceImpl extends ServiceImpl<PaperMapper, Paper> implements
     }
 
     @Override
+    public Integer getNumberByTypeid(Long id) {
+        return paperDao.getNumberByTypeid(id);
+    }
+
+    @Override
     public Paper getPaperById(Long id) {
         return null;
     }

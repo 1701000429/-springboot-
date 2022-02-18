@@ -44,6 +44,17 @@ public class MD5Utils {
 
     }
 
+    public static String stringNstring(String source) {
+        //String source = "啊啊啊啊啊啊啊啊啊啊哦哦哦哦哦哦哦哦哦哦哦呵呵呵呵呵呵呵呵呵呵";
+        String t="";
+
+        for(int i=0;i<source.length();i++){
+            t+="\n";
+            t+=source.substring(i,i+1);
+        }
+        //System.out.println(t);
+        return t;
+    }
 
     public static void main(String[] args) {
         System.out.println(code("123456"));

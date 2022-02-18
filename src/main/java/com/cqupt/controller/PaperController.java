@@ -7,6 +7,7 @@ import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.cqupt.domin.*;
 import com.cqupt.domin.queryvo.PaperQuery;
 import com.cqupt.domin.queryvo.PaperSubmit;
+import com.cqupt.domin.queryvo.PaperTypeNumberVo;
 import com.cqupt.mapper.PaperMapper;
 import com.cqupt.service.PaperService;
 import com.cqupt.service.PapertagService;
@@ -24,8 +25,11 @@ import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpSession;
 import javax.validation.Valid;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+
+import static com.cqupt.utils.MD5Utils.stringNstring;
 
 /**
  * <p>
@@ -229,6 +233,34 @@ public class PaperController {
         PageInfo<PaperQuery> pageInfo = new PageInfo<>(paperget);
         model.addAttribute("pageInfo", pageInfo);
         return "admin/papers :: paperList";
+    }
+
+
+    @GetMapping("/getPaperTypeNumber")
+    @ResponseBody
+    public PaperTypeNumberVo getPaperTypeNumber(){
+        PaperTypeNumberVo paperTypeNumberVo=new PaperTypeNumberVo();
+        List<Type> typeList = typeService.list();
+        paperTypeNumberVo.setTypeList(typeList);
+
+        List<Integer> numberList=new ArrayList<Integer>();
+        for (Type type : typeList) {
+            //每一个type都去查找数量
+            Integer temp=paperService.getNumberByTypeid(Long.valueOf(type.getId()));
+            if(temp==null)
+                temp=0;
+            numberList.add(temp);
+        }
+        paperTypeNumberVo.setPaperNumber(numberList);
+        List<String> stringList=new ArrayList<String>();
+        for (Type type : typeList) {
+            String namen=stringNstring(type.getName());
+            stringList.add(namen);
+        }
+        paperTypeNumberVo.setTypeNameList(stringList);
+        System.out.println("返回给echart====");
+        System.out.println(paperTypeNumberVo);
+        return paperTypeNumberVo;
     }
 
 }

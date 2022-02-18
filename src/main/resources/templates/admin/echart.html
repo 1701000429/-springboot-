@@ -46,6 +46,27 @@
 <br>
 <br>
 <br>
+<div    class="row">
+
+    <!--存放表格的盒子-->
+    <div id="main" style="width: 100%;height:700px;"></div>
+</div>
+<br>
+
+
+<div class="container">
+    <div class="layui-row ">
+        <!--    用layui栅格布局 2022/2/18-->
+        <div class=”layui-col-md5”></div>
+        <div class=" layui-col-md5">
+            <div id="chart2" style="width: 500px;height:500px;"></div>
+        </div>
+        <!--有机会做一个扇形-->
+
+    </div>
+</div>
+
+
 <br>
 <br>
 <br>
@@ -93,8 +114,13 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
 <!--/*/</th:block>/*/-->
-<script>
 
+<script src="../../static/js/echarts.js" th:src="@{/js/echarts.js}"></script>
+<script>
+    function newData2(value,name){
+        this.value=value
+        this.name=name
+    }
     var fileName=document.getElementById("avatarFileName").value;
     //重新加载头像
     $('#navbar-img').attr('src','/cqupt/file/showImageByName?path='+fileName);
@@ -106,6 +132,76 @@
                 .closest('.message')
                 .transition('fade');
         });
+
+
+
+    $.get('/cqupt/admin/getPaperTypeNumber',
+        function (res) {
+            console.log(res);
+            //ecahrt
+            // 基于准备好的dom，初始化echarts实例
+            var myChart = echarts.init(document.getElementById('main'));
+            //发送get请求  得到论文类型列表和数量
+            var myContentdata=[];
+            var myNumberdata = [];
+
+            myContentdata=res.typeNameList;
+            myNumberdata=res.paperNumber;
+            console.log(myContentdata);
+            console.log(myNumberdata);
+            // 指定图表的配置项和数据
+            var option = {
+                title: {
+                    text: '\t\t重庆邮电大学论文统计'
+                },
+                tooltip: {},
+                legend: {
+                    data: ['数量']
+                },
+                xAxis: {
+                    data: myContentdata
+                },
+                yAxis: {},
+                series: [{
+                    name: '数量',
+                    type: 'bar',
+                    data: myNumberdata
+                }]
+            };
+
+            myChart.setOption(option);
+            //扇形图
+
+
+
+            //显示扇形图表2
+            var mychart2=echarts.init(document.getElementById('chart2'),'light');
+            //var myContentdata=[];
+            // var myNumberdata = [];
+            var data2=[];
+            for(var i=0;i<myNumberdata.length;i++){
+                var duixiang=new newData2(myNumberdata[i],myContentdata[i]);
+                data2.push(duixiang);
+            }
+            console.log(data2);
+            var option2 = {
+                title: {
+                    text: '\t\t重庆邮电大学论文统计'
+                },
+                tooltip: {},
+
+
+                series: [{
+                    type: 'pie',
+                    data: data2,
+                    center: ['50%', '50%'],
+                }]
+            };
+
+            // 使用刚指定的配置项和数据显示图表。
+            mychart2.setOption(option2);
+        });
+
 
 </script>
 </body>

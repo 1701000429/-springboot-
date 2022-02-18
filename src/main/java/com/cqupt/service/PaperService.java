@@ -19,6 +19,10 @@ public interface PaperService extends IService<Paper> {
     //获取全部paper，后台列表显示
     List<PaperQuery> getAllPaperQuery();
 
+
+    //获取每个类别的数量
+    Integer getNumberByTypeid(Long id);
+
     Paper getPaperById(Long id);
 
 

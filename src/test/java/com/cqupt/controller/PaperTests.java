@@ -10,6 +10,7 @@ import com.cqupt.mapper.PaperMapper;
 import com.cqupt.mapper.PaperMapper;
 import com.cqupt.service.PaperService;
 import com.cqupt.service.PaperService;
+import jdk.nashorn.internal.runtime.regexp.joni.Regex;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -64,6 +65,24 @@ public class PaperTests {
         mapper.searchByTitleOrTypeOrRecommend(paper);
     }
 
+    @Test
+    void numberTest(){
+        Integer a=null;
+        Long id= Long.valueOf(1);
+        System.out.println(mapper.getNumberByTypeid(id));
+    }
 
 
+    @Test
+    void testString(){
+        String source = "啊啊啊啊啊啊啊啊啊啊哦哦哦哦哦哦哦哦哦哦哦呵呵呵呵呵呵呵呵呵呵";
+        String t="";
+
+        for(int i=0;i<source.length();i++){
+            t+="\n";
+            t+=source.substring(i,i+1);
+        }
+        System.out.println(t);
+
+    }
 }
