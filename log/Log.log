@@ -2779,3 +2779,47 @@ java.lang.NullPointerException: null
 2022-02-18 21:10:55.373  INFO 3116 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Result : admin/myself
 2022-02-18 21:10:55.660  INFO 3116 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/getUserAvatar', ip='0:0:0:0:0:0:0:1', classMethod='com.cqupt.controller.UserController.getUserAvatar', args=[1]}
 2022-02-18 21:10:55.666  INFO 3116 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=成功, data=test.jpg)
+2022-02-18 21:13:16.741  INFO 1488 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 1488 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-18 21:13:16.743  INFO 1488 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-18 21:13:16.820  INFO 1488 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-18 21:13:16.820  INFO 1488 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-18 21:13:18.726  INFO 1488 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-18 21:13:18.737  INFO 1488 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-18 21:13:18.738  INFO 1488 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-18 21:13:18.879  INFO 1488 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-18 21:13:18.879  INFO 1488 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2058 ms
+2022-02-18 21:13:19.135  INFO 1488 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-18 21:13:19.486  INFO 1488 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-18 21:13:20.643  INFO 1488 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-18 21:13:21.171  INFO 1488 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-18 21:13:21.229  INFO 1488 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-18 21:13:21.248  INFO 1488 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 5.199 seconds (JVM running for 6.702)
+2022-02-18 21:13:23.869  INFO 1488 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-18 21:13:23.871  INFO 1488 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-18 21:13:23.874  INFO 1488 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2022-02-18 21:13:23.949  INFO 1488 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='0:0:0:0:0:0:0:1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-18 21:13:23.958  INFO 1488 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-18 21:13:29.902  INFO 1488 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='0:0:0:0:0:0:0:1', classMethod='com.cqupt.controller.UserController.doLogin', args=[lbw, 123456, 2, org.apache.catalina.session.StandardSessionFacade@7ed61553, {}]}
+2022-02-18 21:13:30.188  INFO 1488 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=2)
+2022-02-18 21:13:30.304  INFO 1488 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/index', ip='0:0:0:0:0:0:0:1', classMethod='com.cqupt.controller.MyController.adminIndex', args=[]}
+2022-02-18 21:13:30.304  INFO 1488 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Result : admin/index
+2022-02-18 21:13:34.635  INFO 1488 --- [http-nio-8080-exec-1] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/tags', ip='0:0:0:0:0:0:0:1', classMethod='com.cqupt.controller.TagController.list', args=[{}, 1]}
+2022-02-18 21:13:34.759  INFO 1488 --- [http-nio-8080-exec-1] com.cqupt.aspect.LogAspect               : Result : admin/tags
+2022-02-18 21:13:37.465  INFO 1488 --- [http-nio-8080-exec-8] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/myself', ip='0:0:0:0:0:0:0:1', classMethod='com.cqupt.controller.MyselfEchartController.AdminMyself', args=[org.apache.catalina.session.StandardSessionFacade@7ed61553]}
+2022-02-18 21:13:37.470  INFO 1488 --- [http-nio-8080-exec-8] com.cqupt.aspect.LogAspect               : Result : admin/myself
+2022-02-18 21:13:38.125  INFO 1488 --- [http-nio-8080-exec-9] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/getUserAvatar', ip='0:0:0:0:0:0:0:1', classMethod='com.cqupt.controller.UserController.getUserAvatar', args=[1]}
+2022-02-18 21:13:38.140  INFO 1488 --- [http-nio-8080-exec-9] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=成功, data=test.jpg)
+2022-02-18 21:13:49.410  INFO 1488 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/echart', ip='0:0:0:0:0:0:0:1', classMethod='com.cqupt.controller.MyselfEchartController.echats', args=[]}
+2022-02-18 21:13:49.410  INFO 1488 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Result : admin/echart
+2022-02-18 21:13:54.442  INFO 1488 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/tags', ip='0:0:0:0:0:0:0:1', classMethod='com.cqupt.controller.TagController.list', args=[{}, 1]}
+2022-02-18 21:13:54.470  INFO 1488 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/tags
+2022-02-18 21:15:48.803  INFO 1488 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/logout', ip='0:0:0:0:0:0:0:1', classMethod='com.cqupt.controller.MyController.logout', args=[org.apache.catalina.session.StandardSessionFacade@7ed61553]}
+2022-02-18 21:15:48.804  INFO 1488 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : redirect:/cqupt/login
+2022-02-18 21:15:48.842  INFO 1488 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='0:0:0:0:0:0:0:1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-18 21:15:48.842  INFO 1488 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-18 21:15:54.943  INFO 1488 --- [http-nio-8080-exec-10] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='0:0:0:0:0:0:0:1', classMethod='com.cqupt.controller.UserController.doLogin', args=[ls, 123456, 1, org.apache.catalina.session.StandardSessionFacade@7ed61553, {}]}
+2022-02-18 21:15:54.969  INFO 1488 --- [http-nio-8080-exec-10] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=1)
+2022-02-18 21:15:55.037  INFO 1488 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='0:0:0:0:0:0:0:1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@7ed61553]}
+2022-02-18 21:15:55.141  INFO 1488 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-18 21:15:55.828  INFO 1488 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/file/showImageByName', ip='0:0:0:0:0:0:0:1', classMethod='com.cqupt.controller.UserController.showImageByName', args=[cquptLOGO.jpg]}
+2022-02-18 21:15:55.845  INFO 1488 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Result : <201 CREATED Created,[B@7717a8c0,[Content-Type:"application/octet-stream"]>
