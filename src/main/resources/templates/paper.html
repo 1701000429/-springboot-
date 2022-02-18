@@ -23,10 +23,17 @@
             <a href="#" class="m-item item m-mobile-hide"><i class="mini tags icon"></i>标签</a>
             <a href="#" class="m-item item m-mobile-hide"><i class="mini clone icon"></i>归档</a>
             <a href="#" class="m-item item m-mobile-hide"><i class="mini info icon"></i>关于我</a>
-            <div class="right m-item item m-mobile-hide">
-                <div class="ui icon inverted transparent input m-margin-tb-tiny">
-                    <input type="text" placeholder="Search....">
-                    <i class="search link icon"></i>
+            <div class="right m-item m-mobile-hide menu">
+                <div class="ui dropdown  item">
+                    <div class="text">
+                        <img class="ui avatar image" id="navbar-img" >
+                        <input id="avatarFileName"  type="hidden" th:value="${session.user.avatar}">
+                        <span th:text="${session.user.nickname}">刘博文</span>
+                    </div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a th:href="@{/cqupt/logout}" class="item">注销</a>
+                    </div>
                 </div>
             </div>
         </div>
@@ -687,7 +694,9 @@ h5,h6{font-size:1em;}
 
 
 <script th:inline="javascript">
-
+    var fileName=document.getElementById("avatarFileName").value;
+    //重新加载头像
+    $('#navbar-img').attr('src','/cqupt/file/showImageByName?path='+fileName);
 
     $('.menu.toggle').click(function () {
         $('.m-item').toggleClass('m-mobile-hide');

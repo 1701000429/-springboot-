@@ -68,5 +68,8 @@ public class User implements Serializable {
      */
     private String username;
 
+    //地址
+    private String address;
+
 
 }

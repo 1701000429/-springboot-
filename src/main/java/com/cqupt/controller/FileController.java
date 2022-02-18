@@ -1,5 +1,6 @@
 package com.cqupt.controller;
 
+import com.cqupt.domin.User;
 import com.cqupt.service.impl.FileDownload;
 import com.cqupt.utils.AppFileUtils;
 import com.cqupt.utils.ResultObj;
@@ -55,6 +56,8 @@ public class FileController {
         FileDownload fileDownload=new FileDownload();
         fileDownload.Download(fileName, response);
     }
+
+
 
 
 

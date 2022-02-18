@@ -36,7 +36,7 @@ public class MyselfEchartController {
     }
 
     @GetMapping("/admin/myself")
-    public String AdminMyself() {
+    public String AdminMyself(HttpSession session) {
         return "admin/myself";
     }
 

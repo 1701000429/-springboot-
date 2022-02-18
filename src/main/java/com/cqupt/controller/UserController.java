@@ -5,15 +5,23 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.cqupt.domin.Paper;
 import com.cqupt.mapper.UserMapper;
 import com.cqupt.service.UserService;
+import com.cqupt.utils.AppFileUtils;
 import com.cqupt.utils.MD5Utils;
 import com.cqupt.utils.ResultObj;
+import com.cqupt.utils.WebUtils;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 import com.cqupt.domin.User;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import java.io.File;
+import java.io.IOException;
+import java.util.Date;
 
 /**
  * <p>
@@ -61,7 +69,9 @@ public class UserController {
             //登陆成功
             result.setCode(200);
             result.setMsg("登录成功");
-            //user.setPassword(null);
+
+            //session里面存放没有MD5加密后的原密码，方便用户前端显示
+            user.setPassword(password);
             session.setAttribute("user",user);
             return result;
         } else {
@@ -75,4 +85,114 @@ public class UserController {
     }
 
 
+    /**
+     * 修改用户
+     * @param userVo
+     * @return
+     */
+    @RequestMapping("/user/updateUserInfo")
+    public ResultObj updateUserInfo(User userVo,HttpSession session){
+        String password=userVo.getPassword();
+        userVo.setPassword(MD5Utils.code(password));
+
+        userVo.setUpdatetime(new Date());
+
+        ResultObj result=new ResultObj();
+        result.setCode(200);
+        result.setMsg("修改成功");
+        try {
+            //更新用户信息
+            userService.updateById(userVo);
+            //更新session
+            userVo.setPassword(password);
+
+
+
+            session.setAttribute("user",userVo);
+            System.out.println("更新session==");
+            System.out.println(userVo);
+            return result;
+        } catch (Exception e) {
+            e.printStackTrace();
+            result.setCode(400);
+            result.setMsg("修改失败");
+            return result;
+        }
+    }
+
+
+    //得到用户头像的名称   不是绝对路径！！
+    @RequestMapping("/user/getUserAvatar")
+    public ResultObj getUserAvatar( Integer id){
+        User user =userService.getById(id);
+        //头像名
+        String Avatar=user.getAvatar();
+        //拼接绝对路径 默认为D:/CQUPTupload
+        String filePath= AppFileUtils.UPLOAD_PATH;
+        ResultObj result=new ResultObj();
+        result.setCode(200);
+        result.setMsg("成功");
+        result.setData(Avatar);
+        System.out.println("前端请求头像地址path====");
+        System.out.println(result);
+        return result;
+    }
+
+    /**
+     * 图片下载
+     */
+    @RequestMapping("/file/showImageByPath")
+    public ResponseEntity<Object> showImageByPath(String path){
+        //jue dui lu jing
+        System.out.println("前端请求头像img====");
+        return AppFileUtils.createResponseEntity(path);
+    }
+
+
+    /**
+     * 图片下载
+     */
+    @RequestMapping("/file/showImageByName")
+    public ResponseEntity<Object> showImageByName(String path){
+        //拼接绝对路径 默认为D:/CQUPTupload
+        String filePath= AppFileUtils.UPLOAD_PATH;
+        //jue dui lu jing
+        System.out.println("前端请求头像img====");
+        return AppFileUtils.createResponseEntity(filePath+"/"+path);
+    }
+
+
+
+    //头像上传成功后  写进数据库
+    @PostMapping("/admin/Avatarupload")
+    public ResultObj Avatarupload(@RequestParam MultipartFile file,
+                                  HttpServletRequest request,
+                                  HttpServletResponse response,
+                                  HttpSession session) {
+        ResultObj res=new ResultObj(400,"上传失败");
+
+        if (file.isEmpty()) {
+            return res;
+        }
+        //写进数据库
+        User userTemp=(User)session.getAttribute("user");
+        User user=userService.getById(userTemp.getId());
+        String avatarFileName=file.getOriginalFilename();
+        user.setAvatar(avatarFileName);
+        userService.updateById(user);
+        String fileName = file.getOriginalFilename();
+        String filePath=AppFileUtils.UPLOAD_PATH;
+
+        File dest = new File(filePath + "/"+fileName);
+        try {
+            file.transferTo(dest);
+            res.setCode(200);
+            res.setData(fileName);
+            res.setMsg("上传成功");
+            return res;
+        } catch (IOException e) {
+            System.out.println(e);
+        }
+        return res;
+    }
 }
