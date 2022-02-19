@@ -38,10 +38,39 @@
     <i class="sidebar icon"></i>
   </a>
 </nav>
+<br>
+
 
 <!--中间内容-->
 <div  class="m-container m-padded-tb-big animated fadeIn">
   <div class="ui container">
+
+    <!--搜索框 2022/2/19-->
+    <form id="paper-form" action="#"  th:action="@{/cqupt/user/paperSelect}" method="post" class="ui form">
+      <div class="required field">
+        <div class="ui left labeled input">
+          <div class="ui selection compact teal basic dropdown label">
+            <input type="hidden" value="论文名称" name="selectType"  >
+            <i class="dropdown icon"></i>
+            <div class="text">论文名称</div>
+            <div class="menu">
+              <div class="item" data-value="论文名称">论文名称</div>
+              <div class="item" data-value="论文类型">论文类型</div>
+              <div class="item" data-value="论文标签">论文标签</div>
+
+            </div>
+          </div>
+          <div class="ui action input " style="width: 600px;height:40px;">
+            <input type="text" name="selectContent" placeholder="Search...">
+            <button id="Search-paper" class="ui button">Search</button>
+          </div>
+        </div>
+      </div>
+    </form>
+    <br>
+
+
+
     <div class="ui stackable grid">
       <!--左边论文列表-->
       <div class="eleven wide column">
@@ -391,7 +420,38 @@
   var fileName=document.getElementById("avatarFileName").value;
   //重新加载头像
   $('#navbar-img').attr('src','/cqupt/file/showImageByName?path='+fileName);
-  function zipPost(){
+
+  $('.menu.toggle').click(function () {
+    $('.m-item').toggleClass('m-mobile-hide');
+  });
+
+  $('.ui.dropdown').dropdown({
+    on : 'hover'
+  });
+
+
+  $('.ui.form').form({
+    fields : {
+      title : {
+        identifier: 'selectContent',
+        rules: [{
+          type : 'empty',
+          prompt: '搜索：请输入搜索条件'
+        }]
+      }
+    }
+  });
+
+
+  $('#Search-paper').click(function () {
+
+
+    // $('[name="commentabled"]').val("2");
+
+    $('#paper-form').submit();
+  });
+
+  //   function zipPost(){
   //   var fileNameGet=document.getElementById("fileName").value;
   //   $.ajax({
   //     type: "get", // 使用get方式
@@ -408,9 +468,7 @@
   //
   // }
 
-  $('.menu.toggle').click(function () {
-    $('.m-item').toggleClass('m-mobile-hide');
-  });
+
 </script>
 </body>
 </html>

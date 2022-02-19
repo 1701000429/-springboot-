@@ -39,6 +39,11 @@
     <select id="getTypeByName" resultType="com.cqupt.domin.Type">
         select * from cquptacademic.type where name = #{name}
     </select>
+    <!--根据分类名称来查询-->
+    <select id="getTypeLikeName" resultType="com.cqupt.domin.Type">
+        <bind name="pattern" value="'%' + name + '%'" />
+        select * from cquptacademic.type where name like #{pattern}
+    </select>
 
     <!--编辑修改分类-->
     <update id="updateType" parameterType="com.cqupt.domin.Type">

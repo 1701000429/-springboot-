@@ -5,9 +5,11 @@ import com.baomidou.mybatisplus.core.metadata.IPage;
 import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.cqupt.domin.Paper;
 import com.cqupt.domin.Paper;
+import com.cqupt.domin.Type;
 import com.cqupt.domin.queryvo.PaperQuery;
 import com.cqupt.mapper.PaperMapper;
 import com.cqupt.mapper.PaperMapper;
+import com.cqupt.mapper.TypeMapper;
 import com.cqupt.service.PaperService;
 import com.cqupt.service.PaperService;
 import jdk.nashorn.internal.runtime.regexp.joni.Regex;
@@ -21,6 +23,8 @@ import java.util.List;
 public class PaperTests {
     @Autowired
     PaperMapper mapper;
+    @Autowired
+    TypeMapper typeMapper;
     @Autowired
     PaperService service;
     //测试mybatisPlus中的service层的接口
@@ -55,15 +59,15 @@ public class PaperTests {
         System.out.println(records);
     }
 
-    @Test
-    void PaperSearchTest(){
-        PaperQuery paper=new PaperQuery();
-        paper.setTitle("");
-        paper.setTypeid(2);
-        System.out.println("null test===============");
-        System.out.println(paper.getTitle());
-        mapper.searchByTitleOrTypeOrRecommend(paper);
-    }
+//    @Test
+//    void PaperSearchTest(){
+//        PaperQuery paper=new PaperQuery();
+//        paper.setTitle("");
+//        paper.setTypeid(2);
+//        System.out.println("null test===============");
+//        System.out.println(paper.getTitle());
+//        mapper.searchByTitleOrTypeOrRecommend(paper);
+//    }
 
     @Test
     void numberTest(){
@@ -84,5 +88,10 @@ public class PaperTests {
         }
         System.out.println(t);
 
+    }
+
+    @Test
+    public void testLike(){
+        List<Type> test = typeMapper.getTypeLikeName("1");
     }
 }

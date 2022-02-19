@@ -49,7 +49,7 @@
 <!--中间内容-->
 <div  class="m-container m-padded-tb-big">
     <div class="ui container">
-        <form id="blog-form" action="#" th:object="${paper}" th:action="@{/cqupt/admin/papers}" method="post" class="ui form">
+        <form id="paper-form" action="#" th:object="${paper}" th:action="@{/cqupt/admin/papers}" method="post" class="ui form">
             <input type="hidden" name="id" th:value="*{id}">
             <div class="required field">
                 <div class="ui left labeled input">
@@ -211,18 +211,15 @@
         on : 'hover'
     });
 
-    $('#save-btn').click(function () {
-        $('[name="published"]').val("1");
-        $('#blog-form').submit();
-    });
+
 
 
     $('#publish-btn').click(function () {
-        $('[name="published"]').val("2");
+
 
         // $('[name="commentabled"]').val("2");
 
-        $('#blog-form').submit();
+        $('#paper-form').submit();
     });
 
 

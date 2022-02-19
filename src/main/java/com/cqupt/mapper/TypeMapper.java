@@ -24,6 +24,8 @@ public interface TypeMapper extends BaseMapper<Type> {
 
     Type getTypeByName(String name);
 
+    List<Type> getTypeLikeName(String name);
+
     int updateType(Type type);
 
     void deleteType(Long id);

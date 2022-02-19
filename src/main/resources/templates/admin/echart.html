@@ -54,17 +54,15 @@
 <br>
 
 
-<div class="container">
-    <div class="layui-row ">
-        <!--    用layui栅格布局 2022/2/18-->
-        <div class=”layui-col-md5”></div>
-        <div class=" layui-col-md5">
-            <div id="chart2" style="width: 500px;height:500px;"></div>
-        </div>
-        <!--有机会做一个扇形-->
-
-    </div>
+<div class="ui grid">
+    <i class="two wide column "></i>
+    <i class="three wide column ">
+        <div id="chart2" style="width: 500px;height:500px;"></div>
+    </i>
 </div>
+
+
+
 
 
 <br>
@@ -114,7 +112,7 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
 <!--/*/</th:block>/*/-->
-
+<script src="../../static/layui/layui.js" th:src="@{/layui/layui.js}"></script>
 <script src="../../static/js/echarts.js" th:src="@{/js/echarts.js}"></script>
 <script>
     function newData2(value,name){
@@ -152,7 +150,7 @@
             // 指定图表的配置项和数据
             var option = {
                 title: {
-                    text: '\t\t重庆邮电大学论文统计'
+                    text: '                          重庆邮电大学论文统计'
                 },
                 tooltip: {},
                 legend: {
@@ -186,7 +184,7 @@
             console.log(data2);
             var option2 = {
                 title: {
-                    text: '\t\t重庆邮电大学论文统计'
+                    text: '                     重庆邮电大学论文统计'
                 },
                 tooltip: {},
 

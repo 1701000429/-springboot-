@@ -91,12 +91,13 @@
             </div>
 
             <input type="hidden" id="zip" name="zip" value="">
-
+            <input type="hidden" id="commentabledSubmit" name="commentabled"  class="hidden" value="0" >
             <div class="inline fields">
 
                 <div class="field m-padded-tb">
                     <div class="ui checkbox">
-                        <input type="checkbox" id="commentabled" name="commentabled" checked="true" class="hidden" value="1" onclick="this.value=(this.value=='1')?'0':'1'">
+                        <input type="hidden" id="commentableID" th:value="*{commentabled}">
+                        <input type="checkbox" id="commentabled"   class="hidden" value="0" onclick="this.value=(this.value=='0')?'1':'0'">
                         <label for="commentabled">评论</label>
                     </div>
                 </div>
@@ -165,6 +166,24 @@
     var fileName=document.getElementById("avatarFileName").value;
     //重新加载头像
     $('#navbar-img').attr('src','/cqupt/file/showImageByName?path='+fileName);
+
+    var checkif=document.getElementById("commentableID").value;
+    var checkbox=document.getElementById("commentabled");
+    console.log(checkif);
+
+
+
+
+    //gou xuan
+    if(checkif==1){
+        // 设置元素为选中状态
+        checkbox.checked =  true ;
+    }
+
+    if(checkif==0){
+        // 设置元素为未选中状态
+        checkbox.checked =  false ;
+    }
     //初始化Markdown编辑器
     var contentEditor;
     $(function() {
@@ -184,16 +203,24 @@
         on : 'hover'
     });
 
-    $('#save-btn').click(function () {
-        $('[name="published"]').val("1");
-        $('#blog-form').submit();
-    });
+
 
 
     $('#publish-btn').click(function () {
         $('[name="published"]').val("2");
+        var flag=document.getElementById("commentabled");
+        console.log(flag)
+        console.log(flag)
+        console.log(flag)
+        console.log(flag)
+        if(flag.checked==true){
+            //$('[name="commentabled"]').val("1");
+            document.getElementById("commentabledSubmit").value=1;
 
-        // $('[name="commentabled"]').val("2");
+        }else{
+            document.getElementById("commentabledSubmit").value=0;
+        }
+
 
         $('#blog-form').submit();
     });

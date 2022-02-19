@@ -2,6 +2,7 @@ package com.cqupt.domin.queryvo;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
+import com.cqupt.domin.Paper;
 import com.cqupt.domin.Type;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
@@ -24,7 +25,19 @@ import java.util.Date;
 @Accessors(chain = true)
 public class PaperQuery {
     //以下是后台页面展示的论文列表页
+    public PaperQuery(){}
+    public PaperQuery(Paper paper){
+        this.id=paper.getId();
+        this.title=paper.getTitle();
+        this.updatetime=paper.getUpdatetime();
+        this.typeid= Math.toIntExact(paper.getTypeid());
+        this.views=paper.getViews();
+        this.description=paper.getDescription();
+        this.zip=paper.getZip();
 
+
+
+    }
     @TableId(value = "id", type = IdType.AUTO)
     private Integer id;
     //论文标题
