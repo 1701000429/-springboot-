@@ -4637,3 +4637,1278 @@ Krizhevsky等人（2012a）提出了一种称为AlexNet的深度卷积神经网�
 2022-02-19 21:50:50.927  INFO 15256 --- [http-nio-8080-exec-7] com.cqupt.aspect.LogAspect               : Result : redirect:/cqupt/admin/papers
 2022-02-19 21:50:50.991  INFO 15256 --- [http-nio-8080-exec-8] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papers', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.papers', args=[{message=修改成功}, 1]}
 2022-02-19 21:50:51.048  INFO 15256 --- [http-nio-8080-exec-8] com.cqupt.aspect.LogAspect               : Result : admin/papers
+2022-02-19 21:53:08.075  INFO 11856 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 11856 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-19 21:53:08.076  INFO 11856 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-19 21:53:08.119  INFO 11856 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-19 21:53:08.120  INFO 11856 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-19 21:53:09.431  INFO 11856 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-19 21:53:09.438  INFO 11856 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-19 21:53:09.438  INFO 11856 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-19 21:53:09.526  INFO 11856 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-19 21:53:09.527  INFO 11856 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1407 ms
+2022-02-19 21:53:09.725  INFO 11856 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-19 21:53:10.117  INFO 11856 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-19 21:53:11.072  INFO 11856 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-19 21:53:11.482  INFO 11856 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-19 21:53:11.521  INFO 11856 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-19 21:53:11.531  INFO 11856 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 3.93 seconds (JVM running for 5.129)
+2022-02-19 21:53:11.701  INFO 11856 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-19 21:53:11.702  INFO 11856 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-19 21:53:11.704  INFO 11856 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-02-19 21:53:11.778  INFO 11856 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-19 21:53:11.790  INFO 11856 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-19 21:54:07.079  INFO 11856 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[lbw, 123456, 2, org.apache.catalina.session.StandardSessionFacade@4160ca0c, {}]}
+2022-02-19 21:54:07.431  INFO 11856 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=2)
+2022-02-19 21:54:07.550  INFO 11856 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.adminIndex', args=[]}
+2022-02-19 21:54:07.550  INFO 11856 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Result : admin/index
+2022-02-19 21:54:08.336  INFO 11856 --- [http-nio-8080-exec-10] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/file/showImageByName', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.showImageByName', args=[test.jpg]}
+2022-02-19 21:54:08.346  INFO 11856 --- [http-nio-8080-exec-10] com.cqupt.aspect.LogAspect               : Result : <201 CREATED Created,[B@7254fba6,[Content-Type:"application/octet-stream"]>
+2022-02-19 21:54:11.070  INFO 11856 --- [http-nio-8080-exec-1] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papers', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.papers', args=[{}, 1]}
+2022-02-19 21:54:11.249  INFO 11856 --- [http-nio-8080-exec-1] com.cqupt.aspect.LogAspect               : Result : admin/papers
+2022-02-19 21:54:13.277  INFO 11856 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papers/1/input', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.editInput', args=[1, {}]}
+2022-02-19 21:54:13.325  INFO 11856 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Result : admin/papers-change
+2022-02-19 21:54:26.189  INFO 11856 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papersupdate/$%7Bpaper.id%7D', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.editPost', args=[Paper(id=1, commentabled=1, content=# 通用目标检测的深度学习：综述
+## 摘要
+目标检测是计算机视觉中最基本和最具挑战性的问题之一，它试图从自然图像中的大量预定义类别中定位目标实例。深度学习技术已经成为一种直接从数据中学习特征表示的强大策略，并在通用目标检测领域取得了显著突破。鉴于这一快速发展的时期，本文的目标是对深度学习技术在这一领域的最新成就进行全面的调查。本次调查包括300多项研究贡献，涵盖了一般对象检测的许多方面：检测框架、对象特征表示、对象建议生成、上下文建模、培训策略和评估指标。我们通过确定未来研究的前景来完成调查。
+关键词目标检测·深度学习·卷积神经网络·目标识别
+
+# 1导言
+作为计算机视觉中一个长期存在的、基本的和具有挑战性的问题，目标检测（如图1所示）几十年来一直是一个活跃的研究领域（Fis）-
+chler和Elschlager，1973年）。目标检测的目标是确定图像中是否存在来自给定类别（如人类、汽车、自行车、狗或猫）的任何对象实例，如果存在，则返回每个对象实例的空间位置和范围（例如，通过边界框Everingham et al.2010；Russakovsky et al.2015）。作为Cornerston图像理解和计算机视觉，目标检测构成了解决复杂或高级视觉任务（如分割、场景理解、目标跟踪、图像字幕、事件检测和活动识别）的基础。目标检测支持广泛的应用，包括机器人视觉、消费电子、安全、自动驾驶、人机交互、基于内容的图像检索、智能视频监控和增强现实。
+最近，深度学习技术（Hinton和Salakhutdinov，2006；LeCun等人，2015）已经成为从数据中自动学习特征表示的强大方法。具体而言，这些技术在对象检测方面提供了重大改进，如图3所示。
+如图2所示，对象检测可分为两种类型之一（Grauman和Leibe 2011；Zhang等人2013）：检测特定实例与检测广泛类别。第一种类型旨在检测特定对象的实例（如唐纳德·特朗普的脸、埃菲尔铁塔或邻居的狗），本质上是一个匹配问题。
+第二种类型的目标是检测某些预定义对象类别（例如人类、汽车、自行车和狗）的实例（通常是以前看不到的）。历史上，目标检测领域的大部分工作都集中在单个类别（通常是人脸和行人）或几个特定类别的检测上。相比之下，在过去几年中，研究界已开始朝着更具挑战性的目标迈进，即建立通用目标检测系统，在该系统中，目标检测能力的广度可与人类相媲美。
+Krizhevsky等人（2012a）提出了一种称为AlexNet的深度卷积神经网络（DCNN），该网络在大规模视觉识别挑战赛（ILSVRC）中实现了破纪录的图像分类精度（Russakovsky等人，2015）。从那时起，计算机视觉的大部分领域的研究重点都是具体的深度学习方法，实际上包括通用目标检测领域（Girshick等人2014；He等人2014；Girshick 2015；Sermanet al.2014；Ren等人2017）。虽然已经取得了巨大的进步，如图3所示，但我们不知道这方面的全面调查
+如表1所示，已经发布了许多著名的物体检测调查。这些调查包括许多关于特定物体检测问题的优秀调查，如行人检测（Enzweiler和Gavrila，2009年；Geronimo等人，2010年；Dollar等人，2012年）、人脸检测（Yang等人，2002年；Zafeiriouetal，2015年）、车辆检测（Suntetal，2006年）和文本检测（Ye和Doermann 2015）。除了Zhang等人（2013年）就对象类检测主题进行的调查外，最近直接关注通用对象检测问题的调查相对较少。然而，Grauman和Leibe（2011年）、Andreopoulos和Tsotsos（2013年）对该研究进行了审查而Zhang等人（2013年）大多在2012年之前，因此在深度学习和相关方法最近取得显著成功并占据主导地位之前。
+深度学习允许计算模型学习极其复杂、微妙和抽象的表示，推动了广泛问题的重大进展，如视觉识别、目标检测、语音识别、自然语言处理、医学图像分析、药物发现和基因组学works，DCNNs（LeCun et al.1998，2015；Krizhevsky et al.2012a）在图像、视频、语音和音频处理方面取得了突破。可以肯定的是，已经发表了许多关于深度学习的调查，包括Bengioteal.（2013）、LeCunetal.（2015）、Litjensetal.（2017）、Gu et al.（2018），最近在ICCV和CVPR的教程中。
+尽管最近在目标检测领域取得了巨大的进步，但这项技术仍然比人类视觉要原始得多，还不能令人满意地解决现实世界中的挑战，如方法论。2.2.我们看到了许多长期存在的挑战：
+•在开放世界中工作：对任何数量的环境变化都具有鲁棒性，能够进化或适应。•受限条件下的对象检测：从标记较弱的数据或少量边界框注释、可穿戴设备、看不见的对象类别等学习。
+•其他模式下的目标检测：视频、RGBD图像、3D点云、激光雷达、遥感图像等。
+基于这些挑战，我们看到了以下未来研究方向：
+(1)最终目标是开发能够准确、高效地识别和定位开放世界场景中数千个或更多对象类别中的实例的对象检测，其水平与人类视觉系统相当。一般来说，对象检测算法无法识别外部的对象类别r训练数据集，但理想情况下应具有识别新对象类别的能力（Lake等人2015；Hariharan和Girshick 2017）。当前检测数据集（Everingham等人2010；Russakovsky等人2015；Lin等人2014）仅包含几十到数百个类别，远远少于人类可以识别的类别。需要开发具有更多类别的新的更大规模数据集（Hoffman等人2014；Singh等人2018a；Redmon和Farhadi 2017）。开放世界学习
+（2） 通用目标检测成功的原因之一是开发了高级检测框架，包括基于区域的[RCNN（Girshicketal.2014）、FastRCNN（Girshick 2015）、快速RCNN（Ren et al.2015）、Mask RCNN（He et al.2017）]和一级检测器[YOLO（Redmon et al.2016）、SSD（Liu et al.2016）].基于区域的检测器具有更高的精确度，单级检测器通常更高级和更简单。对象检测器严重依赖于底层主干网络，这些主干网络已针对图像分类进行了优化，可能会导致学习偏差；从头开始学习对象检测器可能有助于新的检测框架。更好、更高效的检测框架
+（3） CNN的深度显著增加，从几层[AlexNet（Krizhevsky et al.2012b）]到数百层[ResNet（He et al.2016），DenseNet（Huang et al.2017a）]。这些网络有数百万到数亿个参数，需要大量数据和GPU进行训练。为了减少或消除网络冗余，设计紧凑、轻量级网络的研究兴趣越来越大（Chen等人2017a；Alvarez和Salzmann 2016；Huang等人2018；Howard等人2017；Lin等人2017c；Yu等人2018）和网络加速（Cheng等人2018c；Hubara等人2016；Han等人2016；Li等人2017a，c；Wei等人2018）。紧凑高效的CNN功能
+（4）深度学习绕过人工特征工程，这需要具有较强领域知识的人类专家，然而DCNNs需要类似的显著的专门知识。很自然地考虑检测骨干架构的自动化设计，例如最近的自动机器学习（AutoML）（QuunMin等人，2018）。，已应用于图像分类和对象检测（Caiteal.2018；Chenetal.2019c；Ghiasietal.2019；Liuetal.2018a；ZophandLe2016；Zoph等人，2018）。自动神经结构搜索
+（5） 为了更丰富、更详细地理解图像内容，需要解决像素级对象实例分割问题（Lin等人2014；He等人2017；Hu等人2018c），这在需要单个对象精确边界的潜在应用中可以发挥重要作用。对象实例分割
+（6） 当前最先进的探测器采用从带有对象边界框或分割遮罩的标记数据中学习的全监督模型（Everingham等人2015；Lin等人2014；Russakovsky等人2015；Lin等人2014）。然而，全监督学习具有严重的局限性，特别是在边界框注释的收集是劳动密集型的，并且图像数量很大的情况下。在没有完全标记的培训数据的情况下，完全监督学习是不可扩展的，因此有必要了解在仅提供弱/部分注释数据的情况下如何利用CNN的力量（Bilen和Vedaldi 2016；Diba等人2017；Shi等人2017）。弱监督检测
+（7） 深度探测器的成功在很大程度上依赖于大量带注释的训练数据。当标记数据稀少时，深度探测器的性能经常恶化，无法很好地推广。相比之下，人类（甚至儿童）可以从极少的示例中快速学习视觉概念，并且通常可以很好地概括（Biederman 1987b；Lake et al.2015；FeiFei et al.2006）。因此，仅从几个示例学习的能力，如fewshotdetection，非常引人注目少镜头/零镜头目标检测
+（Chen等人，2018a；Dong等人，2018；Finn等人，2017；Kang等人，2018；Lake等人，2015；Ren等人，2018；Schwartz等人，2019）。更受约束的零炮目标检测定位和识别以前从未见过的目标类别（Bansal等人2018；Demirel等人2018；Rahman等人2018b，a），这对于需要智能和增量发现新目标类别的终身学习机器至关重要。[21] 
+（8） 大多数探测器基于静止的2D图像；其他模式下的目标检测在自主车辆、无人机和机器人等领域具有高度相关性。这些模式在有效利用深度（Chen等人2015c；Pepik等人2015；Xiang等人2014；Wu等人2015）、视频（Feichtenhofer等人2017；Kang等人2016）和点云（Qi等人2017、2018）方面提出了新的挑战。其他模式中的目标检测
+（9） 最近，人们在学习通用表示法方面的努力不断增加，这些表示法在多个图像领域中都是有效的，如自然图像、视频、航空图像和医学CT图像（Rebuffi et al.2017、2018）。大多数此类研究侧重于图像分类，很少针对目标检测（Wang et al.2019），开发的检测器通常是特定领域的。独立于图像域的目标检测和跨域目标检测是未来的重要方向。通用目标检测：
+通用目标检测的研究领域还很不完善。然而，考虑到过去5年的突破，我们对未来的发展和机遇持乐观态度。
+## 总结
+深度学习。。。。。
+
+, createtime=null, description=目标检测是计算机视觉中最基本和最具挑战性的问题之一，它试图从自然图像中的大量预定义类别中定位目标实例。深度学习技术已经成为一种直接从数据中学习特征表示的强大策略，并在通用目标检测领域取得了显著突破。鉴于这一快速发展的时期，本文的目标是对深度学习技术在这一领域的最新成就进行全面的调查。本次调查包括300多项研究贡献，涵盖了一般对象检测的许多方面：检测框架、对象特征表示、对象建议生成、上下文建模、培训策略和评估指标。我们通过确定未来研究的前景来完成调查。, firstpicture=null, published=null, title=通用目标检测综述, updatetime=null, views=null, typeid=null, userid=null, commentcount=null, zip=, flag=原创), {}]}
+2022-02-19 21:54:26.231  INFO 11856 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Result : redirect:/cqupt/admin/papers
+2022-02-19 21:54:26.264  INFO 11856 --- [http-nio-8080-exec-1] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papers', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.papers', args=[{message=修改成功}, 1]}
+2022-02-19 21:54:26.318  INFO 11856 --- [http-nio-8080-exec-1] com.cqupt.aspect.LogAspect               : Result : admin/papers
+2022-02-19 21:55:19.070  INFO 11856 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papers/1/input', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.editInput', args=[1, {}]}
+2022-02-19 21:55:19.106  INFO 11856 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/papers-change
+2022-02-19 21:55:27.152  INFO 11856 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papersupdate/$%7Bpaper.id%7D', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.editPost', args=[Paper(id=1, commentabled=1, content=# 通用目标检测的深度学习：综述
+## 摘要
+目标检测是计算机视觉中最基本和最具挑战性的问题之一，它试图从自然图像中的大量预定义类别中定位目标实例。深度学习技术已经成为一种直接从数据中学习特征表示的强大策略，并在通用目标检测领域取得了显著突破。鉴于这一快速发展的时期，本文的目标是对深度学习技术在这一领域的最新成就进行全面的调查。本次调查包括300多项研究贡献，涵盖了一般对象检测的许多方面：检测框架、对象特征表示、对象建议生成、上下文建模、培训策略和评估指标。我们通过确定未来研究的前景来完成调查。
+关键词目标检测·深度学习·卷积神经网络·目标识别
+
+# 1导言
+作为计算机视觉中一个长期存在的、基本的和具有挑战性的问题，目标检测（如图1所示）几十年来一直是一个活跃的研究领域（Fis）-
+chler和Elschlager，1973年）。目标检测的目标是确定图像中是否存在来自给定类别（如人类、汽车、自行车、狗或猫）的任何对象实例，如果存在，则返回每个对象实例的空间位置和范围（例如，通过边界框Everingham et al.2010；Russakovsky et al.2015）。作为Cornerston图像理解和计算机视觉，目标检测构成了解决复杂或高级视觉任务（如分割、场景理解、目标跟踪、图像字幕、事件检测和活动识别）的基础。目标检测支持广泛的应用，包括机器人视觉、消费电子、安全、自动驾驶、人机交互、基于内容的图像检索、智能视频监控和增强现实。
+最近，深度学习技术（Hinton和Salakhutdinov，2006；LeCun等人，2015）已经成为从数据中自动学习特征表示的强大方法。具体而言，这些技术在对象检测方面提供了重大改进，如图3所示。
+如图2所示，对象检测可分为两种类型之一（Grauman和Leibe 2011；Zhang等人2013）：检测特定实例与检测广泛类别。第一种类型旨在检测特定对象的实例（如唐纳德·特朗普的脸、埃菲尔铁塔或邻居的狗），本质上是一个匹配问题。
+第二种类型的目标是检测某些预定义对象类别（例如人类、汽车、自行车和狗）的实例（通常是以前看不到的）。历史上，目标检测领域的大部分工作都集中在单个类别（通常是人脸和行人）或几个特定类别的检测上。相比之下，在过去几年中，研究界已开始朝着更具挑战性的目标迈进，即建立通用目标检测系统，在该系统中，目标检测能力的广度可与人类相媲美。
+Krizhevsky等人（2012a）提出了一种称为AlexNet的深度卷积神经网络（DCNN），该网络在大规模视觉识别挑战赛（ILSVRC）中实现了破纪录的图像分类精度（Russakovsky等人，2015）。从那时起，计算机视觉的大部分领域的研究重点都是具体的深度学习方法，实际上包括通用目标检测领域（Girshick等人2014；He等人2014；Girshick 2015；Sermanet al.2014；Ren等人2017）。虽然已经取得了巨大的进步，如图3所示，但我们不知道这方面的全面调查
+如表1所示，已经发布了许多著名的物体检测调查。这些调查包括许多关于特定物体检测问题的优秀调查，如行人检测（Enzweiler和Gavrila，2009年；Geronimo等人，2010年；Dollar等人，2012年）、人脸检测（Yang等人，2002年；Zafeiriouetal，2015年）、车辆检测（Suntetal，2006年）和文本检测（Ye和Doermann 2015）。除了Zhang等人（2013年）就对象类检测主题进行的调查外，最近直接关注通用对象检测问题的调查相对较少。然而，Grauman和Leibe（2011年）、Andreopoulos和Tsotsos（2013年）对该研究进行了审查而Zhang等人（2013年）大多在2012年之前，因此在深度学习和相关方法最近取得显著成功并占据主导地位之前。
+深度学习允许计算模型学习极其复杂、微妙和抽象的表示，推动了广泛问题的重大进展，如视觉识别、目标检测、语音识别、自然语言处理、医学图像分析、药物发现和基因组学works，DCNNs（LeCun et al.1998，2015；Krizhevsky et al.2012a）在图像、视频、语音和音频处理方面取得了突破。可以肯定的是，已经发表了许多关于深度学习的调查，包括Bengioteal.（2013）、LeCunetal.（2015）、Litjensetal.（2017）、Gu et al.（2018），最近在ICCV和CVPR的教程中。
+尽管最近在目标检测领域取得了巨大的进步，但这项技术仍然比人类视觉要原始得多，还不能令人满意地解决现实世界中的挑战，如方法论。2.2.我们看到了许多长期存在的挑战：
+•在开放世界中工作：对任何数量的环境变化都具有鲁棒性，能够进化或适应。•受限条件下的对象检测：从标记较弱的数据或少量边界框注释、可穿戴设备、看不见的对象类别等学习。
+•其他模式下的目标检测：视频、RGBD图像、3D点云、激光雷达、遥感图像等。
+基于这些挑战，我们看到了以下未来研究方向：
+(1)最终目标是开发能够准确、高效地识别和定位开放世界场景中数千个或更多对象类别中的实例的对象检测，其水平与人类视觉系统相当。一般来说，对象检测算法无法识别外部的对象类别r训练数据集，但理想情况下应具有识别新对象类别的能力（Lake等人2015；Hariharan和Girshick 2017）。当前检测数据集（Everingham等人2010；Russakovsky等人2015；Lin等人2014）仅包含几十到数百个类别，远远少于人类可以识别的类别。需要开发具有更多类别的新的更大规模数据集（Hoffman等人2014；Singh等人2018a；Redmon和Farhadi 2017）。开放世界学习
+（2） 通用目标检测成功的原因之一是开发了高级检测框架，包括基于区域的[RCNN（Girshicketal.2014）、FastRCNN（Girshick 2015）、快速RCNN（Ren et al.2015）、Mask RCNN（He et al.2017）]和一级检测器[YOLO（Redmon et al.2016）、SSD（Liu et al.2016）].基于区域的检测器具有更高的精确度，单级检测器通常更高级和更简单。对象检测器严重依赖于底层主干网络，这些主干网络已针对图像分类进行了优化，可能会导致学习偏差；从头开始学习对象检测器可能有助于新的检测框架。更好、更高效的检测框架
+（3） CNN的深度显著增加，从几层[AlexNet（Krizhevsky et al.2012b）]到数百层[ResNet（He et al.2016），DenseNet（Huang et al.2017a）]。这些网络有数百万到数亿个参数，需要大量数据和GPU进行训练。为了减少或消除网络冗余，设计紧凑、轻量级网络的研究兴趣越来越大（Chen等人2017a；Alvarez和Salzmann 2016；Huang等人2018；Howard等人2017；Lin等人2017c；Yu等人2018）和网络加速（Cheng等人2018c；Hubara等人2016；Han等人2016；Li等人2017a，c；Wei等人2018）。紧凑高效的CNN功能
+（4）深度学习绕过人工特征工程，这需要具有较强领域知识的人类专家，然而DCNNs需要类似的显著的专门知识。很自然地考虑检测骨干架构的自动化设计，例如最近的自动机器学习（AutoML）（QuunMin等人，2018）。，已应用于图像分类和对象检测（Caiteal.2018；Chenetal.2019c；Ghiasietal.2019；Liuetal.2018a；ZophandLe2016；Zoph等人，2018）。自动神经结构搜索
+（5） 为了更丰富、更详细地理解图像内容，需要解决像素级对象实例分割问题（Lin等人2014；He等人2017；Hu等人2018c），这在需要单个对象精确边界的潜在应用中可以发挥重要作用。对象实例分割
+（6） 当前最先进的探测器采用从带有对象边界框或分割遮罩的标记数据中学习的全监督模型（Everingham等人2015；Lin等人2014；Russakovsky等人2015；Lin等人2014）。然而，全监督学习具有严重的局限性，特别是在边界框注释的收集是劳动密集型的，并且图像数量很大的情况下。在没有完全标记的培训数据的情况下，完全监督学习是不可扩展的，因此有必要了解在仅提供弱/部分注释数据的情况下如何利用CNN的力量（Bilen和Vedaldi 2016；Diba等人2017；Shi等人2017）。弱监督检测
+（7） 深度探测器的成功在很大程度上依赖于大量带注释的训练数据。当标记数据稀少时，深度探测器的性能经常恶化，无法很好地推广。相比之下，人类（甚至儿童）可以从极少的示例中快速学习视觉概念，并且通常可以很好地概括（Biederman 1987b；Lake et al.2015；FeiFei et al.2006）。因此，仅从几个示例学习的能力，如fewshotdetection，非常引人注目少镜头/零镜头目标检测
+（Chen等人，2018a；Dong等人，2018；Finn等人，2017；Kang等人，2018；Lake等人，2015；Ren等人，2018；Schwartz等人，2019）。更受约束的零炮目标检测定位和识别以前从未见过的目标类别（Bansal等人2018；Demirel等人2018；Rahman等人2018b，a），这对于需要智能和增量发现新目标类别的终身学习机器至关重要。[21] 
+（8） 大多数探测器基于静止的2D图像；其他模式下的目标检测在自主车辆、无人机和机器人等领域具有高度相关性。这些模式在有效利用深度（Chen等人2015c；Pepik等人2015；Xiang等人2014；Wu等人2015）、视频（Feichtenhofer等人2017；Kang等人2016）和点云（Qi等人2017、2018）方面提出了新的挑战。其他模式中的目标检测
+（9） 最近，人们在学习通用表示法方面的努力不断增加，这些表示法在多个图像领域中都是有效的，如自然图像、视频、航空图像和医学CT图像（Rebuffi et al.2017、2018）。大多数此类研究侧重于图像分类，很少针对目标检测（Wang et al.2019），开发的检测器通常是特定领域的。独立于图像域的目标检测和跨域目标检测是未来的重要方向。通用目标检测：
+通用目标检测的研究领域还很不完善。然而，考虑到过去5年的突破，我们对未来的发展和机遇持乐观态度。
+## 总结
+深度学习。。。。。
+
+, createtime=null, description=目标检测是计算机视觉中最基本和最具挑战性的问题之一，它试图从自然图像中的大量预定义类别中定位目标实例。深度学习技术已经成为一种直接从数据中学习特征表示的强大策略，并在通用目标检测领域取得了显著突破。鉴于这一快速发展的时期，本文的目标是对深度学习技术在这一领域的最新成就进行全面的调查。本次调查包括300多项研究贡献，涵盖了一般对象检测的许多方面：检测框架、对象特征表示、对象建议生成、上下文建模、培训策略和评估指标。我们通过确定未来研究的前景来完成调查。, firstpicture=null, published=null, title=通用目标检测综述, updatetime=null, views=null, typeid=null, userid=null, commentcount=null, zip=, flag=原创), {}]}
+2022-02-19 21:55:27.228  INFO 11856 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Result : redirect:/cqupt/admin/papers
+2022-02-19 21:55:27.236  INFO 11856 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papers', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.papers', args=[{message=修改成功}, 1]}
+2022-02-19 21:55:27.275  INFO 11856 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/papers
+2022-02-19 21:55:34.350  INFO 11856 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papers/1/input', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.editInput', args=[1, {}]}
+2022-02-19 21:55:34.386  INFO 11856 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Result : admin/papers-change
+2022-02-19 21:55:40.340  INFO 11856 --- [http-nio-8080-exec-7] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papersupdate/$%7Bpaper.id%7D', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.editPost', args=[Paper(id=1, commentabled=0, content=# 通用目标检测的深度学习：综述
+## 摘要
+目标检测是计算机视觉中最基本和最具挑战性的问题之一，它试图从自然图像中的大量预定义类别中定位目标实例。深度学习技术已经成为一种直接从数据中学习特征表示的强大策略，并在通用目标检测领域取得了显著突破。鉴于这一快速发展的时期，本文的目标是对深度学习技术在这一领域的最新成就进行全面的调查。本次调查包括300多项研究贡献，涵盖了一般对象检测的许多方面：检测框架、对象特征表示、对象建议生成、上下文建模、培训策略和评估指标。我们通过确定未来研究的前景来完成调查。
+关键词目标检测·深度学习·卷积神经网络·目标识别
+
+# 1导言
+作为计算机视觉中一个长期存在的、基本的和具有挑战性的问题，目标检测（如图1所示）几十年来一直是一个活跃的研究领域（Fis）-
+chler和Elschlager，1973年）。目标检测的目标是确定图像中是否存在来自给定类别（如人类、汽车、自行车、狗或猫）的任何对象实例，如果存在，则返回每个对象实例的空间位置和范围（例如，通过边界框Everingham et al.2010；Russakovsky et al.2015）。作为Cornerston图像理解和计算机视觉，目标检测构成了解决复杂或高级视觉任务（如分割、场景理解、目标跟踪、图像字幕、事件检测和活动识别）的基础。目标检测支持广泛的应用，包括机器人视觉、消费电子、安全、自动驾驶、人机交互、基于内容的图像检索、智能视频监控和增强现实。
+最近，深度学习技术（Hinton和Salakhutdinov，2006；LeCun等人，2015）已经成为从数据中自动学习特征表示的强大方法。具体而言，这些技术在对象检测方面提供了重大改进，如图3所示。
+如图2所示，对象检测可分为两种类型之一（Grauman和Leibe 2011；Zhang等人2013）：检测特定实例与检测广泛类别。第一种类型旨在检测特定对象的实例（如唐纳德·特朗普的脸、埃菲尔铁塔或邻居的狗），本质上是一个匹配问题。
+第二种类型的目标是检测某些预定义对象类别（例如人类、汽车、自行车和狗）的实例（通常是以前看不到的）。历史上，目标检测领域的大部分工作都集中在单个类别（通常是人脸和行人）或几个特定类别的检测上。相比之下，在过去几年中，研究界已开始朝着更具挑战性的目标迈进，即建立通用目标检测系统，在该系统中，目标检测能力的广度可与人类相媲美。
+Krizhevsky等人（2012a）提出了一种称为AlexNet的深度卷积神经网络（DCNN），该网络在大规模视觉识别挑战赛（ILSVRC）中实现了破纪录的图像分类精度（Russakovsky等人，2015）。从那时起，计算机视觉的大部分领域的研究重点都是具体的深度学习方法，实际上包括通用目标检测领域（Girshick等人2014；He等人2014；Girshick 2015；Sermanet al.2014；Ren等人2017）。虽然已经取得了巨大的进步，如图3所示，但我们不知道这方面的全面调查
+如表1所示，已经发布了许多著名的物体检测调查。这些调查包括许多关于特定物体检测问题的优秀调查，如行人检测（Enzweiler和Gavrila，2009年；Geronimo等人，2010年；Dollar等人，2012年）、人脸检测（Yang等人，2002年；Zafeiriouetal，2015年）、车辆检测（Suntetal，2006年）和文本检测（Ye和Doermann 2015）。除了Zhang等人（2013年）就对象类检测主题进行的调查外，最近直接关注通用对象检测问题的调查相对较少。然而，Grauman和Leibe（2011年）、Andreopoulos和Tsotsos（2013年）对该研究进行了审查而Zhang等人（2013年）大多在2012年之前，因此在深度学习和相关方法最近取得显著成功并占据主导地位之前。
+深度学习允许计算模型学习极其复杂、微妙和抽象的表示，推动了广泛问题的重大进展，如视觉识别、目标检测、语音识别、自然语言处理、医学图像分析、药物发现和基因组学works，DCNNs（LeCun et al.1998，2015；Krizhevsky et al.2012a）在图像、视频、语音和音频处理方面取得了突破。可以肯定的是，已经发表了许多关于深度学习的调查，包括Bengioteal.（2013）、LeCunetal.（2015）、Litjensetal.（2017）、Gu et al.（2018），最近在ICCV和CVPR的教程中。
+尽管最近在目标检测领域取得了巨大的进步，但这项技术仍然比人类视觉要原始得多，还不能令人满意地解决现实世界中的挑战，如方法论。2.2.我们看到了许多长期存在的挑战：
+•在开放世界中工作：对任何数量的环境变化都具有鲁棒性，能够进化或适应。•受限条件下的对象检测：从标记较弱的数据或少量边界框注释、可穿戴设备、看不见的对象类别等学习。
+•其他模式下的目标检测：视频、RGBD图像、3D点云、激光雷达、遥感图像等。
+基于这些挑战，我们看到了以下未来研究方向：
+(1)最终目标是开发能够准确、高效地识别和定位开放世界场景中数千个或更多对象类别中的实例的对象检测，其水平与人类视觉系统相当。一般来说，对象检测算法无法识别外部的对象类别r训练数据集，但理想情况下应具有识别新对象类别的能力（Lake等人2015；Hariharan和Girshick 2017）。当前检测数据集（Everingham等人2010；Russakovsky等人2015；Lin等人2014）仅包含几十到数百个类别，远远少于人类可以识别的类别。需要开发具有更多类别的新的更大规模数据集（Hoffman等人2014；Singh等人2018a；Redmon和Farhadi 2017）。开放世界学习
+（2） 通用目标检测成功的原因之一是开发了高级检测框架，包括基于区域的[RCNN（Girshicketal.2014）、FastRCNN（Girshick 2015）、快速RCNN（Ren et al.2015）、Mask RCNN（He et al.2017）]和一级检测器[YOLO（Redmon et al.2016）、SSD（Liu et al.2016）].基于区域的检测器具有更高的精确度，单级检测器通常更高级和更简单。对象检测器严重依赖于底层主干网络，这些主干网络已针对图像分类进行了优化，可能会导致学习偏差；从头开始学习对象检测器可能有助于新的检测框架。更好、更高效的检测框架
+（3） CNN的深度显著增加，从几层[AlexNet（Krizhevsky et al.2012b）]到数百层[ResNet（He et al.2016），DenseNet（Huang et al.2017a）]。这些网络有数百万到数亿个参数，需要大量数据和GPU进行训练。为了减少或消除网络冗余，设计紧凑、轻量级网络的研究兴趣越来越大（Chen等人2017a；Alvarez和Salzmann 2016；Huang等人2018；Howard等人2017；Lin等人2017c；Yu等人2018）和网络加速（Cheng等人2018c；Hubara等人2016；Han等人2016；Li等人2017a，c；Wei等人2018）。紧凑高效的CNN功能
+（4）深度学习绕过人工特征工程，这需要具有较强领域知识的人类专家，然而DCNNs需要类似的显著的专门知识。很自然地考虑检测骨干架构的自动化设计，例如最近的自动机器学习（AutoML）（QuunMin等人，2018）。，已应用于图像分类和对象检测（Caiteal.2018；Chenetal.2019c；Ghiasietal.2019；Liuetal.2018a；ZophandLe2016；Zoph等人，2018）。自动神经结构搜索
+（5） 为了更丰富、更详细地理解图像内容，需要解决像素级对象实例分割问题（Lin等人2014；He等人2017；Hu等人2018c），这在需要单个对象精确边界的潜在应用中可以发挥重要作用。对象实例分割
+（6） 当前最先进的探测器采用从带有对象边界框或分割遮罩的标记数据中学习的全监督模型（Everingham等人2015；Lin等人2014；Russakovsky等人2015；Lin等人2014）。然而，全监督学习具有严重的局限性，特别是在边界框注释的收集是劳动密集型的，并且图像数量很大的情况下。在没有完全标记的培训数据的情况下，完全监督学习是不可扩展的，因此有必要了解在仅提供弱/部分注释数据的情况下如何利用CNN的力量（Bilen和Vedaldi 2016；Diba等人2017；Shi等人2017）。弱监督检测
+（7） 深度探测器的成功在很大程度上依赖于大量带注释的训练数据。当标记数据稀少时，深度探测器的性能经常恶化，无法很好地推广。相比之下，人类（甚至儿童）可以从极少的示例中快速学习视觉概念，并且通常可以很好地概括（Biederman 1987b；Lake et al.2015；FeiFei et al.2006）。因此，仅从几个示例学习的能力，如fewshotdetection，非常引人注目少镜头/零镜头目标检测
+（Chen等人，2018a；Dong等人，2018；Finn等人，2017；Kang等人，2018；Lake等人，2015；Ren等人，2018；Schwartz等人，2019）。更受约束的零炮目标检测定位和识别以前从未见过的目标类别（Bansal等人2018；Demirel等人2018；Rahman等人2018b，a），这对于需要智能和增量发现新目标类别的终身学习机器至关重要。[21] 
+（8） 大多数探测器基于静止的2D图像；其他模式下的目标检测在自主车辆、无人机和机器人等领域具有高度相关性。这些模式在有效利用深度（Chen等人2015c；Pepik等人2015；Xiang等人2014；Wu等人2015）、视频（Feichtenhofer等人2017；Kang等人2016）和点云（Qi等人2017、2018）方面提出了新的挑战。其他模式中的目标检测
+（9） 最近，人们在学习通用表示法方面的努力不断增加，这些表示法在多个图像领域中都是有效的，如自然图像、视频、航空图像和医学CT图像（Rebuffi et al.2017、2018）。大多数此类研究侧重于图像分类，很少针对目标检测（Wang et al.2019），开发的检测器通常是特定领域的。独立于图像域的目标检测和跨域目标检测是未来的重要方向。通用目标检测：
+通用目标检测的研究领域还很不完善。然而，考虑到过去5年的突破，我们对未来的发展和机遇持乐观态度。
+## 总结
+深度学习。。。。。
+
+, createtime=null, description=目标检测是计算机视觉中最基本和最具挑战性的问题之一，它试图从自然图像中的大量预定义类别中定位目标实例。深度学习技术已经成为一种直接从数据中学习特征表示的强大策略，并在通用目标检测领域取得了显著突破。鉴于这一快速发展的时期，本文的目标是对深度学习技术在这一领域的最新成就进行全面的调查。本次调查包括300多项研究贡献，涵盖了一般对象检测的许多方面：检测框架、对象特征表示、对象建议生成、上下文建模、培训策略和评估指标。我们通过确定未来研究的前景来完成调查。, firstpicture=null, published=null, title=通用目标检测综述, updatetime=null, views=null, typeid=null, userid=null, commentcount=null, zip=, flag=原创), {}]}
+2022-02-19 21:55:40.414  INFO 11856 --- [http-nio-8080-exec-7] com.cqupt.aspect.LogAspect               : Result : redirect:/cqupt/admin/papers
+2022-02-19 21:55:40.422  INFO 11856 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papers', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.papers', args=[{message=修改成功}, 1]}
+2022-02-19 21:55:40.454  INFO 11856 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Result : admin/papers
+2022-02-19 21:56:09.010  INFO 11856 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papers/input', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.input', args=[{}]}
+2022-02-19 21:56:09.035  INFO 11856 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Result : admin/papers-input
+2022-02-19 21:56:30.140  INFO 11856 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papers', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.post', args=[PaperSubmit(typename=null, tagid=1,2, id=null, commentabled=null, content=1, createtime=null, description=1, firstpicture=null, published=null, title=2321312不可评论, updatetime=null, views=null, typeid=2, userid=null, commentcount=null, zip=, flag=原创), {}, org.apache.catalina.session.StandardSessionFacade@4160ca0c]}
+2022-02-19 21:56:30.218  INFO 11856 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : redirect:/cqupt/admin/papers
+2022-02-19 21:56:30.226  INFO 11856 --- [http-nio-8080-exec-7] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papers', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.papers', args=[{message=新增成功}, 1]}
+2022-02-19 21:56:30.248  INFO 11856 --- [http-nio-8080-exec-7] com.cqupt.aspect.LogAspect               : Result : admin/papers
+2022-02-19 21:56:33.280  INFO 11856 --- [http-nio-8080-exec-9] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papers/24/input', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.editInput', args=[24, {}]}
+2022-02-19 21:56:33.308  INFO 11856 --- [http-nio-8080-exec-9] com.cqupt.aspect.LogAspect               : Result : admin/papers-change
+2022-02-19 21:56:39.504  INFO 11856 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papersupdate/$%7Bpaper.id%7D', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.editPost', args=[Paper(id=24, commentabled=1, content=1, createtime=null, description=1, firstpicture=null, published=null, title=2321312不可评论, updatetime=null, views=null, typeid=null, userid=null, commentcount=null, zip=, flag=原创), {}]}
+2022-02-19 21:56:39.554  INFO 11856 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Result : redirect:/cqupt/admin/papers
+2022-02-19 21:56:39.562  INFO 11856 --- [http-nio-8080-exec-9] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papers', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.papers', args=[{message=修改成功}, 1]}
+2022-02-19 21:56:39.579  INFO 11856 --- [http-nio-8080-exec-9] com.cqupt.aspect.LogAspect               : Result : admin/papers
+2022-02-19 21:56:41.290  INFO 11856 --- [http-nio-8080-exec-9] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papers/24/input', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.editInput', args=[24, {}]}
+2022-02-19 21:56:41.305  INFO 11856 --- [http-nio-8080-exec-9] com.cqupt.aspect.LogAspect               : Result : admin/papers-change
+2022-02-19 21:56:45.770  INFO 11856 --- [http-nio-8080-exec-10] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papers/24/delete', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.delete', args=[24, {}]}
+2022-02-19 21:56:45.796  INFO 11856 --- [http-nio-8080-exec-10] com.cqupt.aspect.LogAspect               : Result : redirect:/cqupt/admin/papers
+2022-02-19 21:56:45.806  INFO 11856 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papers', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.papers', args=[{message=删除成功}, 1]}
+2022-02-19 21:56:45.845  INFO 11856 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Result : admin/papers
+2022-02-19 21:56:48.631  INFO 11856 --- [http-nio-8080-exec-8] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papers/input', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.input', args=[{}]}
+2022-02-19 21:56:48.657  INFO 11856 --- [http-nio-8080-exec-8] com.cqupt.aspect.LogAspect               : Result : admin/papers-input
+2022-02-19 21:57:05.680  INFO 11856 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papers', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.post', args=[PaperSubmit(typename=null, tagid=2,3, id=null, commentabled=1, content=1, createtime=null, description=可评论, firstpicture=null, published=null, title=11, updatetime=null, views=null, typeid=19, userid=null, commentcount=null, zip=, flag=原创), {}, org.apache.catalina.session.StandardSessionFacade@4160ca0c]}
+2022-02-19 21:57:05.722  INFO 11856 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : redirect:/cqupt/admin/papers
+2022-02-19 21:57:05.730  INFO 11856 --- [http-nio-8080-exec-8] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papers', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.papers', args=[{message=新增成功}, 1]}
+2022-02-19 21:57:05.762  INFO 11856 --- [http-nio-8080-exec-8] com.cqupt.aspect.LogAspect               : Result : admin/papers
+2022-02-19 21:57:08.852  INFO 11856 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papers/25/input', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.editInput', args=[25, {}]}
+2022-02-19 21:57:08.879  INFO 11856 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/papers-change
+2022-02-19 21:57:14.889  INFO 11856 --- [http-nio-8080-exec-10] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papers/25/delete', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.delete', args=[25, {}]}
+2022-02-19 21:57:14.911  INFO 11856 --- [http-nio-8080-exec-10] com.cqupt.aspect.LogAspect               : Result : redirect:/cqupt/admin/papers
+2022-02-19 21:57:14.919  INFO 11856 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papers', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.papers', args=[{message=删除成功}, 1]}
+2022-02-19 21:57:14.951  INFO 11856 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : admin/papers
+2022-02-19 22:04:02.030  INFO 9896 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 9896 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-19 22:04:02.031  INFO 9896 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-19 22:04:02.093  INFO 9896 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-19 22:04:02.093  INFO 9896 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-19 22:04:03.924  INFO 9896 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-19 22:04:03.932  INFO 9896 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-19 22:04:03.932  INFO 9896 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-19 22:04:04.090  INFO 9896 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-19 22:04:04.090  INFO 9896 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1996 ms
+2022-02-19 22:04:04.259  INFO 9896 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-19 22:04:04.556  INFO 9896 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-19 22:04:05.539  INFO 9896 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-19 22:04:05.928  INFO 9896 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-19 22:04:06.017  INFO 9896 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-19 22:04:06.036  INFO 9896 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 4.585 seconds (JVM running for 6.083)
+2022-02-19 22:04:17.362  INFO 9896 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-19 22:04:17.363  INFO 9896 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-19 22:04:17.368  INFO 9896 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 4 ms
+2022-02-19 22:04:17.437  INFO 9896 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-19 22:04:17.445  INFO 9896 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-19 22:04:23.655  INFO 9896 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[lbw, 123456, 2, org.apache.catalina.session.StandardSessionFacade@5838c72d, {}]}
+2022-02-19 22:04:23.991  INFO 9896 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=2)
+2022-02-19 22:04:24.062  INFO 9896 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.adminIndex', args=[]}
+2022-02-19 22:04:24.062  INFO 9896 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Result : admin/index
+2022-02-19 22:04:25.974  INFO 9896 --- [http-nio-8080-exec-8] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papers', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.papers', args=[{}, 1]}
+2022-02-19 22:04:26.155  INFO 9896 --- [http-nio-8080-exec-8] com.cqupt.aspect.LogAspect               : Result : admin/papers
+2022-02-19 22:04:28.928  INFO 9896 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papers/input', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.input', args=[{}]}
+2022-02-19 22:04:28.971  INFO 9896 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Result : admin/papers-input
+2022-02-19 22:04:46.819  INFO 9896 --- [http-nio-8080-exec-10] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papers', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.post', args=[PaperSubmit(typename=null, tagid=2,3, id=null, commentabled=1, content=无附件, createtime=null, description=1, firstpicture=null, published=null, title=无附件, updatetime=null, views=null, typeid=2, userid=null, commentcount=null, zip=, flag=原创), {}, org.apache.catalina.session.StandardSessionFacade@5838c72d]}
+2022-02-19 22:04:46.916  INFO 9896 --- [http-nio-8080-exec-10] com.cqupt.aspect.LogAspect               : Result : redirect:/cqupt/admin/papers
+2022-02-19 22:04:46.955  INFO 9896 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papers', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.papers', args=[{message=新增成功}, 1]}
+2022-02-19 22:04:47.022  INFO 9896 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Result : admin/papers
+2022-02-19 22:04:48.560  INFO 9896 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@5838c72d]}
+2022-02-19 22:04:48.649  INFO 9896 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-19 22:05:15.893  INFO 9896 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/paperZipDownload/%E9%80%9A%E7%94%A8%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E7%BB%BC%E8%BF%B0.docx', ip='127.0.0.1', classMethod='com.cqupt.controller.FileController.fileDownload', args=[通用目标检测综述.docx, org.apache.catalina.connector.ResponseFacade@519d886a]}
+2022-02-19 22:05:15.900  INFO 9896 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=下载成功, data=null)
+2022-02-19 22:05:15.910 ERROR 9896 --- [http-nio-8080-exec-4] c.c.aspect.ControllerExceptionHandler    : Requst URL : http://localhost:8080/cqupt/user/paperZipDownload/%E9%80%9A%E7%94%A8%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E7%BB%BC%E8%BF%B0.docx，Exception : {}
+
+org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class com.cqupt.utils.ResultObj] with preset Content-Type 'application/force-download'
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:312)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:183)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:135)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-02-19 22:05:15.914  WARN 9896 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class com.cqupt.utils.ResultObj] with preset Content-Type 'application/force-download']
+2022-02-19 22:05:15.922 ERROR 9896 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: getOutputStream() has already been called for this response] with root cause
+
+java.lang.IllegalStateException: getOutputStream() has already been called for this response
+	at org.apache.catalina.connector.Response.getWriter(Response.java:584)
+	at org.apache.catalina.connector.ResponseFacade.getWriter(ResponseFacade.java:227)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:364)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-02-19 22:05:15.944 ERROR 9896 --- [http-nio-8080-exec-4] s.e.ErrorMvcAutoConfiguration$StaticView : Cannot render error page for request [/cqupt/user/paperZipDownload/%E9%80%9A%E7%94%A8%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E7%BB%BC%E8%BF%B0.docx] and exception [No converter for [class com.cqupt.utils.ResultObj] with preset Content-Type 'application/force-download'] as the response has already been committed. As a result, the response may have the wrong status code.
+2022-02-19 22:05:22.837  INFO 9896 --- [http-nio-8080-exec-1] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/paperZipDownload/%E9%80%9A%E7%94%A8%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E7%BB%BC%E8%BF%B0.docx', ip='127.0.0.1', classMethod='com.cqupt.controller.FileController.fileDownload', args=[通用目标检测综述.docx, org.apache.catalina.connector.ResponseFacade@519d886a]}
+2022-02-19 22:05:22.840  INFO 9896 --- [http-nio-8080-exec-1] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=下载成功, data=null)
+2022-02-19 22:05:22.841 ERROR 9896 --- [http-nio-8080-exec-1] c.c.aspect.ControllerExceptionHandler    : Requst URL : http://localhost:8080/cqupt/user/paperZipDownload/%E9%80%9A%E7%94%A8%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E7%BB%BC%E8%BF%B0.docx，Exception : {}
+
+org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class com.cqupt.utils.ResultObj] with preset Content-Type 'application/force-download'
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:312)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:183)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:135)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-02-19 22:05:22.845  WARN 9896 --- [http-nio-8080-exec-1] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class com.cqupt.utils.ResultObj] with preset Content-Type 'application/force-download']
+2022-02-19 22:05:22.848 ERROR 9896 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: getOutputStream() has already been called for this response] with root cause
+
+java.lang.IllegalStateException: getOutputStream() has already been called for this response
+	at org.apache.catalina.connector.Response.getWriter(Response.java:584)
+	at org.apache.catalina.connector.ResponseFacade.getWriter(ResponseFacade.java:227)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:364)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-02-19 22:05:22.881 ERROR 9896 --- [http-nio-8080-exec-1] s.e.ErrorMvcAutoConfiguration$StaticView : Cannot render error page for request [/cqupt/user/paperZipDownload/%E9%80%9A%E7%94%A8%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E7%BB%BC%E8%BF%B0.docx] and exception [No converter for [class com.cqupt.utils.ResultObj] with preset Content-Type 'application/force-download'] as the response has already been committed. As a result, the response may have the wrong status code.
+2022-02-19 22:05:29.271  INFO 9896 --- [http-nio-8080-exec-9] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/paperZipDownload/book_mall.sql', ip='127.0.0.1', classMethod='com.cqupt.controller.FileController.fileDownload', args=[book_mall.sql, org.apache.catalina.connector.ResponseFacade@519d886a]}
+2022-02-19 22:05:29.308  INFO 9896 --- [http-nio-8080-exec-9] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=下载成功, data=null)
+2022-02-19 22:05:29.310 ERROR 9896 --- [http-nio-8080-exec-9] c.c.aspect.ControllerExceptionHandler    : Requst URL : http://localhost:8080/cqupt/user/paperZipDownload/book_mall.sql，Exception : {}
+
+org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class com.cqupt.utils.ResultObj] with preset Content-Type 'application/force-download'
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:312)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:183)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:135)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-02-19 22:05:29.311  WARN 9896 --- [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class com.cqupt.utils.ResultObj] with preset Content-Type 'application/force-download']
+2022-02-19 22:05:29.312 ERROR 9896 --- [http-nio-8080-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: getOutputStream() has already been called for this response] with root cause
+
+java.lang.IllegalStateException: getOutputStream() has already been called for this response
+	at org.apache.catalina.connector.Response.getWriter(Response.java:584)
+	at org.apache.catalina.connector.ResponseFacade.getWriter(ResponseFacade.java:227)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:364)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-02-19 22:05:29.327 ERROR 9896 --- [http-nio-8080-exec-9] s.e.ErrorMvcAutoConfiguration$StaticView : Cannot render error page for request [/cqupt/user/paperZipDownload/book_mall.sql] and exception [No converter for [class com.cqupt.utils.ResultObj] with preset Content-Type 'application/force-download'] as the response has already been committed. As a result, the response may have the wrong status code.
+2022-02-19 22:06:11.996  INFO 9896 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/paperZipDownload/%E9%80%9A%E7%94%A8%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E7%BB%BC%E8%BF%B0.docx', ip='127.0.0.1', classMethod='com.cqupt.controller.FileController.fileDownload', args=[通用目标检测综述.docx, org.apache.catalina.connector.ResponseFacade@29f57f71]}
+2022-02-19 22:06:11.997  INFO 9896 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=下载成功, data=null)
+2022-02-19 22:06:11.998 ERROR 9896 --- [http-nio-8080-exec-3] c.c.aspect.ControllerExceptionHandler    : Requst URL : http://localhost:8080/cqupt/user/paperZipDownload/%E9%80%9A%E7%94%A8%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E7%BB%BC%E8%BF%B0.docx，Exception : {}
+
+org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class com.cqupt.utils.ResultObj] with preset Content-Type 'application/force-download'
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:312)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:183)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:135)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-02-19 22:06:11.999  WARN 9896 --- [http-nio-8080-exec-3] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class com.cqupt.utils.ResultObj] with preset Content-Type 'application/force-download']
+2022-02-19 22:06:12.004 ERROR 9896 --- [http-nio-8080-exec-3] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: getOutputStream() has already been called for this response] with root cause
+
+java.lang.IllegalStateException: getOutputStream() has already been called for this response
+	at org.apache.catalina.connector.Response.getWriter(Response.java:584)
+	at org.apache.catalina.connector.ResponseFacade.getWriter(ResponseFacade.java:227)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:364)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-02-19 22:06:12.040 ERROR 9896 --- [http-nio-8080-exec-3] s.e.ErrorMvcAutoConfiguration$StaticView : Cannot render error page for request [/cqupt/user/paperZipDownload/%E9%80%9A%E7%94%A8%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E7%BB%BC%E8%BF%B0.docx] and exception [No converter for [class com.cqupt.utils.ResultObj] with preset Content-Type 'application/force-download'] as the response has already been committed. As a result, the response may have the wrong status code.
+2022-02-19 22:06:30.374  INFO 9896 --- [http-nio-8080-exec-9] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/paperZipDownload/book_mall.sql', ip='127.0.0.1', classMethod='com.cqupt.controller.FileController.fileDownload', args=[book_mall.sql, org.apache.catalina.connector.ResponseFacade@29f57f71]}
+2022-02-19 22:06:30.376  INFO 9896 --- [http-nio-8080-exec-9] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=下载成功, data=null)
+2022-02-19 22:06:30.378 ERROR 9896 --- [http-nio-8080-exec-9] c.c.aspect.ControllerExceptionHandler    : Requst URL : http://localhost:8080/cqupt/user/paperZipDownload/book_mall.sql，Exception : {}
+
+org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class com.cqupt.utils.ResultObj] with preset Content-Type 'application/force-download'
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:312)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:183)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:135)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-02-19 22:06:30.380  WARN 9896 --- [http-nio-8080-exec-9] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class com.cqupt.utils.ResultObj] with preset Content-Type 'application/force-download']
+2022-02-19 22:06:30.382 ERROR 9896 --- [http-nio-8080-exec-9] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: getOutputStream() has already been called for this response] with root cause
+
+java.lang.IllegalStateException: getOutputStream() has already been called for this response
+	at org.apache.catalina.connector.Response.getWriter(Response.java:584)
+	at org.apache.catalina.connector.ResponseFacade.getWriter(ResponseFacade.java:227)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:364)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-02-19 22:06:30.393 ERROR 9896 --- [http-nio-8080-exec-9] s.e.ErrorMvcAutoConfiguration$StaticView : Cannot render error page for request [/cqupt/user/paperZipDownload/book_mall.sql] and exception [No converter for [class com.cqupt.utils.ResultObj] with preset Content-Type 'application/force-download'] as the response has already been committed. As a result, the response may have the wrong status code.
+2022-02-19 22:06:44.210  INFO 9896 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/paperZipDownload/book_mall.sql', ip='127.0.0.1', classMethod='com.cqupt.controller.FileController.fileDownload', args=[book_mall.sql, org.apache.catalina.connector.ResponseFacade@29f57f71]}
+2022-02-19 22:06:44.211  INFO 9896 --- [http-nio-8080-exec-5] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=下载成功, data=null)
+2022-02-19 22:06:44.213 ERROR 9896 --- [http-nio-8080-exec-5] c.c.aspect.ControllerExceptionHandler    : Requst URL : http://localhost:8080/cqupt/user/paperZipDownload/book_mall.sql，Exception : {}
+
+org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class com.cqupt.utils.ResultObj] with preset Content-Type 'application/force-download'
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:312)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:183)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:135)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-02-19 22:06:44.215  WARN 9896 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class com.cqupt.utils.ResultObj] with preset Content-Type 'application/force-download']
+2022-02-19 22:06:44.217 ERROR 9896 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: getOutputStream() has already been called for this response] with root cause
+
+java.lang.IllegalStateException: getOutputStream() has already been called for this response
+	at org.apache.catalina.connector.Response.getWriter(Response.java:584)
+	at org.apache.catalina.connector.ResponseFacade.getWriter(ResponseFacade.java:227)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:364)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-02-19 22:06:44.223 ERROR 9896 --- [http-nio-8080-exec-5] c.c.aspect.ControllerExceptionHandler    : Requst URL : http://localhost:8080/cqupt/user/paperZipDownload/book_mall.sql，Exception : {}
+
+org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class java.util.LinkedHashMap] with preset Content-Type 'application/force-download'
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:312)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:219)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:135)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711)
+	at org.apache.catalina.core.ApplicationDispatcher.doInclude(ApplicationDispatcher.java:578)
+	at org.apache.catalina.core.ApplicationDispatcher.include(ApplicationDispatcher.java:517)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:384)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:249)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:344)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-02-19 22:06:44.224  WARN 9896 --- [http-nio-8080-exec-5] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class java.util.LinkedHashMap] with preset Content-Type 'application/force-download']
+2022-02-19 22:06:44.226 ERROR 9896 --- [http-nio-8080-exec-5] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
+
+java.lang.IllegalStateException: getOutputStream() has already been called for this response
+	at org.apache.catalina.connector.Response.getWriter(Response.java:584)
+	at org.apache.catalina.connector.ResponseFacade.getWriter(ResponseFacade.java:227)
+	at javax.servlet.ServletResponseWrapper.getWriter(ServletResponseWrapper.java:114)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:364)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711)
+	at org.apache.catalina.core.ApplicationDispatcher.doInclude(ApplicationDispatcher.java:578)
+	at org.apache.catalina.core.ApplicationDispatcher.include(ApplicationDispatcher.java:517)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:384)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:249)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:344)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-02-19 22:06:44.228 ERROR 9896 --- [http-nio-8080-exec-5] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing ErrorPage[errorCode=0, location=/error]
+
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.IllegalStateException: getOutputStream() has already been called for this response
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711)
+	at org.apache.catalina.core.ApplicationDispatcher.doInclude(ApplicationDispatcher.java:578)
+	at org.apache.catalina.core.ApplicationDispatcher.include(ApplicationDispatcher.java:517)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:384)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:249)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:344)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalStateException: getOutputStream() has already been called for this response
+	at org.apache.catalina.connector.Response.getWriter(Response.java:584)
+	at org.apache.catalina.connector.ResponseFacade.getWriter(ResponseFacade.java:227)
+	at javax.servlet.ServletResponseWrapper.getWriter(ServletResponseWrapper.java:114)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:364)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	... 35 common frames omitted
+
+2022-02-19 22:06:45.553  INFO 9896 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/paperZipDownload/book_mall.sql', ip='127.0.0.1', classMethod='com.cqupt.controller.FileController.fileDownload', args=[book_mall.sql, org.apache.catalina.connector.ResponseFacade@29f57f71]}
+2022-02-19 22:06:45.556  INFO 9896 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=下载成功, data=null)
+2022-02-19 22:06:45.557 ERROR 9896 --- [http-nio-8080-exec-4] c.c.aspect.ControllerExceptionHandler    : Requst URL : http://localhost:8080/cqupt/user/paperZipDownload/book_mall.sql，Exception : {}
+
+org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class com.cqupt.utils.ResultObj] with preset Content-Type 'application/force-download'
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:312)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:183)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:135)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-02-19 22:06:45.559  WARN 9896 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class com.cqupt.utils.ResultObj] with preset Content-Type 'application/force-download']
+2022-02-19 22:06:45.561 ERROR 9896 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is java.lang.IllegalStateException: getOutputStream() has already been called for this response] with root cause
+
+java.lang.IllegalStateException: getOutputStream() has already been called for this response
+	at org.apache.catalina.connector.Response.getWriter(Response.java:584)
+	at org.apache.catalina.connector.ResponseFacade.getWriter(ResponseFacade.java:227)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:364)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:197)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:540)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:135)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-02-19 22:06:45.566 ERROR 9896 --- [http-nio-8080-exec-4] c.c.aspect.ControllerExceptionHandler    : Requst URL : http://localhost:8080/cqupt/user/paperZipDownload/book_mall.sql，Exception : {}
+
+org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class java.util.LinkedHashMap] with preset Content-Type 'application/force-download'
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:312)
+	at org.springframework.web.servlet.mvc.method.annotation.HttpEntityMethodProcessor.handleReturnValue(HttpEntityMethodProcessor.java:219)
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:78)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:135)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:895)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:808)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1067)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711)
+	at org.apache.catalina.core.ApplicationDispatcher.doInclude(ApplicationDispatcher.java:578)
+	at org.apache.catalina.core.ApplicationDispatcher.include(ApplicationDispatcher.java:517)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:384)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:249)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:344)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-02-19 22:06:45.567  WARN 9896 --- [http-nio-8080-exec-4] .m.m.a.ExceptionHandlerExceptionResolver : Resolved [org.springframework.http.converter.HttpMessageNotWritableException: No converter for [class java.util.LinkedHashMap] with preset Content-Type 'application/force-download']
+2022-02-19 22:06:45.569 ERROR 9896 --- [http-nio-8080-exec-4] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] threw exception
+
+java.lang.IllegalStateException: getOutputStream() has already been called for this response
+	at org.apache.catalina.connector.Response.getWriter(Response.java:584)
+	at org.apache.catalina.connector.ResponseFacade.getWriter(ResponseFacade.java:227)
+	at javax.servlet.ServletResponseWrapper.getWriter(ServletResponseWrapper.java:114)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:364)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711)
+	at org.apache.catalina.core.ApplicationDispatcher.doInclude(ApplicationDispatcher.java:578)
+	at org.apache.catalina.core.ApplicationDispatcher.include(ApplicationDispatcher.java:517)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:384)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:249)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:344)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+
+2022-02-19 22:06:45.570 ERROR 9896 --- [http-nio-8080-exec-4] o.a.c.c.C.[Tomcat].[localhost]           : Exception Processing ErrorPage[errorCode=0, location=/error]
+
+org.springframework.web.util.NestedServletException: Request processing failed; nested exception is java.lang.IllegalStateException: getOutputStream() has already been called for this response
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:655)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:764)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:227)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:117)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:102)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:189)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationDispatcher.invoke(ApplicationDispatcher.java:711)
+	at org.apache.catalina.core.ApplicationDispatcher.doInclude(ApplicationDispatcher.java:578)
+	at org.apache.catalina.core.ApplicationDispatcher.include(ApplicationDispatcher.java:517)
+	at org.apache.catalina.core.StandardHostValve.custom(StandardHostValve.java:384)
+	at org.apache.catalina.core.StandardHostValve.status(StandardHostValve.java:249)
+	at org.apache.catalina.core.StandardHostValve.throwable(StandardHostValve.java:344)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:169)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:357)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:382)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:895)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1732)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: java.lang.IllegalStateException: getOutputStream() has already been called for this response
+	at org.apache.catalina.connector.Response.getWriter(Response.java:584)
+	at org.apache.catalina.connector.ResponseFacade.getWriter(ResponseFacade.java:227)
+	at javax.servlet.ServletResponseWrapper.getWriter(ServletResponseWrapper.java:114)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:364)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:190)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1401)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1145)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1084)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:963)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	... 35 common frames omitted
+
+2022-02-19 22:07:54.252  INFO 13684 --- [restartedMain] com.cqupt.CquptApplication               : Starting CquptApplication using Java 1.8.0_111 on LAPTOP-Q220O7B3 with PID 13684 (D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform\target\classes started by 86177 in D:\Study\研一项目开发技术栈总结\项目实战\CQUPT_springboot学术交流平台\springboot-Academic-exchange-platform)
+2022-02-19 22:07:54.253  INFO 13684 --- [restartedMain] com.cqupt.CquptApplication               : No active profile set, falling back to default profiles: default
+2022-02-19 22:07:54.312  INFO 13684 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-02-19 22:07:54.312  INFO 13684 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-02-19 22:07:55.952  INFO 13684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2022-02-19 22:07:55.960  INFO 13684 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-02-19 22:07:55.960  INFO 13684 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.56]
+2022-02-19 22:07:56.126  INFO 13684 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-02-19 22:07:56.126  INFO 13684 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1813 ms
+2022-02-19 22:07:56.298  INFO 13684 --- [restartedMain] c.a.d.s.b.a.DruidDataSourceAutoConfigure : Init DruidDataSource
+2022-02-19 22:07:56.554  INFO 13684 --- [restartedMain] com.alibaba.druid.pool.DruidDataSource   : {dataSource-1} inited
+2022-02-19 22:07:57.437  INFO 13684 --- [restartedMain] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page template: index
+2022-02-19 22:07:57.839  INFO 13684 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-02-19 22:07:57.886  INFO 13684 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2022-02-19 22:07:57.904  INFO 13684 --- [restartedMain] com.cqupt.CquptApplication               : Started CquptApplication in 4.273 seconds (JVM running for 5.829)
+2022-02-19 22:08:20.109  INFO 13684 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-02-19 22:08:20.110  INFO 13684 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-02-19 22:08:20.112  INFO 13684 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2022-02-19 22:08:20.189  INFO 13684 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/login', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.toLogin', args=[]}
+2022-02-19 22:08:20.198  INFO 13684 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : admin/login
+2022-02-19 22:08:26.888  INFO 13684 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/doLogin', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.doLogin', args=[lbw, 123456, 2, org.apache.catalina.session.StandardSessionFacade@fe55f94, {}]}
+2022-02-19 22:08:27.266  INFO 13684 --- [http-nio-8080-exec-6] com.cqupt.aspect.LogAspect               : Result : ResultObj(code=200, msg=登录成功, data=2)
+2022-02-19 22:08:27.361  INFO 13684 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.adminIndex', args=[]}
+2022-02-19 22:08:27.361  INFO 13684 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Result : admin/index
+2022-02-19 22:08:27.903  INFO 13684 --- [http-nio-8080-exec-8] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/file/showImageByName', ip='127.0.0.1', classMethod='com.cqupt.controller.UserController.showImageByName', args=[test.jpg]}
+2022-02-19 22:08:27.914  INFO 13684 --- [http-nio-8080-exec-8] com.cqupt.aspect.LogAspect               : Result : <201 CREATED Created,[B@51731700,[Content-Type:"application/octet-stream"]>
+2022-02-19 22:08:29.105  INFO 13684 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/admin/papers', ip='127.0.0.1', classMethod='com.cqupt.controller.PaperController.papers', args=[{}, 1]}
+2022-02-19 22:08:29.278  INFO 13684 --- [http-nio-8080-exec-3] com.cqupt.aspect.LogAspect               : Result : admin/papers
+2022-02-19 22:08:33.189  INFO 13684 --- [http-nio-8080-exec-9] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/index', ip='127.0.0.1', classMethod='com.cqupt.controller.MyController.index', args=[{}, 1, {}, org.apache.catalina.session.StandardSessionFacade@fe55f94]}
+2022-02-19 22:08:33.282  INFO 13684 --- [http-nio-8080-exec-9] com.cqupt.aspect.LogAspect               : Result : index
+2022-02-19 22:08:35.377  INFO 13684 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/paperZipDownload/%E9%80%9A%E7%94%A8%E7%9B%AE%E6%A0%87%E6%A3%80%E6%B5%8B%E7%BB%BC%E8%BF%B0.docx', ip='127.0.0.1', classMethod='com.cqupt.controller.FileController.fileDownload', args=[通用目标检测综述.docx, org.apache.catalina.connector.ResponseFacade@500d03a0]}
+2022-02-19 22:08:35.386  INFO 13684 --- [http-nio-8080-exec-2] com.cqupt.aspect.LogAspect               : Result : null
+2022-02-19 22:09:02.898  INFO 13684 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Request : {url='http://localhost:8080/cqupt/user/paperZipDownload/book_mall.sql', ip='127.0.0.1', classMethod='com.cqupt.controller.FileController.fileDownload', args=[book_mall.sql, org.apache.catalina.connector.ResponseFacade@213c7c41]}
+2022-02-19 22:09:02.900  INFO 13684 --- [http-nio-8080-exec-4] com.cqupt.aspect.LogAspect               : Result : null

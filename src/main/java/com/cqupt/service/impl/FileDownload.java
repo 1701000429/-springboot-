@@ -10,13 +10,13 @@ import java.io.OutputStream;
 import java.net.URLEncoder;
 
 public class FileDownload {
-    public void Download(String name, HttpServletResponse response) throws Exception {
+    public boolean Download(String name, HttpServletResponse response) throws Exception {
         System.out.println(name);
         String filePath= AppFileUtils.UPLOAD_PATH+"/"+name;
         File file = new File(filePath);
         if (!file.exists()) {
             System.out.println("文件不存在");
-            return;
+            return false;
         }
         System.out.println("filepath==========="+filePath);
         response.setContentType("application/force-download");
@@ -35,6 +35,7 @@ public class FileDownload {
             }
         }
         System.out.println("文件下载成功");
+        return true;
     }
 
 }

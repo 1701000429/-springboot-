@@ -51,10 +51,17 @@ public class FileController {
     }
 
     @RequestMapping("/user/paperZipDownload/{fileName}")
-    public void logDownload(@PathVariable String fileName, HttpServletResponse response) throws Exception {
+    public void fileDownload(@PathVariable String fileName, HttpServletResponse response) throws Exception {
 
         FileDownload fileDownload=new FileDownload();
-        fileDownload.Download(fileName, response);
+        boolean flag=fileDownload.Download(fileName, response);
+        if(flag){
+            ResultObj res=new ResultObj(200,"下载成功");
+
+        }else{
+            ResultObj res=new ResultObj(400,"下载失败");
+
+        }
     }
 
 
