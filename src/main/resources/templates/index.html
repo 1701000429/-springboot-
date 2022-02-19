@@ -247,7 +247,7 @@
                 <i class="idea icon"></i>分类
               </div>
               <div class="right aligned column">
-                <a href="#" th:href="@{/cqupt/user/loadAllType}" target="_blank">more <i class="angle double right icon"></i></a>
+                <button class="layui-btn" id="btn1"  >more </i></button>
               </div>
             </div>
           </div>
@@ -291,7 +291,7 @@
                 <i class="tags icon"></i>标签
               </div>
               <div class="right aligned column">
-                <a href="#" th:href="@{/cqupt/user/loadAllTags}" target="_blank">more <i class="angle double right icon"></i></a>
+                <button class="layui-btn" id="btn2"  >more </i></button>
               </div>
             </div>
           </div>
@@ -375,6 +375,74 @@
 
 <br>
 <br>
+
+<!--分类和标签的弹出层  使用layui的弹出层-->
+
+<div id="typeLayui" style="display: none;padding: 10px;padding-right: 5%">
+  <div class="ui teal segment">
+    <div class="ui fluid vertical menu" >
+      <a href="#"  class="item"  th:each="type : ${ALLtypes}">
+        <span th:text="${type.name}">学习日志</span>
+        <!--                <div class="ui teal basic left pointing label" >13</div>-->
+      </a>
+      <!--/*-->
+      <a href="#" class="item">
+        思考与感悟
+        <div class="ui teal basic left pointing label">13</div>
+      </a>
+      <a href="#" class="item">
+        学习日志
+        <div class="ui teal basic left pointing label">13</div>
+      </a>
+      <a href="#" class="item">
+        学习日志
+        <div class="ui teal basic left pointing label">13</div>
+      </a>
+      <a href="#" class="item">
+        学习日志
+        <div class="ui teal basic left pointing label">13</div>
+      </a>
+      <a href="#" class="item">
+        学习日志
+        <div class="ui teal basic left pointing label">13</div>
+      </a>
+      <!--*/-->
+    </div>
+  </div>
+</div>
+<div id="tagLayui" style="display: none;padding: 10px;padding-right: 5%">
+  <div class="ui teal segment">
+    <div class="ui fluid vertical menu" >
+      <a href="#"  class="item"  th:each="tag : ${ALLtags}">
+        <span th:text="${tag.name}">学习日志</span>
+        <!--                <div class="ui teal basic left pointing label" >13</div>-->
+      </a>
+      <!--/*-->
+      <a href="#" class="item">
+        思考与感悟
+        <div class="ui teal basic left pointing label">13</div>
+      </a>
+      <a href="#" class="item">
+        学习日志
+        <div class="ui teal basic left pointing label">13</div>
+      </a>
+      <a href="#" class="item">
+        学习日志
+        <div class="ui teal basic left pointing label">13</div>
+      </a>
+      <a href="#" class="item">
+        学习日志
+        <div class="ui teal basic left pointing label">13</div>
+      </a>
+      <a href="#" class="item">
+        学习日志
+        <div class="ui teal basic left pointing label">13</div>
+      </a>
+      <!--*/-->
+    </div>
+  </div>
+</div>
+
 <!--底部footer-->
 <footer th:replace="_fragments :: footer" class="ui inverted vertical segment m-padded-tb-massive ">
   <div class="ui center aligned container">
@@ -411,6 +479,8 @@
   </div>
 
 </footer>
+<script type="text/javascript" src="../../static/layui/layui.js" th:src="@{/layui/layui.js}"></script>
+
 <!--/*/<th:block th:replace="_fragments :: script">/*/-->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
@@ -451,22 +521,51 @@
     $('#paper-form').submit();
   });
 
-  //   function zipPost(){
-  //   var fileNameGet=document.getElementById("fileName").value;
-  //   $.ajax({
-  //     type: "get", // 使用get方式
-  //     url: "/cqupt/user/paperZipDownload",
-  //     data: {fileName:fileNameGet}, // 参数列表，stringify()方法用于将JS对象序列化为json字符串
-  //     success: function(result){
-  //       // 请求成功后的操作
-  //       console.log("文件下载成功")
-  //     },
-  //     error: function(result){
-  //       // 请求失败后的操作
-  //     }
-  //   });
-  //
-  // }
+  var openTypeLayer;
+  var openTagLayer;
+  layui.use(['jquery', 'form', 'layer', 'table', 'laydate'], function () {
+    var $ = layui.jquery;
+    var form = layui.form;
+    var layer = layui.layer;
+    var table = layui.table;
+    var laydate = layui.laydate;
+    //打开type more
+
+    function openTypeLayer() {
+      mainIndex = layer.open({
+        type:1,
+        content:$("#typeLayui"),
+        area:['700px','500px'],
+        title:'更多类型',
+        success:function () {
+          console.log("type弹出层====")
+
+        }
+      });
+    }
+
+    //打开tag more
+    function openTagLayer() {
+      mainIndex = layer.open({
+        type:1,
+        content:$("#tagLayui"),
+        area:['700px','500px'],
+        title:'更多标签',
+        success:function () {
+          console.log("tag弹出层====")
+
+        }
+      });
+    }
+
+    $("#btn1").click(function () {
+      openTypeLayer()
+    })
+    $("#btn2").click(function () {
+      openTagLayer()
+    })
+
+  });
 
 
 </script>

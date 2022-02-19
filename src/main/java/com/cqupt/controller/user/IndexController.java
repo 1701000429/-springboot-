@@ -220,7 +220,11 @@ public class IndexController {
 
         PageInfo<PaperQuery> pageInfo = new PageInfo<PaperQuery>(paperQueryList);
         model.addAttribute("pageInfo",pageInfo);
-
+//more
+        List<Type> ALLtypes=typeService.list();
+        List<Tag> ALLtags=tagService.list();
+        model.addAttribute("ALLtypes", ALLtypes);
+        model.addAttribute("ALLtags", ALLtags);
         //进入首页
         return "index";
 

@@ -1,10 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head >
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人中心</title>
+    <link href="../static/images/favicon.ico" th:href="@{/images/cquptLOGO.jpg}" rel="icon" type="image/x-ico">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.css">
+    <link rel="stylesheet" href="../../static/css/me.css" th:href="@{/css/me.css}">
+    <link rel="stylesheet" href="../../static/layui/css/layui.css" th:href="@{/layui/css/layui.css}" media="all" />
+    <link rel="stylesheet" href="../../static/css/public.css" th:href="@{/css/public.css}" media="all" />
 </head>
-<body>
-个人主页   todo 2022/2/16
+
+<body class="childrenBody">
+
+<!--导航栏-->
+<!--导航-->
+<nav th:replace="_fragments :: menu(6)" class="ui inverted attached segment m-padded-tb-mini m-shadow-small" >
+    <div class="ui container">
+        <div class="ui inverted secondary stackable menu">
+            <h2 class="ui teal header item">管理后台</h2>
+            <a href="#" class="active m-item item m-mobile-hide"><i class="mini home icon"></i>博客</a>
+            <a href="#" class=" m-item item m-mobile-hide"><i class="mini idea icon"></i>分类</a>
+            <a href="#" class="m-item item m-mobile-hide"><i class="mini tags icon"></i>标签</a>
+            <div class="right m-item m-mobile-hide menu">
+                <div class="ui dropdown  item">
+                    <div class="text">
+                        <img class="ui avatar image" id="navbar-img" >
+                        <input id="avatarFileName"  type="hidden" th:value="${session.user.avatar}">
+                        <span th:text="${session.user.nickname}">刘博文</span>
+                    </div>
+                    <i class="dropdown icon"></i>
+                    <div class="menu">
+                        <a th:href="@{/cqupt/logout}" class="item">注销</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <a href="#" class="ui menu toggle black icon button m-right-top m-mobile-show">
+        <i class="sidebar icon"></i>
+    </a>
+</nav>
+
+<!--个人信息展示及修改-->
+<br>
+<br>
+<br>
+<br>
+<form class="layui-form layui-row" method="post">
+    <div class="layui-col-md3 layui-col-xs12 user_right">
+        <div class="layui-upload-list userFace">
+            <input type="hidden" name="id" id="id" th:value="${session.user.id}">
+            <!--            th:text="${#dates.format(paper.updatetime, 'yyyy-MM-dd')}"-->
+            <input type="hidden" name="createtime" id="createtime" th:value="${#dates.format(session.user.createtime, 'yyyy-MM-dd')}">
+            <input type="hidden" name="type" id="type" th:value="${session.user.type}">
+
+            <input type="hidden" name="avatar" id="avatar" th:value="${session.user.avatar}">
+            <img class="layui-upload-img layui-circle userFaceBtn userAvatar" id="userFace">
+        </div>
+        <button type="button" class="layui-btn layui-btn-primary userFaceBtn" id="LBWuserFaceBtn"><i class="layui-icon">&#xe67c;</i> 更改头像</button>
+
+    </div>
+    <div class="layui-col-md6 layui-col-xs12">
+        <div class="layui-form-item">
+            <label class="layui-form-label">用户名</label>
+            <div class="layui-input-block">
+                <input type="hidden" class="id" name="id" th:value="${session.user.id}">
+                <input type="text" value="" id="username" name="username" th:value="${session.user.username}" disabled class="layui-input layui-disabled">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">密码</label>
+            <div class="layui-input-block">
+                <input type="password" name="password" value="" id="password" th:value="${session.user.password}"  class="layui-input ">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">姓名</label>
+            <div class="layui-input-block">
+                <input type="text" value="" id="nickname" name="nickname" th:value="${session.user.nickname}"  class="layui-input ">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">邮箱</label>
+            <div class="layui-input-block">
+                <input type="text" th:value="${session.user.email}" id="email" name="email" class="layui-input ">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">地址</label>
+            <div class="layui-input-block">
+                <input type="text" th:value="${session.user.address}" id="address"  name="address" class="layui-input ">
+            </div>
+        </div>
+
+        <div class="layui-form-item">
+            <div class="layui-input-block">
+                <button class="layui-btn" lay-submit="" lay-filter="changeUser">立即提交</button>
+                <!--<button type="reset" class="layui-btn layui-btn-primary">重置</button>-->
+            </div>
+        </div>
+    </div>
+</form>
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<!--底部栏-->
+<footer class="ui inverted vertical segment m-padded-tb-massive m-opacity">
+    <!--容器-->
+    <div class="ui center aligned container">
+        <div class="ui inverted divided stackable grid">
+            <div class="three wide column">
+                <div class="ui inverted link list">
+                    <div class="item">
+                        <img src="../static/images/wechat.jpg" th:src="@{/images/wechat.jpg}"  class="ui rounded image" alt="" style="width: 110px">
+                    </div>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced " >重邮友情链接</h4>
+                <div class="ui inverted link list">
+                    <a href="http://www.cqupt.edu.cn/" class="item m-text-thin">重庆邮电大学</a>
+                    <a href="http://cs.cqupt.edu.cn/" class="item m-text-thin">重庆邮电大学-计算机学院</a>
+                    <a href="https://tieba.baidu.com/f?kw=%D6%D8%C7%EC%D3%CA%B5%E7%B4%F3%D1%A7&fr=ala0&tpl=5&dyTabStr=MCw2LDMsMiwxLDQsNSw3LDgsOQ%3D%3D" class="item m-text-thin">重庆邮电大学-百度贴吧</a>
+                </div>
+            </div>
+            <div class="three wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">联系开发者</h4>
+                <div class="ui inverted link list">
+                    <a href="#" class="item m-text-thin">Email：7794262@qq.com</a>
+                    <a href="#" class="item m-text-thin">QQ：7794262</a>
+                </div>
+            </div>
+            <div class="seven wide column">
+                <h4 class="ui inverted header m-text-thin m-text-spaced ">CQUPT-ACADEMIC</h4>
+                <p class="m-text-thin m-text-spaced m-opacity-mini">重庆邮电大学学术交流平台，旨在促进同学论文交流，营造良好的学术氛围。。。。。。</p>
+            </div>
+        </div>
+        <div class="ui inverted section divider"></div>
+        <p class="m-text-thin m-text-spaced m-opacity-tiny">Copyright © 2022 LBW Designed in CQUPT</p>
+    </div>
+
+</footer>
+
+
+<script type="text/javascript" src="../../static/layui/layui.js" th:src="@{/layui/layui.js}"></script>
+<!--/*/<th:block th:replace="admin/_fragments :: script">/*/-->
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.2/dist/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/semantic-ui/2.2.4/semantic.min.js"></script>
+<!--/*/</th:block>/*/-->
+<script type="text/javascript">
+    var fileName=document.getElementById("avatarFileName").value;
+    //重新加载头像
+    $('#navbar-img').attr('src','/cqupt/file/showImageByName?path='+fileName);
+
+    layui.use(['jquery','upload','form'],function () {
+
+
+
+        var $ = layui.jquery;
+        var upload = layui.upload;
+        var form = layui.form;
+
+        //获得当前用户
+        var id = $("#id");
+        var loginname = $("#username");
+        //页面加载完成  得到图像路径
+        $.post('/cqupt/user/getUserAvatar',
+            id,
+            function (res) {
+                //拿到绝对路径
+                var imgpath = res.data;
+                $('#userFace').attr('src','/cqupt/file/showImageByName?path='+imgpath);
+
+            });
+
+        8
+        //上传头像
+        upload.render({
+            elem: '#LBWuserFaceBtn',
+            url: '/cqupt/admin/Avatarupload',
+            method : "post",
+            done: function(res, index, upload){
+                var fileName=res.data;
+                $('.userFace').css("background","#fff");
+                $("#avatar").val(fileName);
+                //重新加载头像
+                $('#userFace').attr('src','/cqupt/file/showImageByName?path='+fileName);
+            }
+        });
+
+        //提交个人资料
+        form.on("submit(changeUser)",function(data){
+            var index = layer.msg('提交中，请稍候',{icon: 16,time:false,shade:0.8});
+            $.post("/cqupt/user/updateUserInfo", data.field, function (res) {
+                layer.msg(res.msg);
+            });
+            setTimeout(function(){
+                layer.close(index);
+                layer.msg("提交成功！");
+
+            },2000);
+            return false; //阻止表单跳转。如果需要表单跳转，去掉这段即可。
+        })
+    });
+
+
+</script>
 </body>
 </html>

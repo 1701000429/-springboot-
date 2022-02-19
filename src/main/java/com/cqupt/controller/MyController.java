@@ -95,6 +95,13 @@ public class MyController {
         PageInfo<PaperQuery> pageInfo = new PageInfo<PaperQuery>(list);
         model.addAttribute("pageInfo",pageInfo);
 
+
+
+        //more
+        List<Type> ALLtypes=typeService.list();
+        List<Tag> ALLtags=tagService.list();
+        model.addAttribute("ALLtypes", ALLtypes);
+        model.addAttribute("ALLtags", ALLtags);
         return "index";
     }
 
