@@ -1,4 +1,5 @@
 package com.cqupt.controller;
+import com.baomidou.mybatisplus.core.conditions.Wrapper;
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.cqupt.domin.Paper;
 import com.cqupt.domin.Tag;
@@ -8,6 +9,8 @@ import com.cqupt.domin.queryvo.PaperQuery;
 import com.cqupt.service.PaperService;
 import com.cqupt.service.TagService;
 import com.cqupt.service.TypeService;
+import com.cqupt.service.UserService;
+import com.cqupt.utils.ResultObj;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,10 +19,7 @@ import org.springframework.data.domain.Sort;
 import org.springframework.data.web.PageableDefault;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
 import javax.servlet.http.HttpSession;
@@ -38,6 +38,32 @@ public class MyController {
 
     @Autowired
     private TagService tagService;
+    @Autowired
+    private UserService userService;
+//    commenthistory
+
+    @GetMapping("/user/commentHistory")
+    public String commenthistory() {
+
+        return "commenthistory";
+    }
+
+    @GetMapping("/admin/loginInfo")
+    public String loginInfo() {
+        return "admin/logininfo";
+    }
+
+    //历史记录简单路由
+    @GetMapping("/user/history")
+    public String history() {
+        return "history";
+    }
+    //注册页面
+    @GetMapping("/signup")
+    public String signup() {
+        return "signup";
+    }
+
 
     //登陆页面
     @GetMapping("/login")

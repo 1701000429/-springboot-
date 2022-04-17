@@ -16,6 +16,9 @@ public class WebConfig extends WebMvcConfigurerAdapter {
                 .addPathPatterns("/cqupt/**")
                 .excludePathPatterns("/cqupt")
                 .excludePathPatterns("/cqupt/login")
-                .excludePathPatterns("/cqupt/doLogin");
+                .excludePathPatterns("/cqupt/doLogin")
+                .excludePathPatterns("/cqupt/signup")
+                .excludePathPatterns("/cqupt/doSignup")
+        ;
     }
 }

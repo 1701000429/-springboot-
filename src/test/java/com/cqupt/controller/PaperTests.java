@@ -40,7 +40,6 @@ public class PaperTests {
     void selectTest() {
         // 条件分页查询
         //IPage<Paper> page(IPage<Paper> page, Wrapper<Paper> queryWrapper);
-
         //测试实体类
         Paper Paper=new Paper();
         //1.分页limit条件
@@ -51,7 +50,6 @@ public class PaperTests {
         //3.order by
         //queryWrapper.orderByDesc("id");
         //4.调用
-
         service.page(page,queryWrapper);
 
         List<Paper> records = page.getRecords();

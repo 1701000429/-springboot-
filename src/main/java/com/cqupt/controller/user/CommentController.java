@@ -2,10 +2,12 @@ package com.cqupt.controller.user;
 
 
 import com.cqupt.domin.Comment;
+import com.cqupt.domin.Commenthistory;
 import com.cqupt.domin.User;
 import com.cqupt.domin.queryvo.CommentQuery;
 import com.cqupt.mapper.CommentMapper;
 import com.cqupt.service.CommentService;
+import com.cqupt.service.CommenthistoryService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -13,6 +15,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
+import java.util.Date;
 
 /**
  * <p>
@@ -30,6 +33,8 @@ public class CommentController {
     @Autowired
     private CommentMapper commentMapper;
     //默认头像
+    @Autowired
+    private CommenthistoryService commentHistoryService;
     @Value("${comment.avatar}")
     private String avatar;
 
@@ -66,6 +71,15 @@ public class CommentController {
 
         //评论的持久化
         commentMapper.insert(comment);
+
+        //2022 4 18 新增 评论历史
+        Commenthistory commenthistory=new Commenthistory();
+        commenthistory.setCommenttime(new Date());
+        commenthistory.setUsername(user.getUsername());
+        commenthistory.setContent(comment.getContent());
+        commentHistoryService.save(commenthistory);
+
+
         return "redirect:/comments/" + paperId;
     }
 }

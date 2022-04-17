@@ -32,7 +32,7 @@ public class localController {
     TagService tagService;
     @Autowired
     PapertagService papertagService;
-
+    //前台论文详情页,之所以再写一遍，没有session会被拦截请求。这里的路径不在cqupt下，不会被拦截
     //前台论文详情页
     @GetMapping("/paper/{id}")
     public String blog(@PathVariable Long id, Model model) {

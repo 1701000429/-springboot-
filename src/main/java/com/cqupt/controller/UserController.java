@@ -2,13 +2,18 @@ package com.cqupt.controller;
 
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
-import com.cqupt.domin.Paper;
-import com.cqupt.mapper.UserMapper;
+import com.baomidou.mybatisplus.core.metadata.IPage;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
+
+import com.cqupt.domin.Commenthistory;
+import com.cqupt.domin.Loginfo;
+import com.cqupt.domin.Paperuser;
+import com.cqupt.domin.queryvo.PaperuserVO;
+import com.cqupt.service.CommenthistoryService;
+import com.cqupt.service.LoginfoService;
+import com.cqupt.service.PaperuserService;
 import com.cqupt.service.UserService;
-import com.cqupt.utils.AppFileUtils;
-import com.cqupt.utils.MD5Utils;
-import com.cqupt.utils.ResultObj;
-import com.cqupt.utils.WebUtils;
+import com.cqupt.utils.*;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -21,7 +26,11 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.File;
 import java.io.IOException;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Date;
+import java.util.List;
 
 /**
  * <p>
@@ -31,14 +40,265 @@ import java.util.Date;
  * @author 刘博文
  * @since 2022-02-08
  */
+//新增功能  注册，历史记录管理，登录信息管理
 @RestController
 @RequestMapping("/cqupt")
 public class UserController {
 
     @Autowired
     UserService userService;
+    @Autowired
+    PaperuserService paperuserService;
+    @Autowired
+    CommenthistoryService commenthistoryService;
+    @Autowired
+    LoginfoService loginfoService;
+//    loadAllcommenthistory  deleteCommentHistory  batchDeleteCommentHistory
+@RequestMapping("/loadAllcommenthistory")
+public DataGridView loadAllcommenthistory(Commenthistory commenthistory
+        , HttpSession session){
+    System.out.println(commenthistory);
+    Paperuser paperuser=new Paperuser();
+    User LoginUser2=(User) session.getAttribute("user");
+    System.out.println(LoginUser2);
+
+    IPage<Commenthistory> page = new Page<Commenthistory>(1,10);
+    QueryWrapper<Commenthistory> queryWrapper = new QueryWrapper<Commenthistory>();
 
 
+    queryWrapper.like(commenthistory.getContent()!=null,"content",commenthistory.getContent());
+
+
+    queryWrapper.orderByDesc("commenttime");
+    IPage<Commenthistory> page1 = commenthistoryService.page(page, queryWrapper);
+    List<Commenthistory> records = page1.getRecords();
+
+
+    return new DataGridView(page1.getTotal(),page1.getRecords());
+}
+
+
+    @RequestMapping("deleteCommentHistory")
+public ResultObj deleteCommentHistory(Integer id){
+    ResultObj result=new ResultObj();
+    try {
+        commenthistoryService.removeById(id);
+        result.setCode(200);
+        result.setMsg("删除登录日志成功");
+        return result;
+    } catch (Exception e) {
+        e.printStackTrace();
+        result.setCode(400);
+        result.setMsg("删除登录日志失败");
+        return result;
+    }
+}
+    @RequestMapping("batchDeleteCommentHistory")
+    public ResultObj batchDeleteCommentHistory(PaperuserVO paperuser){
+        ResultObj result=new ResultObj();
+        try {
+            Collection<Serializable> idList = new ArrayList<Serializable>();
+            //根据多个id进行删除
+            for (Integer id : paperuser.getIds()) {
+                idList.add(id);
+            }
+            commenthistoryService.removeByIds(idList);
+            result.setCode(200);
+            result.setMsg("批量删除成功");
+            return result;
+        } catch (Exception e) {
+            e.printStackTrace();
+            result.setCode(400);
+            result.setMsg("批量删除失败");
+            return result;
+        }
+    }
+
+@RequestMapping("batchDeleteLoginInfo")
+public ResultObj batchDeleteLoginInfo(PaperuserVO paperuser){
+    ResultObj result=new ResultObj();
+    try {
+        Collection<Serializable> idList = new ArrayList<Serializable>();
+        //根据多个id进行删除
+        for (Integer id : paperuser.getIds()) {
+            idList.add(id);
+        }
+        loginfoService.removeByIds(idList);
+        result.setCode(200);
+        result.setMsg("批量删除成功");
+        return result;
+    } catch (Exception e) {
+        e.printStackTrace();
+        result.setCode(400);
+        result.setMsg("批量删除失败");
+        return result;
+    }
+}
+//    deleteLoginInfo batchDeleteLoginInfo
+//batchDeletePaperuser
+
+
+
+
+
+    @RequestMapping("deleteLoginInfo")
+    public ResultObj deleteLoginInfo(Integer id){
+        ResultObj result=new ResultObj();
+        try {
+            loginfoService.removeById(id);
+            result.setCode(200);
+            result.setMsg("删除登录日志成功");
+            return result;
+        } catch (Exception e) {
+            e.printStackTrace();
+            result.setCode(400);
+            result.setMsg("删除登录日志失败");
+            return result;
+        }
+    }
+    @RequestMapping("/loadAllloginInfo")
+    public DataGridView loadAllloginInfo(Loginfo loginfo
+            , HttpSession session){
+        System.out.println(loginfo);
+        Paperuser paperuser=new Paperuser();
+        User LoginUser2=(User) session.getAttribute("user");
+        System.out.println(LoginUser2);
+
+        IPage<Loginfo> page = new Page<Loginfo>(1,10);
+        QueryWrapper<Loginfo> queryWrapper = new QueryWrapper<Loginfo>();
+
+
+        queryWrapper.like(loginfo.getLoginname()!=null,"loginname",loginfo.getLoginname());
+
+
+        queryWrapper.orderByDesc("logintime");
+        IPage<Loginfo> page1 = loginfoService.page(page, queryWrapper);
+        List<Loginfo> records = page1.getRecords();
+
+
+        return new DataGridView(page1.getTotal(),page1.getRecords());
+    }
+
+
+
+
+    /**
+     * 删除阅读记录
+     * @paramid
+     * @return
+     */
+
+//batchDeletePaperuser
+    @RequestMapping("batchDeletePaperuser")
+    public ResultObj batchDeletePaperuser(PaperuserVO paperuser){
+        ResultObj result=new ResultObj();
+        try {
+            Collection<Serializable> idList = new ArrayList<Serializable>();
+            //根据多个id进行删除
+            for (Integer id : paperuser.getIds()) {
+                idList.add(id);
+            }
+            paperuserService.removeByIds(idList);
+            result.setCode(200);
+            result.setMsg("批量删除成功");
+            return result;
+        } catch (Exception e) {
+            e.printStackTrace();
+            result.setCode(400);
+            result.setMsg("批量删除失败");
+            return result;
+        }
+    }
+
+
+
+
+    @RequestMapping("deletePaperuser")
+    public ResultObj deleteInport(Integer id){
+        ResultObj result=new ResultObj();
+        try {
+            paperuserService.removeById(id);
+            result.setCode(200);
+            result.setMsg("删除阅读记录成功");
+            return result;
+        } catch (Exception e) {
+            e.printStackTrace();
+            result.setCode(400);
+            result.setMsg("删除阅读记录失败");
+            return result;
+        }
+    }
+
+
+    @RequestMapping("/loadAllpaperuser")
+    public DataGridView loadAllpaperuser(Paperuser myPaperuser
+            ,HttpSession session){
+        System.out.println(myPaperuser);
+        Paperuser paperuser=new Paperuser();
+        User LoginUser2=(User) session.getAttribute("user");
+        System.out.println(LoginUser2);
+
+        IPage<Paperuser> page = new Page<Paperuser>(1,10);
+        QueryWrapper<Paperuser> queryWrapper = new QueryWrapper<Paperuser>();
+
+        queryWrapper.eq(LoginUser2.getUsername()!=null,"username",LoginUser2.getUsername());
+
+        queryWrapper.like(myPaperuser.getPapername()!=null,"papername",myPaperuser.getPapername());
+
+
+        queryWrapper.orderByDesc("readtime");
+        IPage<Paperuser> page1 = paperuserService.page(page, queryWrapper);
+        List<Paperuser> records = page1.getRecords();
+
+
+        return new DataGridView(page1.getTotal(),page1.getRecords());
+    }
+
+    @RequestMapping("/doSignup")
+    public ResultObj dosignup(@RequestParam String username,
+                             @RequestParam String password,
+                             @RequestParam String nickname,
+                              @RequestParam String email,
+                              @RequestParam String address,
+
+                             RedirectAttributes attributes){
+        System.out.println("进入了doSignup控制器，现在进行zhuce=======");
+        QueryWrapper<User> queryWrapper = new QueryWrapper<User>();
+        //2.select添加where条件（动态sql）
+        queryWrapper.eq("username",username);
+        User user=userService.getOne(queryWrapper);
+        ResultObj result=new ResultObj();
+        if (user == null) {
+            //可以注册
+            result.setCode(200);
+            result.setMsg("注册成功");
+
+            //session里面存放没有MD5加密后的原密码，方便用户前端显示
+            User newUser=new User();
+            newUser.setAvatar("cquptLOGO.jpg");
+            newUser.setCreatetime(new Date());
+            newUser.setEmail(email);
+            newUser.setNickname(nickname);
+            String Md5Pass=MD5Utils.code(password);
+            newUser.setPassword(Md5Pass);
+            newUser.setType(1);
+            newUser.setAvatar("cquptLOGO.jpg");
+            newUser.setUpdatetime(new Date());
+            newUser.setUsername(username);
+            newUser.setAddress(address);
+            boolean isSuccess=userService.save(newUser);
+            if(isSuccess)
+                return result;
+        }
+        //登录失败
+        result.setCode(404);
+        result.setMsg("，用户名已经存在");
+        attributes.addFlashAttribute("message", "用户注册失败");
+        return result;
+
+
+
+    }
     @RequestMapping("/doLogin")
     public ResultObj doLogin(@RequestParam String username,
                              @RequestParam String password,
@@ -67,6 +327,15 @@ public class UserController {
         }
         if (user != null) {
             //登陆成功
+            //2022  4  17 登陆成功记录到日志中
+            Loginfo loginfo=new Loginfo();
+            loginfo.setLoginip(WebUtils.getRequest().getRemoteAddr());
+            loginfo.setLoginname(username);
+            loginfo.setLogintime(new Date());
+            loginfoService.save(loginfo);
+            System.out.println(loginfo);
+
+
             result.setCode(200);
             result.setMsg("登录成功");
 

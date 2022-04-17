@@ -40,7 +40,6 @@ class PapertagTests {
     void selectTest() {
         // 条件分页查询
         //IPage<Papertag> page(IPage<Papertag> page, Wrapper<Papertag> queryWrapper);
-
         //测试实体类
         Papertag papertag=new Papertag(1,1,10);
         //1.分页limit条件

@@ -3,10 +3,7 @@ import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 import com.cqupt.domin.*;
 import com.cqupt.domin.queryvo.PaperQuery;
 import com.cqupt.mapper.TypeMapper;
-import com.cqupt.service.PaperService;
-import com.cqupt.service.PapertagService;
-import com.cqupt.service.TagService;
-import com.cqupt.service.TypeService;
+import com.cqupt.service.*;
 import com.cqupt.utils.AppFileUtils;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
@@ -28,6 +25,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URLEncoder;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import com.cqupt.utils.MarkdownUtils;
 
@@ -46,9 +44,12 @@ public class IndexController {
     PapertagService papertagService;
     @Autowired
     TypeMapper typeMapper;
-    //前台论文详情页,之所以再写一遍，没有session会被拦截请求。这里的路径不在cqupt下，不会被拦截
+    @Autowired
+    PaperuserService paperuserService;
+
+
     @GetMapping("/paper/{id}")
-    public String paper(@PathVariable Long id, Model model) {
+    public String paper(@PathVariable Long id, Model model,HttpSession session) {
         Paper paper=paperService.getById(id);
         //浏览量+1
         int nowView=paper.getViews();
@@ -74,6 +75,16 @@ public class IndexController {
             tags.add(tag);
         }
         model.addAttribute("tags", tags);
+
+        //2022/4/17 最新提交   这里把用户浏览信息记录到数据库
+        User userTemp=(User)session.getAttribute("user");
+        Paperuser paperuser=new Paperuser();
+        paperuser.setPapername(paper.getTitle());
+        paperuser.setUsername(userTemp.getUsername());
+        paperuser.setReadtime(new Date());
+        paperuserService.save(paperuser);
+
+
         return "paper";
     }
 
